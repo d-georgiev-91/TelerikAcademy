@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotatingWalkinMatrix", "RotatingWalkinMatrix\RotatingWalkinMatrix.csproj", "{C9A4004A-26F7-4EDE-A2A4-D11D2DF14DF4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RotatingWalkInMatrixTests", "RotatingWalkInMatrixTests\RotatingWalkInMatrixTests.csproj", "{5E8D58A0-8455-4752-92B5-17633FBA098A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9A4004A-26F7-4EDE-A2A4-D11D2DF14DF4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9A4004A-26F7-4EDE-A2A4-D11D2DF14DF4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9A4004A-26F7-4EDE-A2A4-D11D2DF14DF4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9A4004A-26F7-4EDE-A2A4-D11D2DF14DF4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E8D58A0-8455-4752-92B5-17633FBA098A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E8D58A0-8455-4752-92B5-17633FBA098A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E8D58A0-8455-4752-92B5-17633FBA098A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E8D58A0-8455-4752-92B5-17633FBA098A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

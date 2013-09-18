@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Strings</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		textarea
+		{
+			margin-left: 10px;	
+		}
+	</style>
+</head>
+<body>
+	<label for="tb-text">Text:</label>
+	<textarea id="tb-text"></textarea>
+	<a href="#" id="btn-replace-whitespace" onclick="onClickRemoveWhiteSpace()">Replaces non breaking white-spaces</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickRemoveWhiteSpace() {
+			var text = document.getElementById("tb-text").value;
+			if (text == "") {
+				alert("The field is empty.");
+			}
+			else {
+				jsConsole.writeLine("The result is: " + replaceWhiteSpace(text));
+			}
+		}
+		function replaceWhiteSpace(text) {
+			var result = "";
+			var foundWhiteSpace = false;
+			for (var character in text) {
+				if (text[character] == " ") {
+					if (foundWhiteSpace == true) {
+						continue;
+					}
+					result += "&nbsp;"
+					foundWhiteSpace = true;
+				}
+				else {
+					result += text[character];
+					foundWhiteSpace = false;		
+				}
+			}
+			return result;
+		}
+	</script>
+</body>
+</html>

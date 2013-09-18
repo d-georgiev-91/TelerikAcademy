@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+div#calculator {
+    border: 1px solid #506070; 
+    width: 407px;
+    height: 350px;
+    font-family: 'Segoe UI';
+    background: #f0f0f0;
+    background: -moz-linear-gradient(top,  #f0f0f0 0%, #ecf4fc 0%, #e9f1fa 7%, #d9e4f1 23%, #d9e4f1 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f0f0), color-stop(0%,#ecf4fc), color-stop(7%,#e9f1fa), color-stop(23%,#d9e4f1), color-stop(100%,#d9e4f1));
+    background: -webkit-linear-gradient(top,  #f0f0f0 0%,#ecf4fc 0%,#e9f1fa 7%,#d9e4f1 23%,#d9e4f1 100%);
+    background: -o-linear-gradient(top,  #f0f0f0 0%,#ecf4fc 0%,#e9f1fa 7%,#d9e4f1 23%,#d9e4f1 100%);
+    background: -ms-linear-gradient(top,  #f0f0f0 0%,#ecf4fc 0%,#e9f1fa 7%,#d9e4f1 23%,#d9e4f1 100%);
+    background: linear-gradient(to bottom,  #f0f0f0 0%,#ecf4fc 0%,#e9f1fa 7%,#d9e4f1 23%,#d9e4f1 100%);
+}
+
+/*MENU*/
+ul {
+    list-style-type: none;
+}
+
+div.menu ul li {
+    display: inline;
+}
+
+div.menu {
+    height: 18px; 
+    border-bottom: 1px solid #B6BCCC;
+    background: #fefeff;
+    background: -moz-linear-gradient(top,  #fefeff 0%, #f2f4fa 35%, #e9ecf6 41%, #f0f2fa 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefeff), color-stop(35%,#f2f4fa), color-stop(41%,#e9ecf6), color-stop(100%,#f0f2fa));
+    background: -webkit-linear-gradient(top,  #fefeff 0%,#f2f4fa 35%,#e9ecf6 41%,#f0f2fa 100%);
+    background: -o-linear-gradient(top,  #fefeff 0%,#f2f4fa 35%,#e9ecf6 41%,#f0f2fa 100%);
+    background: -ms-linear-gradient(top,  #fefeff 0%,#f2f4fa 35%,#e9ecf6 41%,#f0f2fa 100%);
+    background: linear-gradient(to bottom,  #fefeff 0%,#f2f4fa 35%,#e9ecf6 41%,#f0f2fa 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefeff', endColorstr='#f0f2fa',GradientType=0 );
+}
+
+div.menu ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Segoe UI';
+    font-size: 13px;
+    margin-left: 6px;
+    margin-right: 2px;
+    vertical-align: text-top;
+    cursor: default;
+}
+
+div.menu ul li a:hover {
+    cursor: default;
+    border: 1px solid #959AA7;
+    border-radius: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-left: 6px;
+}
+
+div.menu ul li a span.keyboardShortcut {
+    text-decoration: underline;   
+}
+/*End of MENU*/
+
+/*Display*/
+div#input {
+    margin-top:  11px;
+    margin-left: 11px;
+    width: 383px;
+    height: 48px;
+    border: 1px solid #8E9CAD;
+    border-radius: 2px;
+    background: #f0f5fd;
+    background: -moz-linear-gradient(top,  #f0f5fd 0%, #f1f6fd 33%, #fefeff 78%, #fefeff 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f5fd), color-stop(33%,#f1f6fd), color-stop(78%,#fefeff), color-stop(100%,#fefeff));
+    background: -webkit-linear-gradient(top,  #f0f5fd 0%,#f1f6fd 33%,#fefeff 78%,#fefeff 100%);
+    background: -o-linear-gradient(top,  #f0f5fd 0%,#f1f6fd 33%,#fefeff 78%,#fefeff 100%);
+    background: -ms-linear-gradient(top,  #f0f5fd 0%,#f1f6fd 33%,#fefeff 78%,#fefeff 100%);
+    background: linear-gradient(to bottom,  #f0f5fd 0%,#f1f6fd 33%,#fefeff 78%,#fefeff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f5fd', endColorstr='#fefeff',GradientType=0 );
+}
+
+input[type="text"] {
+    color: #333;
+    text-align: right;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    width: 380px;
+    padding-top: 7px;
+    height: 40px;
+    font-family: Consolas;
+    font-size: 23px;
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+/*End of Display*/
+
+/*Binary representation block*/
+div#numberInBinary {
+    border: 1px solid #8E9CAD;
+    background: none;
+    margin-left: 11px;
+    margin-top: 5px;
+    width: 383px;
+    height: 59px;
+    border-radius: 2px;
+}
+
+div#numberInBinary ul li {
+    display: inline;
+    padding-left: 7px;
+    font-family: Consolas;
+    font-size: 13px;
+    overflow: hidden;
+    float: left;
+    line-height: 13px;
+}
+
+div#numberInBinary ul.bits li {
+    width: 29px;
+}
+
+div#numberInBinary ul.bits li + li {
+    margin-left: 12px;
+}
+
+div#numberInBinary ul.bitsIndex li:first-child {
+    width: 185px;
+}
+
+div#numberInBinary ul.bitsIndex li:last-child{
+    text-align: right;
+    width: 151px;
+}
+
+#firstLine {
+    padding-top: 2px;
+}
+
+.bits {
+    color: #1E395B;
+}
+
+.bitsIndex {
+    color: #666;
+}
+
+/*End of Binary representation block*/
+
+div#input, input[type="button"], div#numberInBinary{
+    box-shadow: inset 0 0 0 1px white;
+}
+
+/*Radio buttons*/
+div#radioButtons {
+
+    width: 84px;
+    float: left;
+}
+
+div.radiobtn {
+    border: 1px solid #8E9CAD;
+    margin-left: 11px;
+    padding-left: 7px;
+    padding-top: 7px;
+    font-family: 'Segoe UI';
+    font-size: 11px;
+    overflow: hidden;
+    border-radius: 2px;
+}
+
+div#numeralSystem {
+    height: 84px;
+    margin-top: 4px;
+}
+
+div#word {
+    height: 84px;
+    margin-top: 3px;
+}
+
+div#numeralSystem li, div#word li{
+    padding-bottom: 5px;
+}
+label, input[type="radio"] {
+    vertical-align: middle;
+}
+
+div#numeralSystem label, div#word label{
+    padding-left: 2px;
+}
+
+/*End of Radio buttons*/
+
+/*Buttons*/
+div#buttons {
+    float: left;
+    display: table;
+    margin-top: 4px;
+    padding-right: 3px;
+}
+.row {
+    display: table-row;
+}
+
+input[type="button"] {
+        width: 36px;
+        height: 29px;
+        float: left;   
+        position: relative;
+        margin-left: 3px;
+        margin-bottom: 3px;
+        border: 1px solid #8797AA;
+        border-radius: 3px;
+        line-height: 60%;
+        color: #1E395B;
+}
+
+input[type="button"]#zero {
+    width: 75px;
+}
+input[type="button"]#equal {
+    height: 61px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #1E395B;
+}
+
+#leftSide {
+    float: left;
+    display: inline-block;
+}
+
+input[type="button"].memoryFunctions, input[type="button"].functions {
+    background-color: #D9E4F1;
+    font-size: 12px;
+    border: 1px solid #8797AA;
+}
+
+input[type="button"]#multiply {
+    font-size: 15px;
+    vertical-align: bottom;
+}
+
+input[type="button"].numbers {
+    background: none;
+    font-size: 16px;
+    background: rgb(247,251,255);
+    background: -moz-linear-gradient(top,  rgba(247,251,255,1) 0%, rgba(241,245,249,1) 36%, rgba(237,243,247,1) 45%, rgba(231,237,245,1) 50%, rgba(234,241,248,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(247,251,255,1)), color-stop(36%,rgba(241,245,249,1)), color-stop(45%,rgba(237,243,247,1)), color-stop(50%,rgba(231,237,245,1)), color-stop(100%,rgba(234,241,248,1)));
+    background: -webkit-linear-gradient(top,  rgba(247,251,255,1) 0%,rgba(241,245,249,1) 36%,rgba(237,243,247,1) 45%,rgba(231,237,245,1) 50%,rgba(234,241,248,1) 100%);
+    background: -o-linear-gradient(top,  rgba(247,251,255,1) 0%,rgba(241,245,249,1) 36%,rgba(237,243,247,1) 45%,rgba(231,237,245,1) 50%,rgba(234,241,248,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(247,251,255,1) 0%,rgba(241,245,249,1) 36%,rgba(237,243,247,1) 45%,rgba(231,237,245,1) 50%,rgba(234,241,248,1) 100%);
+    background: linear-gradient(to bottom,  rgba(247,251,255,1) 0%,rgba(241,245,249,1) 36%,rgba(237,243,247,1) 45%,rgba(231,237,245,1) 50%,rgba(234,241,248,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7fbff', endColorstr='#eaf1f8',GradientType=0 );
+}
+
+input[type="button"]:disabled {
+    border: 1px solid #B4C2D1;
+    background: none;
+    box-shadow: none;
+}
+
+input[type="button"]#emptyButton {
+    border: 1px solid #8E9CAD;
+    box-shadow: none;
+}
+
+input[type="button"].functions:hover, input[type="button"].numbers:hover, input[type="button"].memoryFunctions:hover {
+    border-color: #FFDB00;
+    background: rgb(255,248,240);
+    background: -moz-linear-gradient(top,  rgba(255,248,240,1) 0%, rgba(255,244,232,1) 5%, rgba(255,233,210,1) 45%, rgba(255,219,122,1) 50%, rgba(255,223,137,1) 68%, rgba(255,234,149,1) 91%, rgba(255,238,154,1) 95%, rgba(255,245,173,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,248,240,1)), color-stop(5%,rgba(255,244,232,1)), color-stop(45%,rgba(255,233,210,1)), color-stop(50%,rgba(255,219,122,1)), color-stop(68%,rgba(255,223,137,1)), color-stop(91%,rgba(255,234,149,1)), color-stop(95%,rgba(255,238,154,1)), color-stop(100%,rgba(255,245,173,1)));
+    background: -webkit-linear-gradient(top,  rgba(255,248,240,1) 0%,rgba(255,244,232,1) 5%,rgba(255,233,210,1) 45%,rgba(255,219,122,1) 50%,rgba(255,223,137,1) 68%,rgba(255,234,149,1) 91%,rgba(255,238,154,1) 95%,rgba(255,245,173,1) 100%);
+    background: -o-linear-gradient(top,  rgba(255,248,240,1) 0%,rgba(255,244,232,1) 5%,rgba(255,233,210,1) 45%,rgba(255,219,122,1) 50%,rgba(255,223,137,1) 68%,rgba(255,234,149,1) 91%,rgba(255,238,154,1) 95%,rgba(255,245,173,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(255,248,240,1) 0%,rgba(255,244,232,1) 5%,rgba(255,233,210,1) 45%,rgba(255,219,122,1) 50%,rgba(255,223,137,1) 68%,rgba(255,234,149,1) 91%,rgba(255,238,154,1) 95%,rgba(255,245,173,1) 100%);
+    background: linear-gradient(to bottom,  rgba(255,248,240,1) 0%,rgba(255,244,232,1) 5%,rgba(255,233,210,1) 45%,rgba(255,219,122,1) 50%,rgba(255,223,137,1) 68%,rgba(255,234,149,1) 91%,rgba(255,238,154,1) 95%,rgba(255,245,173,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff8f0', endColorstr='#fff5ad',GradientType=0 );
+}
+
+input[type="button"].functions:active, input[type="button"].numbers:active, input[type="button"].memoryFunctions:active {
+    background: rgb(215,179,95);
+    background: -moz-linear-gradient(top,  rgba(215,179,95,1) 0%, rgba(237,202,141,1) 4%, rgba(242,205,140,1) 13%, rgba(244,198,120,1) 46%, rgba(244,186,86,1) 50%, rgba(244,194,99,1) 71%, rgba(243,206,106,1) 88%, rgba(243,215,112,1) 96%, rgba(227,200,85,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(215,179,95,1)), color-stop(4%,rgba(237,202,141,1)), color-stop(13%,rgba(242,205,140,1)), color-stop(46%,rgba(244,198,120,1)), color-stop(50%,rgba(244,186,86,1)), color-stop(71%,rgba(244,194,99,1)), color-stop(88%,rgba(243,206,106,1)), color-stop(96%,rgba(243,215,112,1)), color-stop(100%,rgba(227,200,85,1)));
+    background: -webkit-linear-gradient(top,  rgba(215,179,95,1) 0%,rgba(237,202,141,1) 4%,rgba(242,205,140,1) 13%,rgba(244,198,120,1) 46%,rgba(244,186,86,1) 50%,rgba(244,194,99,1) 71%,rgba(243,206,106,1) 88%,rgba(243,215,112,1) 96%,rgba(227,200,85,1) 100%);
+    background: -o-linear-gradient(top,  rgba(215,179,95,1) 0%,rgba(237,202,141,1) 4%,rgba(242,205,140,1) 13%,rgba(244,198,120,1) 46%,rgba(244,186,86,1) 50%,rgba(244,194,99,1) 71%,rgba(243,206,106,1) 88%,rgba(243,215,112,1) 96%,rgba(227,200,85,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(215,179,95,1) 0%,rgba(237,202,141,1) 4%,rgba(242,205,140,1) 13%,rgba(244,198,120,1) 46%,rgba(244,186,86,1) 50%,rgba(244,194,99,1) 71%,rgba(243,206,106,1) 88%,rgba(243,215,112,1) 96%,rgba(227,200,85,1) 100%);
+    background: linear-gradient(to bottom,  rgba(215,179,95,1) 0%,rgba(237,202,141,1) 4%,rgba(242,205,140,1) 13%,rgba(244,198,120,1) 46%,rgba(244,186,86,1) 50%,rgba(244,194,99,1) 71%,rgba(243,206,106,1) 88%,rgba(243,215,112,1) 96%,rgba(227,200,85,1) 100%);
+    border-color: #C29B29;
+    box-shadow: none;   
+}
+
+input[type="button"]#leftArrow {
+    font-weight: bold;
+    font-size: 15px;
+    color: #1E395B;
+}
+
+input[type="button"].functions {
+    background: rgb(240,246,251);
+    background: -moz-linear-gradient(top,  rgba(240,246,251,1) 0%, rgba(226,234,243,1) 45%, rgba(213,224,237,1) 50%, rgba(215,226,239,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(240,246,251,1)), color-stop(45%,rgba(226,234,243,1)), color-stop(50%,rgba(213,224,237,1)), color-stop(100%,rgba(215,226,239,1)));
+    background: -webkit-linear-gradient(top,  rgba(240,246,251,1) 0%,rgba(226,234,243,1) 45%,rgba(213,224,237,1) 50%,rgba(215,226,239,1) 100%);
+    background: -o-linear-gradient(top,  rgba(240,246,251,1) 0%,rgba(226,234,243,1) 45%,rgba(213,224,237,1) 50%,rgba(215,226,239,1) 100%);
+    background: -ms-linear-gradient(top,  rgba(240,246,251,1) 0%,rgba(226,234,243,1) 45%,rgba(213,224,237,1) 50%,rgba(215,226,239,1) 100%);
+    background: linear-gradient(to bottom,  rgba(240,246,251,1) 0%,rgba(226,234,243,1) 45%,rgba(213,224,237,1) 50%,rgba(215,226,239,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f0f6fb', endColorstr='#d7e2ef',GradientType=0);
+    font-size: 13px;
+}
+
+#input[type="button"].letters {
+    font-size: 16px;
+}
+/*End of Buttons*/

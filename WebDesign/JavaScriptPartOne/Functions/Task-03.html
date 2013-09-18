@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Functions</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		textarea
+		{
+			margin-left: 10px;	
+		}
+	</style>
+</head>
+<body>
+	<label for="tb-word">Word:</label>
+	<input type="text" id="tb-word" />
+	<br/>
+	<label for="tb-text">Text:</label>
+	<textarea id="tb-text"></textarea>
+	<a href="#" id="btn-count-word-in-text" onclick="onClickGetTextAndWord()">Display occurances in text</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickGetTextAndWord() {
+			var word = document.getElementById("tb-word").value;
+			var text = document.getElementById("tb-text").value;
+			if (word == "" || text == "") {
+				alert("The fields are empty.");
+			}
+			else {
+				jsConsole.writeLine("Case insensitive: The word is found " + findWordOccInText(word, text) + " times int text.");
+				jsConsole.writeLine("Case sensitive: The word is found " + findWordOccInText(word, text, true) + " times int text.");
+			}
+		}
+		function findWordOccInText(word, text, caseSensitive) {
+			switch(arguments.length) {
+				case 2:
+					word = word.toLowerCase();
+					text = text.toLowerCase();
+					break;
+			}
+			var occurances = 0;
+			pattern = "\\b" + word + "\\b";
+			var re = new RegExp(pattern, "g");
+			var count = text.match(re);
+			return count.length;
+		}
+	</script>
+</body>
+</html>

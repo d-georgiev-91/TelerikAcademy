@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Using objects</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <a href="#" id="btn-execute-js" onclick="onClickExecuteJavaScipt()">Execute script</a>
+    <div id="js-console">
+    </div>
+    <script src="scripts/js-console.js">	  
+    </script>
+    <script>
+
+        function onClickExecuteJavaScipt() {
+
+            var persons = [
+               {firstname: "Gosho", lastname: "Petrov", age: 32}, 
+               {firstname: "Bay", lastname: "Ivan", age: 81 },
+               {firstname: "Bay", lastname: "Mangau", age: 31 },
+               {firstname: "Pencho", lastname: "Penchev", age: 15 },
+               {firstname: "King", lastname: "Kiro", age: 50 },
+               {firstname: "Kiro", lastname: "Kirov", age: 22 },
+            ];
+
+            getYoungestPersonFullName(persons);
+        }
+
+        function getYoungestPersonFullName(persons) {
+            var youngestPerson = {
+                firstname: "", lastname: "", age: 200,
+            }
+            for (var person in persons) {
+                if (youngestPerson.age >= persons[person].age) {
+                    youngestPerson = persons[person];
+                }
+            }
+            jsConsole.writeLine("The youngest person is: " + youngestPerson.firstname + " " + youngestPerson.lastname + " at age " + youngestPerson.age);
+        }
+    </script>
+</body>
+</html>

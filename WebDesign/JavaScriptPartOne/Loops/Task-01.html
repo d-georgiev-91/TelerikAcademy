@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Loops</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<input type="text" id="tb-number" />
+	<a href="#" id="btn-print-to-n" onclick="onPrintToN()">Print from one to N</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onPrintToN() {
+			var n = jsConsole.readInteger("#tb-number");
+            for (var i = 1; i <= n; i++) {
+            if (i!==n) {
+                jsConsole.write(i + ", ");
+            }
+            else {
+                jsConsole.write(i);
+            }
+		}
+    }
+	</script>
+</body>
+</html>

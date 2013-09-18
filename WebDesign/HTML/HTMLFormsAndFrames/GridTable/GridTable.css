@@ -1,0 +1,31 @@
+.strangeButton{
+    width: 22px;
+}
+input#3{
+    padding-top: 90px;
+}
+table, td, th{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+#firstRow{
+    background-color: #E7E9EB;
+}
+#secondRow{
+    background-color: #E3E4E7;
+}
+#thirdRow{
+    background-color: #DFE3E8;
+}
+#lastRow{
+    background-color: #CDD1D6;    
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+span#items{ 
+    float: right;
+    padding-top: 3px;
+    padding-right: 3px;
+}

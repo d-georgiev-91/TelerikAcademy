@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topics>
+  <topic id="N:Telerik.ILS.Common" />
+  <topic id="T:Telerik.ILS.Common.StringExtensions" />
+  <topic id="AllMembers.T:Telerik.ILS.Common.StringExtensions" />
+  <topic id="Methods.T:Telerik.ILS.Common.StringExtensions" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.CapitalizeFirstLetter(System.String)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.ConvertCyrillicToLatinLetters(System.String)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.ConvertLatinToCyrillicKeyboard(System.String)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.GetFileExtension(System.String)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.GetFirstCharacters(System.String,System.Int32)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.GetStringBetween(System.String,System.String,System.String,System.Int32)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.ToBoolean(System.String)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.ToByteArray(System.String)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.ToContentType(System.String)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.ToDateTime(System.String)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.ToInteger(System.String)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.ToLong(System.String)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.ToMd5Hash(System.String)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.ToShort(System.String)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.ToValidLatinFileName(System.String)" />
+  <topic id="M:Telerik.ILS.Common.StringExtensions.ToValidUsername(System.String)" />
+</topics>

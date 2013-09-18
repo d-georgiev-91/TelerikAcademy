@@ -1,0 +1,9 @@
+  ul{
+    list-style-type: none;
+    margin-left: 1.5em;
+    padding-left: 1em;
+    text-indent: -0.85em;
+}
+ul li:before {
+    content: "- ";
+}

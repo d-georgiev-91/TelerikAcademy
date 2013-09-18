@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="content">
+        <label for="first">First number</label>
+        <input type="text" id="first" />
+        <label for="second">Second number</label>
+        <input type="text" id="second" />
+        <label for="third">Second number</label>
+        <input type="text" id="third" />
+        <a href="#" onclick="SortNumbers()">Sort the numbers</a>
+    </div>
+    <script>
+        function SortNumbers() {
+            var firstNumber = parseInt(document.getElementById("first").value);
+            var secondNumber = parseInt(document.getElementById("second").value);
+            var thirdNumber = parseInt(document.getElementById("third").value);
+            if (isNaN(firstNumber) || isNaN(secondNumber) || isNaN(thirdNumber)) {
+                alert("Please input numbers in all textboxes!");
+            }
+            else {
+                if (firstNumber < secondNumber) {
+                    if (firstNumber < thirdNumber) {
+                        if (secondNumber < thirdNumber) {
+                            alert(firstNumber + " " + secondNumber + " " + thirdNumber);
+                        }
+                        else {
+                            alert(firstNumber + " " + thirdNumber + " " + secondNumber);
+                        }
+                    }
+                    else {
+                        alert(thirdNumber + " " + firstNumber + " " + secondNumber);
+                    }
+                }
+                else if (secondNumber < thirdNumber) {
+                    if (firstNumber < thirdNumber) {
+                        alert(secondNumber + " " + firstNumber + " " + thirdNumber);
+                    }
+                    else {
+                        alert(secondNumber + " " + thirdNumber + " " + firstNumber);
+                    }
+                }
+                else {
+                    alert(thirdNumber + " " + secondNumber + " " + firstNumber);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

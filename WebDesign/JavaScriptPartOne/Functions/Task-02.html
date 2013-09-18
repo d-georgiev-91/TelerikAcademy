@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Functions</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<input type="text" id="tb-number" />
+	<a href="#" id="btn-reverse-number" onclick="onClickExecuteFunction()">Reverse the number</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickExecuteFunction() {
+			var n = jsConsole.readInteger("#tb-number");
+			if (typeof n === "number") {
+				jsConsole.writeLine(reverseNumber(n));
+			}
+			else {
+				jsConsole.writeLine("Input a number.");
+			}
+		}
+		function reverseNumber(number) {
+			var reversedNumber = 0;
+            var reminder;
+            while (number != 0){
+                reminder = parseInt(number % 10);
+                reversedNumber = reversedNumber * 10 + reminder;
+                number = parseInt(number / 10);
+            }
+            return reversedNumber;
+		}
+	</script>
+</body>
+</html>

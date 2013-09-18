@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="content">
+        <label for="first">First integer</label>
+        <input placeholder="Enter integer" type="text" id="first" />
+        <label for="second">Second integer</label>
+        <input placeholder="Enter integer" type="text" id="second" />
+        <a href="#" onclick="Exchange()">Exchange if greater</a>
+    </div>
+    <script>
+        function Exchange() {
+            var firstInteger = parseInt(document.getElementById("first").value);
+            var secondInteger = parseInt(document.getElementById("second").value);
+            if (isNaN(firstInteger) || isNaN(secondInteger)) {
+                alert("All input must be numbers!");
+            }
+            else {
+                if (firstInteger > secondInteger) {
+                    var temp;
+                    temp = firstInteger;
+                    firstInteger = secondInteger;
+                    secondInteger = temp;
+                    document.getElementById("first").value = firstInteger;
+                    document.getElementById("second").value = secondInteger;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,241 @@
+.clearfix{
+	zoom: 1;
+}
+
+.clearfix:after { 
+	content: "";
+	clear: both;
+	display: block;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font: 12px Segoe UI, "sans-serif";
+	background: url(imgs/background-tile.png);
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.nav {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+	.nav li{
+		float: left;
+	}
+
+#site-wrap {
+	margin: 0 auto;
+	width: 900px;
+}
+/*Header*/
+#header {
+	padding: 25px;
+}
+	/*Logo*/
+	#logo {
+		padding: 15px;
+		font-size: 30px;
+		color: #fff;
+		background: red;
+		border-radius: 5px;
+		border: 1px solid #981b1e;
+		float: left;
+	}
+
+	/*Language selection*/
+	#lang-sel {
+		color: #777;
+		float: right;
+	}
+
+		#lang-sel strong {
+			font-weight: normal;
+			float: left;
+		}
+
+		#lang-sel ul{
+			margin: 0 5px;
+			float: left;
+		}
+
+		#lang-sel li{
+			margin: 0 5px;
+		}
+
+		#lang-sel a{
+			color: #333;
+		}
+
+		#lang-sel a:hover{
+			color: #cb2027;
+		}
+
+		#lang-sel .current-lang {
+			font-weight: bold;
+		}
+	/*Information*/
+	.info {
+		margin: 20px 0 0 0;
+		float: right;
+		clear: right;
+		text-align: right;
+		color: #666;
+		text-shadow: 1px 1px 1px rgb(255, 255, 255);
+	}
+		.at {
+			color: #cb2027;
+		}
+
+/*Navigation*/
+body > div > nav {
+	font-size: 11px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 5px;
+	border: 1px #262626 solid;
+}
+	body > div > nav a {
+		padding: 0 9px;
+		display: block;
+		color: #fff;
+		font-family:"Times New Roman", Times, serif;
+		text-decoration: none;
+	}
+
+	body > div > nav a:hover {
+		color: #fff;
+		font-family:"Times New Roman", Times, serif;
+		text-decoration: none;
+	}
+
+	body > div > nav a > li:first-child:hover {
+		border-radius: 3px 0 0 3px;
+	}
+
+	body > div > nav .nav {
+		line-height: 32px;
+		float: left;
+	}
+
+	#search {
+		margin: 0;
+		padding: 4px;
+		height: 24px;
+		float: right;
+	}
+
+	#search input[type="search"] {
+		margin: 0;
+		padding: 0;
+		width: 180px;
+		height: 24px;
+		color: #fff;
+		border: 1px solid #1a1a1a;
+	}
+
+#middle {
+	margin: 0px 0;
+	border: 1px solid #cdcdcd;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+body > div > footer {
+}
+
+	body > div > footer a {
+		color: #888;
+		text-decoration: none;
+	}
+
+	body > div > footer a:hover{
+		color: #cb2027;
+	}
+
+	body > div > footer .nav {
+		float: left;
+	}
+
+	body > div > footer .nav li {
+		padding: 0 10px;
+		border-left: 1px solid #e4e4e4;
+	}
+
+	body > div > footer .nav li:first-child {
+		border: none;
+	}
+
+	body > div > footer .copyright {
+		margin: 0; /*problem pri paragrafa*/
+		text-align: right;
+		float: right;
+	}
+
+.main {
+	padding: 20px;
+	width: 650px;
+}
+
+.sidebar {
+	padding: 20px;
+	width: 168px;
+}
+
+.l-c {
+	background-image: none;
+}
+
+.l-c .main {
+
+}
+
+.l-c .sidebar {
+	display: none;
+}
+
+.l-cs {
+	background-image: url(imgs/middle-cs-tile.png);
+	background-position: top right;
+	background-repeat: repeat-y;
+}
+
+.l-cs .main {
+	width: 650px;
+	float: left;
+}
+
+.l-cs .sidebar {
+	float: right;
+}
+
+.l-sc {
+	background-image: url(imgs/middle-sc-tile.png);
+	background-position: top left;
+	background-repeat: repeat-y;
+}
+
+.l-sc .main {
+	width: 650px;
+	float: right;
+}
+
+.l-sc .sidebar {
+	float: left;
+}
+.gallery {}
+.gallery .thumbs {}
+.gallery .thumbs li {
+	margin: 0 0ppx;
+}
+.gallery .thumbs a {
+	display: block;
+}

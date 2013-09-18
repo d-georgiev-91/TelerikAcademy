@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>PoemEditor</title>
+
+        <!-- WinJS references -->
+        <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+        <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+        <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+        <!-- PoemEditor references -->
+        <link href="/css/default.css" rel="stylesheet" />
+        <script src="/js/default.js"></script>
+    </head>
+    <body>
+        <label for="poem-line">
+            <input id="poem-line" type="text" />
+        </label>
+        <button id="add-line-btn">Add current line</button>
+        <fieldset>
+            <legend>Poem settings: </legend>
+            <fieldset>
+                <legend>Rhymes options: </legend>
+                <label class="rhymes-opt" for="checkNeighbours">
+                    <input type="radio" id="checkNeighbours" name="rhymesOptions" />Two following lines
+                </label>
+                <label class="rhymes-opt" for="checkNeighboursPassOne">
+                    <input type="radio" id="checkNeighboursPassOne" name="rhymesOptions" />Pass one line
+                </label>
+            </fieldset>
+            <label for="checkNeighbours">
+                Lines forming a verse:
+                <input type="range" value="4" min="1" max="15" />
+            </label>
+        </fieldset>
+        <div id="poem-holder"></div>
+    </body>
+</html>

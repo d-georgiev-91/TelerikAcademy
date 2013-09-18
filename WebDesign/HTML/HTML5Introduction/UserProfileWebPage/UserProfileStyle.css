@@ -1,0 +1,15 @@
+ul.menu {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-left: 0;
+}
+
+ul.menu li {
+    display: inline;
+    margin-right: 70px;
+}
+
+h1, dt, section#AdditionalInfo {
+	font-style: italic;
+}

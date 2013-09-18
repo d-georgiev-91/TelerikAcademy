@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Strings</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		textarea
+		{
+			margin-left: 10px;	
+		}
+	</style>
+</head>
+<body>
+	<label for="tb-text">Text:</label>
+	<textarea id="tb-text"></textarea>
+	<a href="#" id="btn-remove-tags" onclick="onClickRemoveTags()">Extract as text</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickRemoveTags() {
+			var text = document.getElementById("tb-text").value;
+			if (text == "") {
+				alert("The field is empty.");
+			}
+			else {
+				jsConsole.writeLine("The result is: " + removeTags(text));
+			}
+		}
+		function removeTags(text) {
+			result = "";
+			openedNotClosedTag = false;
+			for (var character in text) {
+				if (text[character] == "<") {
+					openedNotClosedTag = true;
+				}
+				else if (text[character] == ">") {
+					openedNotClosedTag = false;
+					continue;
+				}
+				if (openedNotClosedTag == false) {
+					result += text[character];
+				}
+			}
+			return result;
+		}
+	</script>
+</body>
+</html>

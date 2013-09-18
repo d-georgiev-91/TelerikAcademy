@@ -1,0 +1,1 @@
+a, article, aside, body, div, footer, h2, head, header, html, img, li, link, meta, nav, p, title, ul

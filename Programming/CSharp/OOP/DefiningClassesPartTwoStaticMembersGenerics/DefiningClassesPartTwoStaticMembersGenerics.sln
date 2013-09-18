@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Point", "Point\Point.csproj", "{DF91B0D9-E376-430A-9D40-F996F2CC62E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericList", "GenericList\GenericList.csproj", "{195CDF8C-97E8-44FE-9D6C-8EFC5406BCB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Matrix", "Matrix\Matrix.csproj", "{0720C964-17F7-4B5F-B701-2A7AE23B2CC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF91B0D9-E376-430A-9D40-F996F2CC62E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF91B0D9-E376-430A-9D40-F996F2CC62E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF91B0D9-E376-430A-9D40-F996F2CC62E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF91B0D9-E376-430A-9D40-F996F2CC62E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{195CDF8C-97E8-44FE-9D6C-8EFC5406BCB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{195CDF8C-97E8-44FE-9D6C-8EFC5406BCB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{195CDF8C-97E8-44FE-9D6C-8EFC5406BCB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{195CDF8C-97E8-44FE-9D6C-8EFC5406BCB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0720C964-17F7-4B5F-B701-2A7AE23B2CC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0720C964-17F7-4B5F-B701-2A7AE23B2CC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0720C964-17F7-4B5F-B701-2A7AE23B2CC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0720C964-17F7-4B5F-B701-2A7AE23B2CC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

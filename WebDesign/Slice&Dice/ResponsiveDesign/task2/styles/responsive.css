@@ -1,0 +1,141 @@
+@media only screen and (max-width : 1600px) and (min-width : 1366px) {
+		body #wrapper
+		{
+			width: 98%;
+			font-size: 18px;
+		}
+		body #wrapper > header h1
+		{
+			font-size: 2.9em;
+		}
+		body #wrapper>header h1 a img
+		{
+			height: 81px;
+		}
+}
+
+@media only screen and (max-width : 1366px) {
+	body #wrapper
+	{
+		width: 95%;
+	}
+}
+
+@media only screen and (max-width : 1024px) {
+		body #wrapper
+		{
+			width: 98%;
+			font-size: 14px;
+		}
+		body #wrapper > header h1
+		{
+			font-size: 2.4em;
+		}
+		body #wrapper>header h1 a img
+		{
+			height: 51px;
+		}
+}
+
+@media only screen and (max-width : 960px) {
+		body #wrapper
+		{
+			width: 98%;
+			font-size: 12px;
+		}
+		body #wrapper > header h1
+		{
+			font-size: 2.2em;
+		}
+		body #wrapper>header h1 a img
+		{
+			height: 47px;
+		}
+}
+
+@media only screen and (max-width : 780px) and (max-width : 640px){
+		body #wrapper
+		{
+			width: 98%;
+			font-size: 14px;
+		}
+		body #wrapper > header h1
+		{
+			font-size: 2.2em;
+		}
+		body #wrapper>header h1 a img
+		{
+			height: 47px;
+		}
+		body #wrapper>section 
+		{
+			width: 90%;
+		}
+		body #wrapper>aside
+		{
+			width: 8%;
+		}
+		body #wrapper>aside div ul li a span
+		{
+			display: none;
+		}
+
+		body #wrapper>aside div:first-child
+		{
+			position: fixed;
+		}
+
+		body #wrapper>aside div:last-child
+		{
+			display: none;
+		}
+}
+
+@media only screen and (max-width : 480px) {
+		body #wrapper
+		{
+			width: 98%;
+			font-size: 14px;
+		}
+		body #wrapper > header h1
+		{
+			font-size: 2.2em;
+		}
+		body #wrapper>header h1 a img
+		{
+			height: 47px;
+		}
+		body #wrapper>section 
+		{
+			width: 90%;
+		}
+		body #wrapper>aside
+		{
+			padding-right: 16px;
+			width: 8%;
+		}
+
+		body #wrapper>header nav
+		{
+			float: none;
+		}
+
+		body #wrapper>header {
+			display: none;
+		}
+
+		body #wrapper>aside div ul li a span
+		{
+			display: none;
+		}
+
+		body #wrapper>aside div:first-child
+		{
+			background: none;
+		}
+
+		body #wrapper>aside div:last-child
+		{
+			display: none;
+		}
+}

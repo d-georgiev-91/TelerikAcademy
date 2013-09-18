@@ -1,0 +1,136 @@
+.clear-fix() {
+    zoom: 1;
+    &:before, &:after {
+		content: " ";
+    	display: block;
+    }
+    &:after {
+    	clear: both;
+    }
+}
+
+a, body, div, form, h1, head, header, html, input, li, nav, span, ul {
+	padding: 0;
+	margin: 0;
+}
+
+@font-face { 
+	font-family: 'Droid-Sans'; 
+	src: url('fonts/DroidSans.ttf'); 
+} 
+@font-face { 
+	font-family: 'Droid-Sans';
+	font-weight: bold; 
+	src: url('fonts/DroidSans-Bold.ttf');
+}
+
+.icon-facebook{ background-position: 0 0; width: 24px; height: 24px; } 
+.icon-rss-feed{ background-position: 0 -25px; width: 24px; height: 24px; } 
+.icon-twitter{ background-position: 0 -50px; width: 24px; height: 24px; } 
+
+a {
+	text-decoration: none;
+}
+
+ul li {
+	list-style: none;
+}
+
+body {
+	background: url(imgs/bg.png);
+	font-family: 'Droid-Sans';
+	font-size: 13px;
+	#web-wrapper {
+		width: 960px;
+		margin: 0 auto;
+		background: #fff;
+		border: 1px solid rgba(0, 0, 0, 0.07);
+		box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.08);
+
+		#web-header {
+				margin-top: 54px;
+			#logo {
+
+				display: inline-block; 
+				h1 {
+					font-size: 34px;
+					font-weight: normal;
+					margin-left: 58px;
+					.clear-fix;
+					a {
+						.black {
+							color: #656464;
+						}
+						.blue {
+							color: #549eb9;
+						}
+					}
+				}
+			}
+
+			#search-form {
+				width: 200px;
+				border: 1px solid #efefef;
+				height: 30px;
+				margin-right: 49px;
+				display: inline-block;
+				#search-bar {
+					border: none;
+					width: 167px;
+					height: 26px;
+					text-indent: 10px;
+				}
+				#search-button {
+					margin: 8px 0 8px 0;
+					background: url('imgs/magnifier.png') no-repeat 6px;
+					border: none;
+					width: 29px;
+					-webkit-appearance: none;
+					-webkit-box-sizing: content-box;
+					display: inline;
+				}
+				float: right;
+				.clear-fix;
+			}
+
+			#web-nav {
+				margin-top: 53px;
+				height: 46px;
+				line-height: 46px;
+				text-transform: uppercase;
+				ul {
+					border-top: 1px solid #efefef; 
+					border-bottom: 1px solid #efefef; 
+					li {
+						border-top: 3px solid #f7f7f7;
+						display: inline-block;
+						&:hover {
+							border-top: 3px solid #549eb9;
+							background: url("imgs/triangle.png") no-repeat center 0;
+						}
+						a {
+							padding: 13px 14px;
+							color: #c6c6c6;
+							font-size: 12px;
+							border-right: 2px dotted #dcdcdc;
+							&:hover {
+							}
+							&.current-tab {
+								color: #656464;
+							}
+						}
+						&#social {
+							float: right;
+							a {
+								margin-top: 10px;
+								border: none;
+								background: url(imgs/icons.png) no-repeat top left;
+							}
+						}
+					}
+				}
+			}
+
+		}
+	}
+}

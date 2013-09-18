@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuerySlider</title>
+	<style>
+		body, ul, li, div, img, form, input, a {
+			padding: 0;
+			margin: 0;
+		}
+
+		#slider {
+			height: 450px;
+		}
+
+		#slider #slides-container {
+			padding: 15px;
+			background: #4B9CDE;
+			list-style:  none;
+			height: 100%;
+		}
+
+		#slider ul li {
+			border: 3px solid  black;
+		}
+		
+		#slider .slider-nav {
+			margin-bottom: 0px;
+		}
+
+		#slider .slider-nav, #slider #slides-container {
+			display: inline-block;
+		}
+
+		#slider ul li img{
+			margin-bottom: -5px;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="slider">
+		<a class="slider-nav" data-dir="prev" href="#">Previous</a>
+		<ul id="slides-container">
+			<li class="current-slide">
+				<img src="imgs/image-1.jpg" alt="">
+			</li>
+			<li>
+				<img src="imgs/image-2.jpg" alt="">
+			</li>
+			<li>
+				<img src="imgs/image-3.jpg" alt="">
+			</li>
+			<li>
+				<img src="imgs/image-4.jpg" alt="">
+			</li>
+			<li>
+				<img src="imgs/image-5.jpg" alt="">
+			</li>
+			<li>
+				<img src="imgs/image-6.jpg" alt="">
+			</li>
+			<li>
+				<form action="#">
+					<label for="cool-text-field">
+						Some cool text field
+						<input type="text" name="cool-text-field" id="cool-text-field">
+					</label>
+					<input type="button" value="Click me">
+				</form>
+			</li>
+		</ul>
+		<a class="slider-nav" data-dir="next" href="#">Next</a>
+	</div>
+	<script src="../jquery-1.10.1.min.js"></script>
+	<script src="slider.js"></script>
+	<script type="text/javascript">
+		var slider = new slider.Control("#slider");
+	</script>
+	</body>
+	</html>

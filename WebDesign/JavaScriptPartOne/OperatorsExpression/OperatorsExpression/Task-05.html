@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="content">
+        <label for="number">Integer number</label>
+        <input placeholder="Enter integer" type="text" id="number" />
+        <a href="#" onclick="IsSeven()">What is third bit</a>
+    </div>
+    <script>
+        function IsSeven() {
+            var myInt = parseInt(document.getElementById("number").value);
+            var mask = 1 << 3;
+            var myIntAndMask = myInt & mask;
+            var myIntBit = myIntAndMask >> 3;
+            var theThirdBit = (myIntBit == 1);
+            alert(theThirdBit);
+        }
+    </script>
+</body>
+</html>

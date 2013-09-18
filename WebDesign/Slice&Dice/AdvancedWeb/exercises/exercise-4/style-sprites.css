@@ -1,0 +1,63 @@
+body {
+	text-align: center;
+	background: rgba(128, 128, 128, 0.43);
+}
+
+.icons {
+	display: inline-block;
+}
+
+td {
+	text-align: center;
+	padding: 10px;
+}
+
+td a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+td a:hover {
+	text-decoration: underline;
+}
+
+i { 
+	background: url(icons.gif) no-repeat;
+	display: inline-block;
+	text-decoration: none;
+}
+
+.icon-comment{ background-position: 0 0; width: 16px; height: 16px; } 
+.icon-comment-add{ background-position: 0 -17px; width: 16px; height: 16px; } 
+.icon-comment-delete{ background-position: 0 -34px; width: 16px; height: 16px; } 
+.icon-comment-edit{ background-position: 0 -51px; width: 16px; height: 16px; } 
+.icon-comments{ background-position: 0 -68px; width: 16px; height: 16px; } 
+.icon-comments-add{ background-position: 0 -85px; width: 16px; height: 16px; } 
+.icon-comments-delete{ background-position: 0 -102px; width: 16px; height: 16px; } 
+.icon-folder{ background-position: 0 -119px; width: 16px; height: 16px; } 
+.icon-folder-add{ background-position: 0 -136px; width: 16px; height: 16px; } 
+.icon-folder-delete{ background-position: 0 -153px; width: 16px; height: 16px; } 
+.icon-folder-edit{ background-position: 0 -170px; width: 16px; height: 16px; } 
+.icon-group{ background-position: 0 -187px; width: 16px; height: 16px; } 
+.icon-group-add{ background-position: 0 -204px; width: 16px; height: 16px; } 
+.icon-group-delete{ background-position: 0 -221px; width: 16px; height: 16px; } 
+.icon-group-edit{ background-position: 0 -238px; width: 16px; height: 16px; } 
+.icon-page-white{ background-position: 0 -255px; width: 16px; height: 16px; } 
+.icon-page-white-acrobat{ background-position: 0 -272px; width: 16px; height: 16px; } 
+.icon-page-white-actionscript{ background-position: 0 -289px; width: 16px; height: 16px; } 
+.icon-page-white-add{ background-position: 0 -306px; width: 16px; height: 16px; } 
+.icon-page-white-c{ background-position: 0 -323px; width: 16px; height: 16px; } 
+.icon-page-white-camera{ background-position: 0 -340px; width: 16px; height: 16px; } 
+.icon-page-white-cplusplus{ background-position: 0 -357px; width: 16px; height: 16px; } 
+.icon-page-white-csharp{ background-position: 0 -374px; width: 16px; height: 16px; } 
+.icon-page-white-cup{ background-position: 0 -391px; width: 16px; height: 16px; } 
+.icon-page-white-delete{ background-position: 0 -408px; width: 16px; height: 16px; } 
+.icon-page-white-edit{ background-position: 0 -425px; width: 16px; height: 16px; } 
+.icon-page-white-excel{ background-position: 0 -442px; width: 16px; height: 16px; } 
+.icon-page-white-php{ background-position: 0 -459px; width: 16px; height: 16px; } 
+.icon-page-white-powerpoint{ background-position: 0 -476px; width: 16px; height: 16px; } 
+.icon-page-white-ruby{ background-position: 0 -493px; width: 16px; height: 16px; } 
+.icon-user{ background-position: 0 -510px; width: 16px; height: 16px; } 
+.icon-user-add{ background-position: 0 -527px; width: 16px; height: 16px; } 
+.icon-user-delete{ background-position: 0 -544px; width: 16px; height: 16px; } 
+.icon-user-edit{ background-position: 0 -561px; width: 16px; height: 16px; } 

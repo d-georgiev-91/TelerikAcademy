@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <noscript><link type="text/css" rel="stylesheet" href="noscript" /></noscript>
+        <![endif]-->
+        <meta charset="utf-8" />
+        <title>LinkedIn</title>
+    </head>
+    <body>
+        <header>
+            <h2><a href="#">LinkedIn</a></h2>
+            <nav>
+                <ul type="disc">
+                    <li><a href="http://www.linkedin.com/home?trk=hb_home">Home</a></li>
+                    <li><a href="http://www.linkedin.com/static?key=what_is_linkedin&trk=hb_what">What is LinkedIn?</a></li>
+                    <li><a href="https://www.linkedin.com/reg/join?trk=hb_join">Join Today</a></li>
+                    <li>
+                        <form action="#" method="post" name="singIn">
+                            <fieldset>
+                                <legend>Sing In</legend>
+                                <ul type="circle">
+                                    <li>
+                                        <label for="email-login">Email:</label>
+                                        <input type="email" id="email-login" name="email-login"/>
+                                    </li>
+                                    <li>
+                                        <label for="password-login">Password:</label>
+                                        <input type="password" id="password-login" name="password-login"/>
+                                    </li>
+                                    <li>
+                                        <input type="submit" id="singIn" name="singIn" value="Sing In" disabled/>
+                                    </li>
+                                </ul>
+                            </fieldset>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <section>
+            <h1>Over 175 million professionals use LinkedIn to exchange information, ideas and opportunities</h1>
+            <ul>
+                <li>Stay informed about your contacts and industry</li>
+                <li>Find the people & knowledge you need to achieve your goals</li>
+                <li>Control your professional identity online</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Join LinkedIn Today</h2>
+            <form action="#" method="post" name="singUp">
+                <fieldset>
+                    <legend>Sing Up</legend>
+                    <ul>
+                        <li>
+                            <label for="firstName-register">First Name:</label>
+                            <div><input type="text" name="firstName-register" id="firstName-register" /></div>
+                        </li>
+                        <li>
+                            <label for="lastName-register">Last Name:</label>
+                            <div><input type="text" name="lastName-register" id="lastName-register" /></div>
+                        </li>
+                        <li>
+                            <label for="email-register">Email:</label>
+                            <div><input type="email" name="email-register" id="email-register" /></div>
+                        </li>
+                        <li>
+                            <label for="password-register">Password:</label>
+                            <div><input type="password" name="password-register" id="password-register" /></div>
+                        </li>
+                    </ul>
+                    <p>6 or more characters</p>
+                    <p>
+                        <input type="submit" id="singup" name="singup" value="Join Now"/>
+                        <a href="#">*</a>
+                    </p>
+                    <p>
+                        Already on LinkedIn?
+                        <a href="https://www.linkedin.com/uas/login">Sing in</a>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <form action="#" method="post" name="search">
+                <h3>Search for someone by name:</h3>
+                <ul>
+                    <li>
+                        <label for="firstName-search">First Name</label>
+                        <input type="text" name="firstName-search" id="firstName-search" />
+                    </li>
+                    <li>
+                        <label for="lastName-search">Last Name</label>
+                        <input type="text" name="lastName-search" id="lastName-search" />
+                    </li>
+                </ul>
+                <input type="submit" id="search" name="search" value="Go"/>
+            </form>
+        </section>
+    </body>
+</html>

@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        #button
+        {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="input">
+        <label for="number">Number:</label>
+        <input type="text" id="number" />
+    </div>
+    <div id="button">
+        <a href="#" onclick="NumberInEnglish()">Number in English</a>
+    </div>
+    <script>
+        function NumberInEnglish() {
+            var number = parseInt(document.getElementById("number").value);
+            if (isNaN(number) || (number < 0 || number > 999)) {
+                alert("Input a number in range [0...999] : ");
+            }
+            else {
+                var hundreds = parseInt(number / 100);
+                var tens = parseInt(number / 10 % 10);
+                var units = parseInt(number % 10);
+                var numberInText = "";
+                switch (hundreds) {
+                    case 0:
+                        numberInText = "";
+                        break;
+                    case 1:
+                        numberInText = "one hundred ";
+                        break;
+                    case 2:
+                        numberInText = "two hundred ";
+                        break;
+                    case 3:
+                        numberInText = "three hundred ";
+                        break;
+                    case 4:
+                        numberInText = "four hundred ";
+                        break;
+                    case 5:
+                        numberInText = "five hundred ";
+                        break;
+                    case 6:
+                        numberInText = "six hundred ";
+                        break;
+                    case 7:
+                        numberInText = "seven hundred ";
+                        break;
+                    case 8:
+                        numberInText = "eight hundred ";
+                        break;
+                    case 9:
+                        numberInText = "nine hundred ";
+                        break;
+                }
+                if (hundreds != 0 && tens != 0 && units == 0) {
+                    numberInText += "and ";
+                }
+                switch (tens) {
+                    case 0:
+                        if (hundreds != 0 && units != 0) {
+                            numberInText += "and ";
+                        }
+                        else {
+                            numberInText += "";
+                        }
+                        break;
+                    case 1:
+                        if (hundreds != 0) {
+                            numberInText += "and ";
+                        }
+                        switch (units) {
+                            case 0:
+                                numberInText += "ten";
+                                break;
+                            case 1:
+                                numberInText += "eleven";
+                                break;
+                            case 2:
+                                numberInText += "twelve";
+                                break;
+                            case 3:
+                                numberInText += "thirteen";
+                                break;
+                            case 4:
+                                numberInText += "fourteen";
+                                break;
+                            case 5:
+                                numberInText += "fifteen";
+                                break;
+                            case 6:
+                                numberInText += "sixteen";
+                                break;
+                            case 7:
+                                numberInText += "seventen";
+                                break;
+                            case 8:
+                                numberInText += "eighteen";
+                                break;
+                            case 9:
+                                numberInText += "nineteen";
+                                break;
+                        }
+                        break;
+                    case 2:
+                        numberInText += "twenty ";
+                        break;
+                    case 3:
+                        numberInText += "thirty ";
+                        break;
+                    case 4:
+                        numberInText += "fourty ";
+                        break;
+                    case 5:
+                        numberInText += "fifty ";
+                        break;
+                    case 6:
+                        numberInText += "sixty ";
+                        break;
+                    case 7:
+                        numberInText += "seventy ";
+                        break;
+                    case 8:
+                        numberInText += "eighty ";
+                        break;
+                    case 9:
+                        numberInText += "ninety ";
+                        break;
+                }
+                if (tens != 1) {
+                    switch (units) {
+                        case 0:
+                            if (hundreds == 0 && tens == 0) {
+                                numberInText = "Zero";
+                            }
+                            break;
+                        case 1:
+                            numberInText += "one";
+                            break;
+                        case 2:
+                            numberInText += "two";
+                            break;
+                        case 3:
+                            numberInText += "three";
+                            break;
+                        case 4:
+                            numberInText += "four";
+                            break;
+                        case 5:
+                            numberInText += "five";
+                            break;
+                        case 6:
+                            numberInText += "six";
+                            break;
+                        case 7:
+                            numberInText += "seven";
+                            break;
+                        case 8:
+                            numberInText += "eight";
+                            break;
+                        case 9:
+                            numberInText += "nine";
+                            break;
+                    }
+                }
+                numberInText = numberInText[0].toUpperCase() + numberInText.substr(1);
+                alert("The number in english is: " + numberInText);
+            }
+        }
+    </script>
+</body>
+</html>

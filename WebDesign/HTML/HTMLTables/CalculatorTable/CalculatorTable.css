@@ -1,0 +1,21 @@
+table{
+   border: 2px solid black;
+   background-color: #13a631; 
+}
+td{
+    border: 2px solid black;
+    background-color: #13a631;
+    text-align: center;
+}
+input#result{
+    border-color: AppWorkspace;
+    text-align: right;
+    color: #fbf618;   
+    background-color: #13a631; 
+}
+.button{
+    border: 0 px;
+    border-style: none;
+    background-color: #13a631;
+    color: #fbf618;
+}

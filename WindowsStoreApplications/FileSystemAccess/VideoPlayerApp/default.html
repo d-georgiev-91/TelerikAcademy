@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>VideoPlayerApp</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- VideoPlayerApp references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="js/dom-logger.js"></script>
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div>
+        <video id="player" controls="controls"></video>
+    </div>
+    <div id="appbar" data-win-control="WinJS.UI.AppBar">
+        <button id="appbar-add-videos-btn" data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'addCommand', label:'Add Song/s', icon:'add'}" type="button"></button>
+        <button id="appbar-remove-btn" data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'removeCommand', label:'Remove Song/s', icon:'remove'}" type="button"></button>
+        <button id="appbar-save-playlist-btn" data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'saveCommand', label:'Save Playlist', icon:'save'}" type="button"></button>
+        <button id="appbar-open-playlist-btn" data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'openCommand', label:'Open Playlist', icon:'movetofolder'}" type="button"></button>
+    </div>
+    <ul id="loaded-videos"></ul>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Arrays</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		a {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<h1>Enter a numbers separated with "," with no whitespace between...</h1>
+	
+	<label for="tb-array">The array: </label>
+	<input type="text" id="tb-array" />
+	<a href="#" id="btn-show-most-freq" onclick="onClickFindTheMostFriquentElement()">Find the most friquent element</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickFindTheMostFriquentElement()
+		{
+			var arrayNonSplited = document.getElementById("tb-array").value;
+			if (arrayNonSplited == "")
+			{
+				alert("The input field is empty");
+			}
+			else
+			{
+				var	 array = arrayNonSplited.split(",");
+				var frequency = 0;
+				var mostFrequent = 0;
+				for (var i = 0; i < array.length; i++)
+				{
+					var frequencyCurrent = 1;
+					for (var j = i + 1; j < array.length; j++)
+					{
+						if (array[i] == array[j])
+						{
+							frequencyCurrent++;
+						}
+					}
+					if (frequencyCurrent > frequency)
+					{
+						mostFrequent = array[i];
+						frequency = frequencyCurrent;
+					}
+				}
+				if (frequency == 1 && array.length != 1)
+				{
+					jsConsole.writeLine("There is no most frequent number.");
+				}
+				else
+				{
+					jsConsole.writeLine("The most frequent number is " + mostFrequent + " with " + frequency);
+				}
+			}
+    	}
+	</script>
+</body>
+</html>

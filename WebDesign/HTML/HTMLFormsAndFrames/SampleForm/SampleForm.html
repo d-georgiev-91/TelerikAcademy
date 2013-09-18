@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="SampleForm.css"/>
+        <title>Sample form</title>
+    </head>
+    <body>
+        <form method="get" action="#">
+            <table>
+                <tr>
+                    <td class="leftCol">
+                        <label for="lastName">Last Name</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="text" id="lastName" name="firstNametitle" title="Input your last name here."/>
+                    </td>
+                <tr>
+                <tr>
+                    <td class="leftCol">
+                        <label for="firstName">First Name</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="text" id="firstName" name="firstName" title="Input your first name here."/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCol">
+                        <label for="address">Address</label>
+                    </td>
+                    <td colspan="3">
+                        <textarea rows="3" cols="50" title="Input your address here." id="address" name="address"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                   <td class="leftCol">
+                       <label for="city">City</label>
+                   </td>
+                    <td>
+                        <input type="text" id="city" name="city" title="Input your city here." />
+                    </td>
+                    <td id="stateLabel">
+                        <label for="state">State</label>
+                    </td>
+                    <td>
+                        <input type="text" id="state" title="Input your state here." />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCol">
+                        <label for="zip">Zip/Postal Code</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="text" id="zip" title="Input your Zip/Postal Code" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCol">
+                        <label for="country">Country</label>
+                    </td>
+                    <td colspan="3">
+                        <select name="country" id="country">
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Russia">Russia</option>
+                            <option value="USA">USA</option>
+                            <option value="UK">UK</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCol">
+                        <label for="countrycode">Phone(country code, area code, number)</label>
+                    </td>
+                    <td colspan="3">
+                        (+
+                        <input type="text" id="countrycode" placeholder="359" pattern="[1-9]{1}[0-9]{2}">
+                        )
+                        <input type="text" id="areacode" placeholder="88" pattern="[1-9]{1}[0-9]{1}">
+                        -
+                        <input type="text" id="number" placeholder="8888888" pattern="[0-9]{7}">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCol">
+                        <label for="email">E-mail</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="email" id="email" name="email" placeholder="sample@mail.com" title="Please, input correct e-mail!"
+                        pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCol">
+                        <label for="month">Birth date</label>
+                    </td>
+                    <td colspan="3">
+                        <label for="month">Month</label>
+                        <input type="text" id="month" name="month" title="Input valid month" pattern="\b([1-9]|1[0-2])\b" />
+                        <label for="day">Day</label>
+                        <input type="text" id="day" name="day" title="Input valid day" pattern="\b([1-9]|[12][0-9]|3[01])\b" />
+                        <label for="year">Year (4 digit)</label>
+                        <input type="text" id="year" name="year" title="Input valid year" pattern="\b(19[0-9]{2}|20[0-9]{2}|2100)\b" />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCol">
+                        <label for="genger">Genger</label>
+                    </td>
+                    <td colspan="3">
+                        <select name="genger" id="genger">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="notahuman">Not a human</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCol">
+                        <label>Starting date</label>
+                    </td>
+                    <td colspan="3">
+                        <input type="radio" name="startingDateg" id="spring" value="spring2006" />
+                        <label for="spring" name="spring">Spring 2006</label>
+                        <input type="radio" name="startingDate" id="summer" value="summer2006" />
+                        <label for="summer" name="summer">Summer 2006</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="leftCol">
+                        <label for="questions">Comments/Questions</label>
+                    </td>
+                    <td colspan="3">
+                        <textarea id="questions" name="questions" cols="50" rows="4"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4" id="buttons">
+                        <input type="submit" value="Submit" />
+                        <input type="reset" value="Clear this form" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>

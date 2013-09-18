@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GridView Control</title>
+	<style>
+
+		table {
+			border-collapse: collapse;
+		}
+		th, td {
+			border: 1px solid black;
+		}
+	</style>
+	<script src="grid-view-controls.js" type="text/javascript"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		var schoolGrid = controls.getGridView("#grid-view-holder");
+		schoolGrid.addHeader("Name", "Location", "<html></html>");
+		schoolGrid.addHeader("Name", "Location", "<html></html>");
+		schoolGrid.addHeader("Name", "Location", "<html></html>");
+		schoolGrid.addHeader("Name", "Location", "<html></html>");
+		schoolGrid.addHeader("Name", "Location", "<html></html>");
+		schoolGrid.addRow("pesho", "stamat", "<html></html>");
+		schoolGrid.addRow("pesho2", "stamat", "<html></html>");
+		schoolGrid.render();
+		/*var academyRow = schoolGrid.addRow("Telerik Academy","Sofia", "5000");
+		console.log(academyRow);*/
+		//var academyGrid = academyRow.getNestedGridView(); 
+		// console.log(document.getElementsByTagName("tbody")[0]);
+		// tb = document.createElement("tbody");
+		// document.body.appendChild(tb);
+		// console.log(document.getElementsByTagName("tbody")[0]);
+	</script>
+</body>
+</html>

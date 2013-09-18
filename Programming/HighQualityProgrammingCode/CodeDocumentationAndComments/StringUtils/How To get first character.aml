@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="470a6195-6426-4ba6-a4d0-8391c0d88269" revisionNumber="1">
+    <developerHowToDocument
+      xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+      xmlns:xlink="http://www.w3.org/1999/xlink">
+
+        <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+        <introduction>
+            <para>
+                This is a simple demonstration of the GetFirstCharacters Method
+            </para>
+        </introduction>
+
+        <!-- Optional procedures followed by optional code example but must have
+         at least one procedure or code example -->
+        <procedure>
+            <title>Follow the basic steps</title>
+            <steps class="ordered">
+                <step>
+                    <content>
+                        <para>Create new empty C# console application from Visual studio templates</para>
+                    </content>
+                </step>
+                <step>
+                    <content>
+                        <para>Use the following code</para>
+                    </content>
+                </step>
+            </steps>
+            <!-- <conclusion>Optional conclusion</conclusion> -->
+        </procedure>
+
+        <codeExample>
+            <code>
+                class Example
+                {
+                static void Main()
+                {
+                string exampleString = "Pesho";
+                Console.WriteLine(exampleString.GetFirstCharacters(5));
+                }
+                }
+            </code>
+        </codeExample>
+
+        <!-- <buildInstructions>Optional instructions for building a
+         code example.</buildInstructions> -->
+
+        <!-- <robustProgramming>Optional discussion of error handling and other
+         issues related to writing solid code.</robustProgramming> -->
+
+        <!-- <security>Optional discussion of security issues.</security> -->
+
+        <relatedTopics>
+            <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID">Link text</link>
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on CodePlex</linkText>
+          <linkAlternateText>Go to CodePlex</linkAlternateText>
+          <linkUri>http://shfb.codeplex.com</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+        </relatedTopics>
+    </developerHowToDocument>
+</topic>

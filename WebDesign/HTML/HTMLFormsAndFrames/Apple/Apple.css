@@ -1,0 +1,18 @@
+html{
+    font-family: "Comic Sans MS", cursive;
+}
+#header{
+    border-bottom: 3px solid black;
+}
+#leftColumn, fieldset{
+    border: 3px solid black;
+}
+legend{
+    text-align: center;
+}
+#leftColumn{
+    padding-bottom: 10px;
+}
+.slider{
+    width: 165px;
+}

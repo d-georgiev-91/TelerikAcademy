@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        #button
+        {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="input">
+        <label for="scores">Scores:</label>
+        <input type="text" id="scores" />
+    </div>
+    <div id="button">
+        <a href="#" onclick="BonusScores()">Bonus scores</a>
+    </div>
+    <script>
+        function BonusScores() {
+            var scores = parseInt(document.getElementById("scores").value);
+            switch (scores) {
+                case 1:
+                case 2:
+                case 3:
+                    scores *= 10;
+                    alert(scores);
+                    break;
+                case 4:
+                case 5:
+                case 6:
+                    scores *= 100;
+                    alert(scores);
+                    break;
+                case 7:
+                case 8:
+                case 9:
+                    scores *= 1000;
+                    alert(scores);
+                    break;
+                case 0:
+                default:
+                    alert("Error.");
+                    break;
+            }
+        }
+    </script>
+</body>
+</html>

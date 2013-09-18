@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FriendsOfPesho", "FriendsOfPesho\FriendsOfPesho.csproj", "{93D2CE38-8573-4613-A677-D63A5DA56CE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Salaries", "Salaries\Salaries.csproj", "{A61862DC-B758-4E0E-9486-CFC8A0267767}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Demo\Demo.csproj", "{FAC0E34B-42FF-4DC4-814E-F30B6FD5ABA8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93D2CE38-8573-4613-A677-D63A5DA56CE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93D2CE38-8573-4613-A677-D63A5DA56CE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93D2CE38-8573-4613-A677-D63A5DA56CE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93D2CE38-8573-4613-A677-D63A5DA56CE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A61862DC-B758-4E0E-9486-CFC8A0267767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A61862DC-B758-4E0E-9486-CFC8A0267767}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A61862DC-B758-4E0E-9486-CFC8A0267767}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A61862DC-B758-4E0E-9486-CFC8A0267767}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAC0E34B-42FF-4DC4-814E-F30B6FD5ABA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC0E34B-42FF-4DC4-814E-F30B6FD5ABA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC0E34B-42FF-4DC4-814E-F30B6FD5ABA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC0E34B-42FF-4DC4-814E-F30B6FD5ABA8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

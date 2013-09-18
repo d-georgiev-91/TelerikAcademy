@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="content">
+        <label for="digit">Enter digit</label>
+        <input placeholder="Enter digit" type="text" id="digit" />
+        <a href="#" onclick="DigitInEnglish()">The digit in english</a>
+    </div>
+    <script>
+        function DigitInEnglish() {
+            var digit = parseInt(document.getElementById("digit").value);
+            if (isNaN(digit)) {
+                alert("Please enter digit!");
+            }
+            else {
+                switch (digit) {
+                    case 0:
+                        alert("Zero");
+                        break;
+                    case 1:
+                        alert("One");
+                        break;
+                    case 2:
+                        alert("Two");
+                        break;
+                    case 3:
+                        alert("Three");
+                        break;
+                    case 4:
+                        alert("Four");
+                        break;
+                    case 5:
+                        alert("Five");
+                        break;
+                    case 6:
+                        alert("Six");
+                        break;
+                    case 7:
+                        alert("Seven");
+                        break;
+                    case 8:
+                        alert("Eight");
+                        break;
+                    case 9:
+                        alert("Nine");
+                        break;
+                    default:
+                        alert("Not a digit")
+                        break;
+                }
+            }
+        }
+    </script>
+</body>
+</html>

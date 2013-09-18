@@ -1,0 +1,19 @@
+.prev-btn {
+	background: url(slider-buttons/previous.png);
+	width: 32px;
+	height: 32px;
+	float:  left;
+	display: inline-block;
+}
+
+.next-btn {
+	background: url(slider-buttons/next.png);
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	float: right;
+}
+
+.images-list {
+	display: inline-block;
+}

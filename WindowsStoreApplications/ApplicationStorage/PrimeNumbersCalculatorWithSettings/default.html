@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PrimeNumbersCalculator</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- PrimeNumbersCalculator references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="js/prime-number-worker.js"></script>
+    <script src="js/prime-numbers-calculator.js"></script>
+    <script src="/js/default.js"></script>
+    <style>
+        body {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <label for="workers-count">
+            Set workers count: 
+            <input type="text" id="workers-count"/>
+        </label>
+        <button id="workers-count-btn">Set workers count</button>
+        <fieldset>
+            <legend>Calculate prime numbers to:</legend>
+            <label for="all-to-number">
+                To: 
+            <input id="all-to-number" type="text" />
+            </label>
+            <button id="btn-calculate-prime-numbers-to">Calculate</button>
+            <div id="calculate-prime-numbers-to-result"></div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Calculate first numbers to:</legend>
+            <label for="prime-numbers-count">
+                Count:
+            <input id="prime-numbers-count" type="text" />
+            </label>
+            <label for="first-prime-number-to">
+                To: 
+            <input id="first-prime-number-to" type="text" />
+            </label>
+            <button id="btn-calculate-first-prime-numbers-to">Calculate</button>
+            <div id="calculate-first-prime-numbers-to-result"></div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Calculate prime numbers in range:</legend>
+            <label for="from-number">
+                From: 
+            <input id="from-number" type="text" />
+            </label>
+            <label for="to-number">
+                To: 
+            <input id="to-number" type="text" />
+            </label>
+            <button id="btn-calculate-prime-numbers-from-to">Calculate</button>
+            <div id="calculate-prime-numbers-from-to-result"></div>
+        </fieldset>
+
+        <div id="error-handler"></div>
+    </div>
+</body>
+</html>

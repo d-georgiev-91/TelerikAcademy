@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Strings</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		textarea
+		{
+			margin-left: 10px;	
+		}
+	</style>
+</head>
+<body>
+	<label for="tb-substr">substr:</label>
+	<input type="text" id="tb-substr" />
+	<br/>
+	<label for="tb-text">Text:</label>
+	<textarea id="tb-text"></textarea>
+	<a href="#" id="btn-count-substr-in-text" onclick="onClickGetTextAndSubstr()">Display occurances in text</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickGetTextAndSubstr() {
+			var substr = document.getElementById("tb-substr").value;
+			var text = document.getElementById("tb-text").value;
+			if (substr == "" || text == "") {
+				alert("The fields are empty.");
+			}
+			else {
+				jsConsole.writeLine("The result is: " + findSubstrOccInText(substr, text));
+			}
+		}
+		function findSubstrOccInText(substr, text) {
+			substr = substr.toLowerCase();
+			text = text.toLowerCase();
+			var occurances = 0;
+			pattern = substr;
+			var re = new RegExp(pattern, "g");
+			var count = text.match(re);
+			return count.length;
+		}
+	</script>
+</body>
+</html>

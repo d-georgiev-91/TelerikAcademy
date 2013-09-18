@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="content">
+        <label for="sideA">Input A</label>
+        <input placeholder="Enter number" type="text" id="sideA" />
+        <label for="sideB">Input B</label>
+        <input placeholder="Enter number" type="text" id="sideB" />
+        <a href="#" onclick="Area()">Area</a>
+    </div>
+    <script>
+        function Area() {
+            var sideA = parseFloat(document.getElementById("sideA").value);
+            var sideB = parseFloat(document.getElementById("sideB").value);
+            var area = sideA * sideB;
+            alert("Area: " + area);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Topics>
+  <Topic id="1a9a2362-bfd0-41b7-94a3-8bb562064ae5" visible="True" isExpanded="true" title="StringUtils">
+    <Topic id="f435110e-181d-4564-89f0-bcd1f3902ff3" visible="True" />
+    <Topic id="1f8e8493-87bb-46f9-ad72-679fce77d711" visible="True" />
+    <Topic id="470a6195-6426-4ba6-a4d0-8391c0d88269" visible="True" isSelected="true" />
+  </Topic>
+</Topics>

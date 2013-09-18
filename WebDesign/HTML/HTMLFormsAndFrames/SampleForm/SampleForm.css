@@ -1,0 +1,46 @@
+table, td{
+    border: 1px solid #a8a8a8;
+    border-collapse: collapse;
+}
+textarea{
+    resize: none;
+}
+.leftCol, #stateLabel{
+    font-weight: bold;
+}
+.leftCol{
+    text-align: right;
+    width: 143px;
+}
+#stateLabel{
+    text-align: center;
+}
+#buttons{
+    text-align: center;
+}
+
+td {
+    padding-left: 6px;
+    padding-right: 6px;
+}
+#month, #day{
+    width: 25px;
+}
+#year{
+    width: 50px;
+}
+#countrycode, #areacode{
+    width: 40px;
+}
+#number{
+    width: fill-available;
+}
+#country{
+    width: 40%;
+}
+#lastName, #firstName, #email{
+    width: 98%;
+}
+#buttons{
+    background-color: #d1ede1;
+}

@@ -1,0 +1,11 @@
+﻿body div a
+{
+    border: 1px solid black;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+body div a:hover
+{
+    font-weight: bold;
+}

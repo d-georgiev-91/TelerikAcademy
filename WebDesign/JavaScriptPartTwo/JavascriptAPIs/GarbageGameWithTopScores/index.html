@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CleanGarbages</title>
+	<style>
+		img {
+			-moz-user-select: none;
+  			-webkit-user-select: none;
+  			-ms-user-select: none;
+		}
+		.garbage:hover {
+			cursor: url("http://www.google.com/intl/en_ALL/mapfiles/openhand.cur"), move;
+		}
+		#start {
+			border: 1px solid black;
+			border-radius: 10px;
+			padding: 5px;
+			font-size: 20px;
+			-moz-box-shadow:inset 0px 1px 0px 0px #fff6af;
+			-webkit-box-shadow:inset 0px 1px 0px 0px #fff6af;
+			box-shadow:inset 0px 1px 0px 0px #fff6af;
+			background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ffec64), color-stop(1, #ffab23) );
+			background:-moz-linear-gradient( center top, #ffec64 5%, #ffab23 100% );
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffec64', endColorstr='#ffab23');
+			background-color:#ffec64;
+			-moz-border-radius:6px;
+			-webkit-border-radius:6px;
+			border-radius:6px;
+			border:1px solid #ffaa22;
+			display:inline-block;
+			color:#333333;
+			font-family:Impact;
+			font-size:15px;
+			font-weight:normal;
+			padding:6px 24px;
+			text-decoration:none;
+			text-shadow:1px 1px 0px #ffee66;
+		}
+		#start:hover {
+			background:-webkit-gradient(linear, 0 0, 0 100%, color-stop(0.05, #ffab23), to(#ffec64));
+			background:-webkit-linear-gradient(center top, #ffab23 5%, #ffec64 100%);
+			background:-moz-linear-gradient(center top, #ffab23 5%, #ffec64 100%);
+			background:-o-linear-gradient(center top, #ffab23 5%, #ffec64 100%);
+			background:linear-gradient(center top, #ffab23 5%, #ffec64 100%);
+			filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffab23', endColorstr='#ffec64');
+			background-color:#ffab23;
+		}
+		#start:active {
+			position:relative;
+			top:1px;
+		}
+		#welcome-screen {
+			padding: 15px;
+		}
+	</style>
+</head>
+<body drag="false">
+	<script src="scripts.js"></script>
+	<script>
+		function openBucket(ev) {
+			ev.target.src = garbageCollectorGame.OPENED_BIN_IMG_SRC;
+		}
+
+		function closeBucket(ev) {
+			ev.target.src = garbageCollectorGame.CLOSED_BIN_IMG_SRC;
+		}
+
+		function allowDrop(ev) {
+			ev.preventDefault();
+		}
+
+		function drag(ev) {
+			ev.dataTransfer.setData("dragged-id", ev.target.id);
+		}
+
+		function drop(ev) {
+			ev.preventDefault();
+			var data = ev.dataTransfer.getData("dragged-id");
+			document.body.removeChild(document.getElementById(data));
+			ev.target.src = garbageCollectorGame.CLOSED_BIN_IMG_SRC;
+		}
+		garbageCollectorGame.popUpWelcomeScreen();
+		garbageCollectorGame.createBucket();
+		garbageCollectorGame.createGarbages(35);
+	</script>
+</body>
+</html>

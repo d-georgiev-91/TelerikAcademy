@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsolePrinter", "ConsolePrinter\ConsolePrinter.csproj", "{8D05C180-A622-4F52-9A72-AA26F3F8AAE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonGenerator", "PersonGenerator\PersonGenerator.csproj", "{A40F7D64-7AC9-46EA-96D4-787BCBB3780B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsBrowserMozilla", "IsBrowserMozilla\IsBrowserMozilla.csproj", "{47C4B027-9296-497A-8FCF-9E3AFFB388E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Minesweeper", "Minesweeper\Minesweeper.csproj", "{0E69F748-9CB0-4518-9E71-72BCA6769CF2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8D05C180-A622-4F52-9A72-AA26F3F8AAE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D05C180-A622-4F52-9A72-AA26F3F8AAE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D05C180-A622-4F52-9A72-AA26F3F8AAE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D05C180-A622-4F52-9A72-AA26F3F8AAE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A40F7D64-7AC9-46EA-96D4-787BCBB3780B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A40F7D64-7AC9-46EA-96D4-787BCBB3780B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A40F7D64-7AC9-46EA-96D4-787BCBB3780B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A40F7D64-7AC9-46EA-96D4-787BCBB3780B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47C4B027-9296-497A-8FCF-9E3AFFB388E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47C4B027-9296-497A-8FCF-9E3AFFB388E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47C4B027-9296-497A-8FCF-9E3AFFB388E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47C4B027-9296-497A-8FCF-9E3AFFB388E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E69F748-9CB0-4518-9E71-72BCA6769CF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E69F748-9CB0-4518-9E71-72BCA6769CF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E69F748-9CB0-4518-9E71-72BCA6769CF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E69F748-9CB0-4518-9E71-72BCA6769CF2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

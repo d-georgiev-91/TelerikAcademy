@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Countries.ViewModels", "Countries.ViewModels\Countries.ViewModels.csproj", "{10724EF4-B0C7-4AB7-8412-FA551A607CB7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountriesNavigationWithoutListControls", "CountriesNavigationWithoutListControls\CountriesNavigationWithoutListControls.csproj", "{F3F7E503-AE74-4AA0-B272-42B0C0EBAEF5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsCatalogEntities", "ProductsCatalogEntities\ProductsCatalogEntities.csproj", "{E9CF6E53-AE34-4C87-85B6-E24779446B6E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductCatalogClient", "ProductCatalogClient\ProductCatalogClient.csproj", "{B3AB77E9-245A-4A13-860B-6D9B2B220670}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CountriesNavigationListControls", "CountriesNavigationListControls\CountriesNavigationListControls.csproj", "{AAAEB0ED-CB0B-4D41-A5C5-E1B801D309FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{10724EF4-B0C7-4AB7-8412-FA551A607CB7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10724EF4-B0C7-4AB7-8412-FA551A607CB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10724EF4-B0C7-4AB7-8412-FA551A607CB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10724EF4-B0C7-4AB7-8412-FA551A607CB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F3F7E503-AE74-4AA0-B272-42B0C0EBAEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F3F7E503-AE74-4AA0-B272-42B0C0EBAEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F3F7E503-AE74-4AA0-B272-42B0C0EBAEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F3F7E503-AE74-4AA0-B272-42B0C0EBAEF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9CF6E53-AE34-4C87-85B6-E24779446B6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9CF6E53-AE34-4C87-85B6-E24779446B6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9CF6E53-AE34-4C87-85B6-E24779446B6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9CF6E53-AE34-4C87-85B6-E24779446B6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B3AB77E9-245A-4A13-860B-6D9B2B220670}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3AB77E9-245A-4A13-860B-6D9B2B220670}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3AB77E9-245A-4A13-860B-6D9B2B220670}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3AB77E9-245A-4A13-860B-6D9B2B220670}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAAEB0ED-CB0B-4D41-A5C5-E1B801D309FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAAEB0ED-CB0B-4D41-A5C5-E1B801D309FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAAEB0ED-CB0B-4D41-A5C5-E1B801D309FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAAEB0ED-CB0B-4D41-A5C5-E1B801D309FD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

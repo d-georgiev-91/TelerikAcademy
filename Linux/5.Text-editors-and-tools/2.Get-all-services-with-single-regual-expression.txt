@@ -1,0 +1,11 @@
+[some-username@some-domain ~]$ sudo grep -E '^[0-9A-Za-z_-]*file[0-9A-Za-z]*\>[[:space:]]+\<[0-9]{1,5}/udp\>' /etc/services
+afs3-fileserver 7000/udp                # file server itself
+profile         136/udp                 # PROFILE Naming System
+bnetfile        1120/udp                # Battle.net File Transfer Protocol
+filecast        3401/udp                # filecast
+profilemac      4749/udp                # Profile for Mac
+boe-filesvr     6404/udp                # Business Objects Enterprise internal server
+mindfilesys     7391/udp                # mind-file system server
+filesphere      24242/udp               # fileSphere
+flashfiler      24677/udp               # FlashFiler
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Functions</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		textarea
+		{
+			margin-left: 10px;	
+		}
+	</style>
+</head>
+<body onload="onClickCountTheDivs()">
+	<div>one div</div>
+	<div>another div</div>
+	<div>another div</div>
+	<div>another div<div style="background: red">div inside div</div></div>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickCountTheDivs() {
+			var htmlElement = document.getElementsByTagName("div");
+			jsConsole.writeLine("The count of the divs is " + htmlElement.length);
+		}
+	</script>
+</body>
+</html>

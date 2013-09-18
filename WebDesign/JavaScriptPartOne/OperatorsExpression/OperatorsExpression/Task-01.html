@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="content">
+        <label for="number">Integer number</label>
+        <input placeholder="Enter integer" type="text" id="number" />
+        <a href="#" onclick="IsOdd()">Display odd or even</a>
+    </div>
+    <script>
+        function IsOdd() {
+            var intNumber = parseInt(document.getElementById("number").value);
+            if (intNumber % 2 != 0)
+                alert("The given number is odd.");
+            else
+                alert("The given number is even.");
+        }
+    </script>
+</body>
+</html>

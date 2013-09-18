@@ -1,0 +1,15 @@
+body {
+    margin:0;
+    padding:0;
+}
+body>div {
+    width: 46%;  
+    margin-top: 16px;
+    margin-left: 16px;
+}
+.visible {
+    background: #000;
+    border: 1px solid #f00;
+    border-radius: 60px;
+    margin-right: 8%;
+}

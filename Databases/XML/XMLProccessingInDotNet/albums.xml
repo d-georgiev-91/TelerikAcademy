@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<albums>
+	<album>
+		<name>Bleach</name>
+		<artist>Nirvana</artist>
+	</album>
+	<album>
+		<name>Dangerous and Moving</name>
+		<artist>Tatu</artist>
+	</album>
+	<album>
+		<name>By The Way</name>
+		<artist>Red Hot Chili Peppers</artist>
+	</album>
+	<album>
+		<name>Californication</name>
+		<artist>Red Hot Chili Peppers</artist>
+	</album>
+</albums>

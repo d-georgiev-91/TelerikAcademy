@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Change color of text area</title>
+	<script src="jquery.js"></script>
+	<script src="inputShim.js"></script>
+	<link href="css/colorpicker.css" rel="stylesheet" media="screen" type="text/css" />
+	<script type="text/javascript" src="js/colorpicker.js"></script>
+	<script>
+		var initColorpicker = function() {
+			$('input[type=color]').each(function() {
+
+				var $input = $(this);
+
+				$input.ColorPicker({
+					onSubmit: function(hsb, hex, rgb, el) {
+
+						$(el).val(hex);
+
+						$(el).ColorPickerHide();
+
+					}
+
+				});
+
+			});
+
+		};
+		if (!Modernizr.inputtypes.color) {
+			$(document).ready(initColorpicker);
+		};
+</script>
+</head>
+<body>
+	<input type="color" id="font-color" onchange="changeFontColor();" title="Changes font color." value="#000000"/>
+	<input type="color" id="background-color" onchange="changeBackgroundColor();" title="Changes background color." value="#FFFFFF" />
+	<textarea id="text" ></textarea>
+	<script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Background changer</title>
+	<link rel="stylesheet" media="screen" type="text/css" href="colorpicker/css/colorpicker.css" />
+</head>
+<body>
+	<input type="color">
+	<script src="../jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="colorpicker/js/colorpicker.js"></script>
+	<script>
+		var colorPicker = $('input[type=color]');
+		console.log(colorPicker);
+		colorPicker.on('change', function() {
+			var selectedColor = this.value;
+			$("body").css("background-color", selectedColor);
+		});
+	</script>
+</body>
+</html>

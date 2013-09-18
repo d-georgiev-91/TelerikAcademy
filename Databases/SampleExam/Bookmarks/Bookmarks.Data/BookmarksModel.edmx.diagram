@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="0a134aeb956c4b93ba49d9008b926de2" Name="Diagram1">
+        <EntityTypeShape EntityType="BookmarksModel.Bookmark" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookmarksModel.BookmarksTag" Width="1.5" PointX="5.25" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookmarksModel.Tag" Width="1.5" PointX="7.625" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BookmarksModel.User" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="BookmarksModel.FK_Bookmarks_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="BookmarksModel.FK_BookmarksTags_Bookmarks" ManuallyRouted="false" />
+        <AssociationConnector Association="BookmarksModel.FK_BookmarksTags_Tags" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

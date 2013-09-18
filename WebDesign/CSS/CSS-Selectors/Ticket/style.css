@@ -1,0 +1,49 @@
+body {
+    background-color: #595959;
+    color: white;
+    font-family: Arial;
+    font-size: 16px;
+}
+h1 {
+    color: #BBBBAC;
+    font-size: 26px;
+    font-weight:normal;
+    margin: 0;
+    margin-bottom: 15px;
+}
+table td.info {
+    font-style: italic;
+    width: 155px;
+}
+li {
+  list-style-type: disc;
+  color: #71B47A;
+}
+#disc {
+    width: 13px;
+}
+#support {
+    color: #FF0014;
+}
+a {
+    text-decoration: none;
+}
+#name, a {
+    color: #FFF2B2;
+}
+#responseTime, #lastAction {
+    color: #BBBBBB;
+}
+#status {
+    color: #E06B2A;
+    font-weight: bold;
+}
+.dataRight {
+    padding-left: 160px;
+}
+#name {
+    margin-left: 5px;
+}
+tr.nextData > td {
+    padding-bottom: 15px;
+}

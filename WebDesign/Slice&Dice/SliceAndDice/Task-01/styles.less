@@ -1,0 +1,144 @@
+.clearfix(){
+  zoom:1;
+  &:after{
+    display:block;
+    content:"";
+    height:0;
+    clear:both;
+    } 
+}
+
+body, div, ul, li, h1 {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #181818;
+	#wrapper {
+		background-color: #e1ebf7;
+		padding: 1px;
+		//margin: 0 auto;
+		width: 778px;
+		height: 386px;
+
+		header {
+			background: #fff;
+			height: 47px;
+			margin-right: 0px;
+			div
+			{
+				display: inline-block;
+				#heading {
+					display: inline-block;
+				}
+			}
+		}
+
+		aside:first-of-type {
+			display: inline-block;
+			float: left;
+			background: #f2f3f7;
+			width: 120px;
+			h1 {
+				margin-top: 17px;
+				font-size: 13px;
+				color: #424284;
+				margin-left: -9px;
+				padding-bottom: 5px;
+			}
+			ul {
+				padding-left: 16px;
+				padding-right: 6px;
+				line-height: 10px;
+				li {
+					list-style: none;
+					list-style-image: url(imgs/bullet-black.gif);
+					margin-top: 2px;
+					a {
+						color: #006699;
+						text-decoration: none;
+						font-size: 11px;
+						&:hover {
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+		}
+		section {
+			display: inline-block;
+			font-size: 10px;
+			background: #e6def5;
+			padding-left: 2px;
+			padding-right: 4px;
+			padding-bottom: 1px;
+			width: 444px;
+			nav {
+				margin-left: 4px;
+				padding-top: 2px;
+				padding-bottom: 3px;
+				strong {
+					margin-left: 5px;
+					font-size: 13px;
+					color: #6d64a3;
+				}
+				ul {
+					display: inline-block;
+					list-style: none;
+					line-height: 1px;
+					li {
+						float: left;
+						padding: 5px 0;
+						a {
+							border-left: 1px solid #0000cc;
+							color: #0000cc;
+							text-decoration: none;
+							font-size: 12px;
+							padding: 0 5px;
+							&:hover {
+								text-decoration: underline;
+							}
+						}
+						&:first-child a{
+							border: 0;
+						}
+					}
+				}
+			}
+			article {
+				float: left;
+				background: #f9f4fd;
+				padding: 10px;
+			}
+		}
+		aside:last-of-type {
+			display: inline-block;
+			width: 203px;
+			height: 305px;
+			margin-right: 5px;
+			background: #f9f4fc;
+			margin: 1px;
+			float: right;
+			font-size: 10px;
+			article {
+				img {
+					float: left;
+				}
+				.clearfix();
+			}
+			ul {
+				margin-left: 20px;
+				li {
+					&.left {
+						float: left;
+						.clearfix();
+					}
+					&.right {
+						float: right;
+					}
+				}
+			}
+		}
+	}
+}

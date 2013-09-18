@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Controls in Some Browsers</title>
+	<style type="text/css">
+		.control-container {
+			display: inline-block;
+			margin: 5px;
+			padding: 5px;
+			border: 1px solid black;
+		}
+		#ui-datepicker-div {
+			visibility: hidden;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/modernizr.input-types.js"></script>
+	<script type="text/javascript" src="scripts/polyfiller.js"></script>
+    <script>
+        $.webshims.polyfill('forms forms-ext');
+    </script>
+    <link rel="stylesheet" href="scripts/colorpicker/colorpicker.css" media="screen" type="text/css" />
+	<script type="text/javascript" src="scripts/colorpicker/colorpicker.js"></script>
+	<script type="text/javascript">
+		var initColorpicker = function () {
+            $('input[type=color]').each(function () {
+                var $input = $(this);
+                $input.ColorPicker({
+                    onSubmit: function (hsb, hex, rgb, el) {
+                        $(el).val(hex);
+                        $(el).ColorPickerHide();
+                    }
+                });
+            });
+        };
+        if (!Modernizr.inputtypes.color) {
+            $(document).ready(initColorpicker);
+        };
+	</script>
+	<script src="scripts/datetime/datetime.js"></script>
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.1/themes/base/jquery.ui.all.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+	<script src="scripts/week/week.js"></script>
+</head>
+<body>
+	<form action="#">
+		<div class="control-container"><label for="range">range: </label><input type="range" id="range"></div><br/>
+		<div class="control-container"><label for="number">number: </label><input type="number" id="number"></div><br/>
+		<div class="control-container"><label for="email">email: </label><input type="email" id="email"></div><br/>
+		<div class="control-container"><label for="date">date: </label><input type="date" id="date"></div><br/>
+		<div class="control-container"><label for="color">color: </label><input type="color" id="color"></div><br/>
+		<div class="control-container"><label for="datetime">date time: </label><input type="datetime" id="datetime"></div><br/>
+		<div class="control-container"><label for="month">month: </label><input type="month" id="month"></div><br/>
+		<div class="control-container"><label for="search">search: </label><input type="search" id="search"></div><br/>
+		<div class="control-container"><label for="tel">tel: </label><input type="tel" id="tel"></div><br/>
+		<div class="control-container"><label for="time">time: </label><input type="time" id="time"></div><br/>
+		<div class="control-container"><label for="url">url: </label><input type="url" id="url"></div><br/>
+		<div class="control-container"><label for="week">week: </label><input type="week" id="week"></div><br/>
+	</form>
+</body>
+</html>

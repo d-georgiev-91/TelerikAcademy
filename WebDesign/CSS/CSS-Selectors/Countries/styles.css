@@ -1,0 +1,98 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+table, th, td{
+    border-collapse: collapse;
+    padding: 6px;
+}
+th{
+    border: 2px solid #27710A;
+    color: white;
+    background-color: #56B906;
+    font-weight: normal;
+    text-align: left;
+}
+td{
+    border-left: 2px solid #BBB99D;
+    border-right: 2px solid #BBB99D;
+}
+tbody tr:nth-child(2n) {
+    background-color: #ECECD8;
+}
+tbody tr:last-child{
+    border-bottom: 2px solid #BBB99D;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox] + label {
+    background-color: #D4D0C8;
+	border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+	box-shadow: inset 1px 1px 1px #404040;
+	padding: 9px;
+	border-radius: 0px;
+	display: inline-block;
+	position: relative;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+input[type=checkbox] + label {
+    background-color: #D4D0C8;
+	border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+	box-shadow: inset 1px 1px 1px #404040;
+	padding: 9px;
+	border-radius: 0px;
+	display: inline-block;
+	position: relative;
+}
+
+input[type=checkbox] + label:active, input[type=checkbox]:checked + label:active {
+	box-shadow: inset 1px 1px 1px #404040;
+}
+
+input[type=checkbox]:checked + label {
+	background-color: #D4D0C8;
+	border-top: 1px solid #808080;
+    border-left: 1px solid #808080;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+	box-shadow: inset 1px 1px 1px #404040;
+	color: #99a1a7;
+}
+
+input[type=checkbox]:checked + label:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #808080;
+}
+.contactName {
+    padding-right: 60px;
+}
+.city {
+    padding-right: 50px;
+}
+.country {
+    padding-right: 55px;
+}
+.isPromoted {
+    padding-right: 20px;
+}
+.countryName {
+    padding-left: 6px;
+}

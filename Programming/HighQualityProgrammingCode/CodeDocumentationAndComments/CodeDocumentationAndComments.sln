@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodeDocumentationAndComments", "CodeDocumentationAndComments\CodeDocumentationAndComments.csproj", "{433F54B4-BC03-4574-ABED-8F4F89A49A04}"
+EndProject
+Project("{7CF6DF6D-3B04-46F8-A40B-537D21BCA0B4}") = "StringUtils", "StringUtils\StringUtils.shfbproj", "{CBB6A1B0-A3AC-4AC0-B7EC-1162CB20E20C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{433F54B4-BC03-4574-ABED-8F4F89A49A04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{433F54B4-BC03-4574-ABED-8F4F89A49A04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{433F54B4-BC03-4574-ABED-8F4F89A49A04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{433F54B4-BC03-4574-ABED-8F4F89A49A04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBB6A1B0-A3AC-4AC0-B7EC-1162CB20E20C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB6A1B0-A3AC-4AC0-B7EC-1162CB20E20C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB6A1B0-A3AC-4AC0-B7EC-1162CB20E20C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB6A1B0-A3AC-4AC0-B7EC-1162CB20E20C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

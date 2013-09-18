@@ -1,0 +1,19 @@
+#J {
+    vertical-align: bottom;
+    text-align: right;
+}
+table, td{
+    border: 1px solid black;
+}
+#A, #D, #E, #F, #H, #I, #K, #L, #M, #O, #Title{
+    text-align: center;
+}
+#B, #G, #N{
+    text-align: right;  
+}
+td {
+    width: 31px;
+}
+#C{
+    text-align: left;
+}

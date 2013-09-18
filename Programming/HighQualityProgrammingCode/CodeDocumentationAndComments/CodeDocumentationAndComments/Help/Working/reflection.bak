@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<reflection xmlns:msxsl="urn:schemas-microsoft-com:xslt" xmlns:ddue="urn:ddue-extensions">
+  <assemblies>
+    <assembly name="CodeDocumentationAndComments">
+      <assemblydata version="1.0.0.0" culture="" key="" hash="SHA1" />
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyProductAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>CodeDocumentationAndComments</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyTitleAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>CodeDocumentationAndComments</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyDescriptionAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value />
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyConfigurationAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value />
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyCompanyAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>Microsoft</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyCopyrightAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>Copyright © Microsoft 2013</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyTrademarkAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value />
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Runtime.InteropServices.ComVisibleAttribute" ref="true" />
+          <argument>
+            <type api="T:System.Boolean" ref="false" />
+            <value>False</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Runtime.InteropServices.GuidAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>143b7493-285c-4502-93d6-4651763848a3</value>
+          </argument>
+        </attribute>
+        <attribute>
+          <type api="T:System.Reflection.AssemblyFileVersionAttribute" ref="true" />
+          <argument>
+            <type api="T:System.String" ref="true" />
+            <value>1.0.0.0</value>
+          </argument>
+        </attribute>
+      </attributes>
+    </assembly>
+  </assemblies>
+  <apis>
+    <api id="N:Telerik.ILS.Common">
+      <topicdata group="api" />
+      <apidata name="Telerik.ILS.Common" group="namespace" />
+      <elements>
+        <element api="T:Telerik.ILS.Common.StringExtensions" />
+      </elements>
+      <file name="8de58998-b109-a973-8160-c522a4d4fd7d" />
+    </api>
+    <api id="T:Telerik.ILS.Common.StringExtensions">
+      <topicdata group="api" allMembersTopicId="AllMembers.T:Telerik.ILS.Common.StringExtensions" />
+      <apidata name="StringExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" layout="auto" format="ansi" />
+      <family>
+        <ancestors>
+          <type api="T:System.Object" ref="true" />
+        </ancestors>
+      </family>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="7ff9e3d0-3e15-7734-f0ad-1f9eea7bf392" />
+    </api>
+    <api id="AllMembers.T:Telerik.ILS.Common.StringExtensions">
+      <topicdata name="StringExtensions" group="list" subgroup="members" typeTopicId="T:Telerik.ILS.Common.StringExtensions" />
+      <apidata name="StringExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" layout="auto" format="ansi" />
+      <elements>
+        <element api="M:Telerik.ILS.Common.StringExtensions.CapitalizeFirstLetter(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ConvertCyrillicToLatinLetters(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ConvertLatinToCyrillicKeyboard(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.GetFileExtension(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.GetFirstCharacters(System.String,System.Int32)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.GetStringBetween(System.String,System.String,System.String,System.Int32)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToBoolean(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToByteArray(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToContentType(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToDateTime(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToInteger(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToLong(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToMd5Hash(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToShort(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToValidLatinFileName(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToValidUsername(System.String)" />
+      </elements>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+      </containers>
+      <file name="64c18a3a-3269-a71c-f687-b5ddc161e6ab" />
+    </api>
+    <api id="Methods.T:Telerik.ILS.Common.StringExtensions">
+      <topicdata name="StringExtensions" group="list" subgroup="Methods" typeTopicId="T:Telerik.ILS.Common.StringExtensions" />
+      <apidata name="StringExtensions" group="type" subgroup="class" />
+      <typedata visibility="public" abstract="true" sealed="true" serializable="false" layout="auto" format="ansi" />
+      <elements>
+        <element api="M:Telerik.ILS.Common.StringExtensions.CapitalizeFirstLetter(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ConvertCyrillicToLatinLetters(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ConvertLatinToCyrillicKeyboard(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.GetFileExtension(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.GetFirstCharacters(System.String,System.Int32)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.GetStringBetween(System.String,System.String,System.String,System.Int32)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToBoolean(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToByteArray(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToContentType(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToDateTime(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToInteger(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToLong(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToMd5Hash(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToShort(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToValidLatinFileName(System.String)" />
+        <element api="M:Telerik.ILS.Common.StringExtensions.ToValidUsername(System.String)" />
+      </elements>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+      </containers>
+      <file name="33375b05-5382-9b52-561a-5ea5698e4095" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.CapitalizeFirstLetter(System.String)">
+      <topicdata group="api" />
+      <apidata name="CapitalizeFirstLetter" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="f1b6b6cb-bf66-79dd-d265-fedbe6dc19fd" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.ConvertCyrillicToLatinLetters(System.String)">
+      <topicdata group="api" />
+      <apidata name="ConvertCyrillicToLatinLetters" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="81306784-7715-471f-e35c-53862a2f2919" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.ConvertLatinToCyrillicKeyboard(System.String)">
+      <topicdata group="api" />
+      <apidata name="ConvertLatinToCyrillicKeyboard" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="23a07d03-8656-21f2-ddb2-e939a23f6dc5" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.GetFileExtension(System.String)">
+      <topicdata group="api" />
+      <apidata name="GetFileExtension" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="fileName">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="127b8350-eb55-4908-35b2-7450b8aaee26" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.GetFirstCharacters(System.String,System.Int32)">
+      <topicdata group="api" />
+      <apidata name="GetFirstCharacters" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="charsCount">
+          <type api="T:System.Int32" ref="false" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="39ec969b-90a3-19b7-5f73-58336b937cf4" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.GetStringBetween(System.String,System.String,System.String,System.Int32)">
+      <topicdata group="api" />
+      <apidata name="GetStringBetween" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="startString">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="endString">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+        <parameter name="startFrom" optional="true">
+          <type api="T:System.Int32" ref="false" />
+          <argument>
+            <type api="T:System.Int32" ref="false" />
+            <value>0</value>
+          </argument>
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="643dca24-5658-9823-13c9-8359579f1bf8" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.ToBoolean(System.String)">
+      <topicdata group="api" />
+      <apidata name="ToBoolean" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Boolean" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="58da45a8-22b1-7f86-f072-5520d2457f16" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.ToByteArray(System.String)">
+      <topicdata group="api" />
+      <apidata name="ToByteArray" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <arrayOf rank="1">
+          <type api="T:System.Byte" ref="false" />
+        </arrayOf>
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="b8da26c8-c624-d080-1313-11936ce51130" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.ToContentType(System.String)">
+      <topicdata group="api" />
+      <apidata name="ToContentType" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="fileExtension">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="c77e6b23-3a97-9b65-cd2e-d06c0f4794c6" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.ToDateTime(System.String)">
+      <topicdata group="api" />
+      <apidata name="ToDateTime" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.DateTime" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="87709dae-8391-81d7-bb89-2c9d342d4b8f" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.ToInteger(System.String)">
+      <topicdata group="api" />
+      <apidata name="ToInteger" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Int32" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="2aaf0c77-a671-60a1-4979-9107eba57dfc" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.ToLong(System.String)">
+      <topicdata group="api" />
+      <apidata name="ToLong" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Int64" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="f6de1a05-c4e1-10f2-be15-5eb0db0c3b21" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.ToMd5Hash(System.String)">
+      <topicdata group="api" />
+      <apidata name="ToMd5Hash" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="96fc78f6-9461-7dc1-c98b-7951a7e457a3" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.ToShort(System.String)">
+      <topicdata group="api" />
+      <apidata name="ToShort" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.Int16" ref="false" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="e3071ae6-56e4-405a-a002-37ba510cee95" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.ToValidLatinFileName(System.String)">
+      <topicdata group="api" />
+      <apidata name="ToValidLatinFileName" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="85b6c39f-5cb1-d25f-a6e9-dfd846dd3806" />
+    </api>
+    <api id="M:Telerik.ILS.Common.StringExtensions.ToValidUsername(System.String)">
+      <topicdata group="api" />
+      <apidata name="ToValidUsername" group="member" subgroup="method" />
+      <memberdata visibility="public" static="true" />
+      <proceduredata virtual="false" />
+      <parameters>
+        <parameter name="input">
+          <type api="T:System.String" ref="true" />
+        </parameter>
+      </parameters>
+      <returns>
+        <type api="T:System.String" ref="true" />
+      </returns>
+      <containers>
+        <library assembly="CodeDocumentationAndComments" module="CodeDocumentationAndComments" kind="ConsoleApplication">
+          <assemblydata version="1.0.0.0 (1.0.0.0)" />
+          <noAptca />
+        </library>
+        <namespace api="N:Telerik.ILS.Common" />
+        <type api="T:Telerik.ILS.Common.StringExtensions" ref="true" />
+      </containers>
+      <attributes>
+        <attribute>
+          <type api="T:System.Runtime.CompilerServices.ExtensionAttribute" ref="true" />
+        </attribute>
+      </attributes>
+      <file name="f97bebfd-9434-d2a1-adf9-ef420e2f582b" />
+    </api>
+  </apis>
+</reflection>

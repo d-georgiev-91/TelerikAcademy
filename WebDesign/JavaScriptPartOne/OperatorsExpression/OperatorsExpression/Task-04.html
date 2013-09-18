@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="content">
+        <label for="number">Integer number</label>
+        <input placeholder="Enter integer" type="text" id="number" />
+        <a href="#" onclick="IsSeven()">Is third digit seven</a>
+    </div>
+    <script>
+        function IsSeven() {
+            var intNumber = parseInt(document.getElementById("number").value);
+            var isSeven = (parseInt(intNumber / 100 % 10 % 7) == 0);
+            alert(isSeven);
+        }
+    </script>
+</body>
+</html>

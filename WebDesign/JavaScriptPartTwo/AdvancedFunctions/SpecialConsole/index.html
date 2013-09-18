@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Special console</title>
+	<script src="special-console.js"></script>
+</head>
+<body>
+	<script>
+		alert("To see the demo you must open the javascript console by pressing 'F12' key!");
+		specialConsole.writeLine("Message: hello");
+		//logs to the console "Message: hello"
+		specialConsole.writeLine("Message: {0}", "hello");
+		//logs to the console "Message: hello"
+		specialConsole.writeError("Error: {0}", "Something happened");
+		specialConsole.writeWarning("Warning: {0}", "A warning");
+	</script>
+</body>
+</html>

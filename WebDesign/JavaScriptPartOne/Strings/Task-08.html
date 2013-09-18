@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Strings</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		textarea
+		{
+			margin-left: 10px;	
+		}
+	</style>
+</head>
+<body>
+	<label for="tb-html">URL: </label>
+	<textarea id="tb-html"></textarea>
+	<a href="#" id="btn-replace-tags" onclick="onClickReplaceTags()">Replace tags</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		var text;
+		function onClickReplaceTags() {
+			text = document.getElementById("tb-html").value;
+			if (text == "") {
+				alert("The field is empty.");
+			}
+			else {
+				jsConsole.writeLine(replaceTags(text));
+			}
+		}
+
+		function escapeHTML(htmlCode) {
+			var result = "";
+			for (var character in htmlCode) {
+				if (htmlCode[character] == "<") {
+					result += "&#060;"
+				}
+				else if (htmlCode[character] == ">") {
+					result += "&#062;"
+				}
+				else {
+					result += htmlCode[character];
+				}
+			}
+			return result;
+		}
+
+		function replaceTags(text) {
+			var result = text;
+			var matcherOne = new RegExp("<a href=\"", "g");
+			var matcherTwo = new RegExp("\">", "g");
+			var matcherThree = new RegExp("</a>", "g");
+            result = result.replace(matcherOne, "[URL=");
+            result = result.replace(matcherTwo, "]");
+            result = result.replace(matcherThree, "[/URL]");
+            return escapeHTML(result);
+		}
+	</script>
+</body>
+</html>

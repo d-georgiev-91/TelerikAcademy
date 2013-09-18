@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JsonToXmlAndXmlToJsonParser", "JsonToXmlAndXmlToJsonParser\JsonToXmlAndXmlToJsonParser.csproj", "{796A7812-0C07-4332-8504-D498B91B7640}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{796A7812-0C07-4332-8504-D498B91B7640}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{796A7812-0C07-4332-8504-D498B91B7640}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{796A7812-0C07-4332-8504-D498B91B7640}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{796A7812-0C07-4332-8504-D498B91B7640}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>TimeCalculator</title>
+
+        <!-- WinJS references -->
+        <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+        <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+        <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+        <!-- TimeCalculator references -->
+        <link href="/css/default.css" rel="stylesheet" />
+        <script src="/js/default.js"></script>
+        <style>
+            #to-date {
+                padding-left: 17px;
+            }
+
+            #from-time, #to-time, #calculate-hours, #calculate-days-and-hours {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="hide-display-time" 
+             data-win-control="WinJS.UI.ToggleSwitch" 
+             data-win-options="{
+             title: 'Show/Hide Hours',
+             on : 'Show',
+             off: 'Hide'
+             }"></div>
+        <div id="start-time">
+            <label>From: </label>
+            <div id="from-date" 
+                data-win-control="WinJS.UI.DatePicker"
+                data-win-options="{
+                    current: '01/01/1913'
+                }">
+
+            </div>
+            <div id="from-time" 
+                 data-win-control="WinJS.UI.TimePicker" 
+                 data-win-options="{
+                 clock : '24HourClock',
+                 current: '00:00:00'
+                 }">
+            </div>
+        </div>
+        <div id="end-time">
+            <label>To: </label>
+            <div id="to-date" 
+                data-win-control="WinJS.UI.DatePicker"
+                data-win-options="{
+                    current: '01/01/1913'
+                }">
+            </div>
+            <div id="to-time"  data-win-control="WinJS.UI.TimePicker" 
+                 data-win-options="{
+                 clock : '24HourClock',
+                 current: '00:00:00'
+                 }">></div>
+        </div>
+        <button id="calculate-difference">Calculate difference</button>
+        <div id="menu-id" data-win-control="WinJS.UI.Menu", data-win-options="{anchor:'calculate-difference'}">
+            <button id="calculate-days" data-win-control="WinJS.UI.MenuCommand" data-win-options="{id:'file-menu-button-id',label:'Calculate days'}"></button>
+            <button id="calculate-hours" data-win-control="WinJS.UI.MenuCommand" data-win-options="{id:'folder-menu-button-id',label:'Calculate hours'}"></button>
+            <button id="calculate-days-and-hours" data-win-control="WinJS.UI.MenuCommand" data-win-options="{id:'url-menu-button-id',label:'Calculate days and hours'}"></button>
+        </div>
+        <div id="result"></div>
+    </body>
+</html>

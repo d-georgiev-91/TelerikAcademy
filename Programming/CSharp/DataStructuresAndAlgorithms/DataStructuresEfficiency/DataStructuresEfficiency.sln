@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadStudents", "ReadStudents\ReadStudents.csproj", "{BF15FE52-2C93-42B1-8D5E-8F794B189727}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TradeCompanySearch", "TradeCompanySearch\TradeCompanySearch.csproj", "{6012C5E0-D56E-428C-910A-2D32C64861ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiDicitionaryDemo", "BiDicitionaryDemo\BiDicitionaryDemo.csproj", "{43B05632-30BA-46D9-BFFB-2720278CDA0E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF15FE52-2C93-42B1-8D5E-8F794B189727}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF15FE52-2C93-42B1-8D5E-8F794B189727}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF15FE52-2C93-42B1-8D5E-8F794B189727}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF15FE52-2C93-42B1-8D5E-8F794B189727}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6012C5E0-D56E-428C-910A-2D32C64861ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6012C5E0-D56E-428C-910A-2D32C64861ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6012C5E0-D56E-428C-910A-2D32C64861ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6012C5E0-D56E-428C-910A-2D32C64861ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43B05632-30BA-46D9-BFFB-2720278CDA0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43B05632-30BA-46D9-BFFB-2720278CDA0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43B05632-30BA-46D9-BFFB-2720278CDA0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43B05632-30BA-46D9-BFFB-2720278CDA0E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

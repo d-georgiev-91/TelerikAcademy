@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<catalogue xmlns:catalogue="urn:catalogue">
+  <album>
+    <name>Bleach</name>
+    <artist>Nirvana</artist>
+    <year>1989</year>
+    <producer>Jack Endino</producer>
+    <price>14.85</price>
+    <song>
+      <title>Blew</title>
+      <duration>2:55</duration>
+    </song>
+    <song>
+      <title>Floyd the Barber</title>
+      <duration>2:18</duration>
+    </song>
+    <song>
+      <title>About a Girl</title>
+      <duration>2:48</duration>
+    </song>
+  </album>
+  <album>
+    <name>Dangerous and Moving</name>
+    <artist>Tatu</artist>
+    <year>2005</year>
+    <producer>Martin Kierszenbaum</producer>
+    <price>12.43</price>
+    <song>
+      <title>All About Us</title>
+      <duration>3:00</duration>
+    </song>
+    <song>
+      <title>Loves Me Not</title>
+      <duration>2:55</duration>
+    </song>
+    <song>
+      <title>Perfect Enemy</title>
+      <duration>4:12</duration>
+    </song>
+  </album>
+  <album>
+    <name>Californication</name>
+    <artist>Red Hot Chili Peppers</artist>
+    <year>1999</year>
+    <producer>Rick Rubin</producer>
+    <price>8</price>
+    <song>
+      <title>Parallel Universe</title>
+      <duration>3</duration>
+    </song>
+    <song>
+      <title>Around the World</title>
+      <duration>4</duration>
+    </song>
+    <song>
+      <title>This Velvet Glove</title>
+      <duration>3</duration>
+    </song>
+  </album>
+</catalogue>

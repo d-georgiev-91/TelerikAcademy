@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookingPotatoes", "CookingPotatoes\CookingPotatoes.csproj", "{090D2693-9C8D-403C-B130-ADC134EBBFE3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kitchen", "Kitchen\Kitchen.csproj", "{A3971158-B710-40F6-A8B1-CF04531501A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsCellVisited", "IsCellVisited\IsCellVisited.csproj", "{4BF90BB6-E486-4E14-BDD6-E5915EDFC8B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindingValueInArray", "FindingValueInArray\FindingValueInArray.csproj", "{4F9C1730-ACEE-4FE1-A27D-8CE5285387CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{090D2693-9C8D-403C-B130-ADC134EBBFE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{090D2693-9C8D-403C-B130-ADC134EBBFE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{090D2693-9C8D-403C-B130-ADC134EBBFE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{090D2693-9C8D-403C-B130-ADC134EBBFE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3971158-B710-40F6-A8B1-CF04531501A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3971158-B710-40F6-A8B1-CF04531501A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3971158-B710-40F6-A8B1-CF04531501A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3971158-B710-40F6-A8B1-CF04531501A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BF90BB6-E486-4E14-BDD6-E5915EDFC8B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BF90BB6-E486-4E14-BDD6-E5915EDFC8B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BF90BB6-E486-4E14-BDD6-E5915EDFC8B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BF90BB6-E486-4E14-BDD6-E5915EDFC8B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F9C1730-ACEE-4FE1-A27D-8CE5285387CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F9C1730-ACEE-4FE1-A27D-8CE5285387CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F9C1730-ACEE-4FE1-A27D-8CE5285387CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F9C1730-ACEE-4FE1-A27D-8CE5285387CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

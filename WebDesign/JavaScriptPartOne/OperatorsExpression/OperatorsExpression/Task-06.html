@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="content">
+        <label for="x">Integer X</label>
+        <input placeholder="Enter number" type="text" id="x" />
+        <label for="y">Integer Y</label>
+        <input placeholder="Enter number" type="text" id="y" />
+        <a href="#" onclick="IsInCircle()">Is in circle</a>
+    </div>
+    <script>
+        function IsInCircle() {
+            var x = parseFloat(document.getElementById("x").value);
+            var y = parseFloat(document.getElementById("y").value);
+            var withinInCircle = (x * x + y * y) <= 5*5;
+            alert(withinInCircle);
+        }
+    </script>
+</body>
+</html>

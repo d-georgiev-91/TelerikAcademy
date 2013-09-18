@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+    <script>
+        function isNumberKey(evt) {
+            var charCode = (evt.which) ? evt.which : event.keyCode
+            //if (charCode > 31 && (charCode < 48 || charCode > 57) && charCode!=188 && charCode!=190)
+            if (charCode != 188)
+                return false;
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <div id="content">
+        <label for="first">First number</label>
+        <input type="text" placeholder="Enter number" id="first" />
+        <label for="second">Second number</label>
+        <input type="text" placeholder="Enter number" id="second" />
+        <label for="third">Second number</label>
+        <input type="text" placeholder="Enter number" id="third" />
+        <a href="#" onclick="GetSign()">Get sign of the product</a>
+    </div>
+    <script>
+        function GetSign() {
+            var firstNumber = parseFloat(document.getElementById("first").value);
+            var secondNumber = parseFloat(document.getElementById("second").value);
+            var thirdNumber = parseFloat(document.getElementById("third").value);
+            if (isNaN(firstNumber) || isNaN(secondNumber) || isNaN(thirdNumber)) {
+                alert("Please, input numbers in all textboxes!");
+            }
+            else {
+                var sign = 0;
+                if (firstNumber < 0) {
+                    sign++;
+                }
+                if (secondNumber < 0) {
+                    sign++;
+                }
+                if (thirdNumber < 0) {
+                    sign++;
+                }
+                if (sign % 2 == 0) {
+                    alert("+");
+                }
+                else {
+                    alert("-");
+                }
+            }
+        }
+    </script>
+</body>
+</html>

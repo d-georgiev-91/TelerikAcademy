@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        #button{
+            margin-top:10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="textField">
+        <label for="FirstVariable">First variable</label>
+        <input type="text" id="FirstVariable" />
+        <label for="SecondVariable">Second variable</label>
+        <input type="text" id="SecondVariable" />
+        <label for="ThirdVariable">Third variable</label>
+        <input type="text" id="ThirdVariable" />
+        <label for="FourthVariable">Fourth variable</label>
+        <input type="text" id="FourthVariable" />
+        <label for="FifthVariable">Fifth variable</label>
+        <input type="text" id="FifthVariable" />
+    </div>
+    <div id="button">
+        <a href="#" onclick="TheGreatestVariable()">The greatest variable</a>
+    </div>
+    <script>
+        function TheGreatestVariable() {
+            var firstVar = document.getElementById("FirstVariable").value;
+            var secondVar = document.getElementById("SecondVariable").value;
+            var thirdVar = document.getElementById("ThirdVariable").value;
+            var fourthVar = document.getElementById("FourthVariable").value;
+            var fifthVar = document.getElementById("FifthVariable").value;
+            var variables = [firstVar, secondVar, thirdVar, fourthVar, fifthVar];
+            var theGreatest = variables[0];
+            for (var i = 1; i < 4; i++) {
+                if (variables[i] > theGreatest) {
+                    theGreatest = variables[i];
+                }
+            }
+            alert("The greatest is: " + theGreatest);
+        }
+    </script>
+</body>
+</html>

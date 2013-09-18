@@ -1,0 +1,18 @@
+﻿<!-- When loading from a fragment, all the HTML in fragment itself is the template -->
+<div class="computer-template">
+    <dl>
+        <dt>Name</dt>
+        <dd data-win-bind="innerText: name"></dd>
+        <dt>Price</dt>
+        <dd><span>$</span><span data-win-bind="innerText: price"></span></dd>
+        <dt>Processor</dt>
+        <dd>
+            <dl>
+                <dt>Model</dt>
+                <dd data-win-bind="innerText: processor.modelName"></dd>
+                <dt>Frequency</dt>
+                <dd data-win-bind="innerText: processor.frequencyGHz"></dd>
+            </dl>
+        </dd>
+    </dl>
+</div>

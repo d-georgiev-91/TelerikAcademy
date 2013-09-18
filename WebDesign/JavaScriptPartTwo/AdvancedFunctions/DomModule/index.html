@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dom module demo</title>
+	<script src="dom-module.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		
+	</div>
+	<a href="#" class="button">I'm a button and i'm so cool click me!!! =)</a>
+	<script>
+		var div = document.createElement("div");
+		domModule.appendChild(div, "#wrapper");
+		domModule.removeChild("body","#wrapper");
+		domModule.addHandler("a.button", 'click', function(){alert("Clicked")});
+
+		var ul = document.createElement("ul");
+		domModule.appendChild(ul, "body");
+
+		for (var i = 0; i < 150; i++) {
+			var li = document.createElement("li");
+			if (i % 2 == 0) {
+				li.className = "UNIQUE";
+			}
+
+			li.innerHTML = i + 1;
+
+			domModule.appendToBuffer("ul", li);
+		}
+
+		/*Adding more 50 elements*/
+		/* 
+		for (var i = 0; i < 50; i++) {
+			var li = document.createElement("li");
+			li.innerHTML = i + 1; 
+			domModule.appendToBuffer("ul", li);
+		}*/
+	</script>
+</body>
+</html>

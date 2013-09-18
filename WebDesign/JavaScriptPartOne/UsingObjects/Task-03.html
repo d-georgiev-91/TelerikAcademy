@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Using objects</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<a href="#" id="btn-execute-js" onclick="onClickExecuteJavaScipt()">Execute script</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+
+	    function onClickExecuteJavaScipt() {
+	        var someObject = {
+	            someNumber: 42,                                        
+	            someString: "Some string",                          
+	            obj: {
+	                otherString: "Some other string"                            
+	            },
+	            array: [                                         
+                    "another string in array",                                   
+                    {                                             
+                        otherString: "Again another string"                  
+                    }
+	            ]
+	        };
+
+	        var copyOfSomeObject = ObjectHandler.getCloneOfObject(someObject);
+
+	        copyOfSomeObject.obj.otherString = "sdadasdas";
+	        jsConsole.writeLine("The copy - copyOfSomeObject.obj.otherString: " + copyOfSomeObject.obj.otherString);
+	        jsConsole.writeLine("The original - someObject.obj.otherString: " + someObject.obj.otherString);
+	    }
+
+	    var ObjectHandler = {
+	        getCloneOfObject: function (oldObject) {
+	            var tempClone = {};
+	            if (typeof (oldObject) == "object") {
+	                for (prop in oldObject) {
+	                    if ((typeof (oldObject[prop]) == "object") && (oldObject[prop]).__isArray) {
+	                        tempClone[prop] = this.getCloneOfArray(oldObject[prop]);
+	                    }
+	                    else if (typeof (oldObject[prop]) == "object") {
+	                        tempClone[prop] = this.getCloneOfObject(oldObject[prop]);
+	                    }
+	                    else {
+	                        tempClone[prop] = oldObject[prop];
+	                    }
+	                }
+	            }
+	            return tempClone;
+	        },
+	        getCloneOfArray: function (oldArray) {
+	            var tempClone = [];
+	            for (var arrIndex = 0; arrIndex <= oldArray.length; arrIndex++) {
+	                if (typeof (oldArray[arrIndex]) == "object") {
+	                    tempClone.push(this.getCloneOfObject(oldArray[arrIndex]));
+	                }
+	                else {
+	                    tempClone.push(oldArray[arrIndex]);
+	                }
+	            }
+	            return tempClone;
+	        }
+	    }
+	</script>
+</body>
+</html>

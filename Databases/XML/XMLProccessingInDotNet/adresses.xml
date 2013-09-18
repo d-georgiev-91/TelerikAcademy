@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<people-addresses>
+  <person>
+    <name>Pesho Peshev</name>
+    <address>Bulgaria, Kaspichan</address>
+    <phone>1337</phone>
+  </person>
+  <person>
+    <name>Ivan Popov</name>
+    <address>Bulgaria, Sofia</address>
+    <phone>0888484986</phone>
+  </person>
+</people-addresses>

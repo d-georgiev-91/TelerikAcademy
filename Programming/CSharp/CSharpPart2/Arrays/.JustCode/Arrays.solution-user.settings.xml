@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JustCodeSettings Version="0.0" Timestamp="faa12273-676c-4da4-aa98-81e0530e02d6">
+  <IgnoredErrorsAndWarningsSettings xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <IgnoredErrorsAndWarnings>
+      <FilePath>
+        <Path>C:\users\mike_laury\documents\visual studio 2012\Projects\Arrays\ArraysComparison\ArraysComparison.cs</Path>
+        <ProjectFullName>c:\users\mike_laury\documents\visual studio 2012\Projects\Arrays\ArraysComparison\ArraysComparison.csproj</ProjectFullName>
+        <IgnoredElement>
+          <Column>36</Column>
+          <Text>&lt;/C&gt;int&lt;//C&gt; has no indexer</Text>
+          <Line>25</Line>
+        </IgnoredElement>
+      </FilePath>
+    </IgnoredErrorsAndWarnings>
+  </IgnoredErrorsAndWarningsSettings>
+</JustCodeSettings>

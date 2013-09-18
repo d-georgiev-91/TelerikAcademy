@@ -1,0 +1,51 @@
+body, html, img, div
+{
+	padding: 0;
+  	margin: 0;
+  	border: 0;
+}
+
+#wrapper
+{
+	width: 750px;
+	height: 450px;
+	padding: 50px 0 0 50px;
+	background: url(images/background-tile.png) repeat-x;
+}
+
+#wrapper #the-big-image 
+{
+	float: left;
+}
+
+#wrapper #the-big-image .drop-shadow img 
+{
+	width: 500px;
+	height: 400px;
+
+}
+
+#wrapper #the-small-images .drop-shadow 
+{
+	margin-left: 45px;
+	margin-bottom: 47px;
+}
+
+#wrapper #the-small-images .drop-shadow img 
+{
+	width: 150px;
+	height: 100px;
+}
+
+.drop-shadow 
+{
+	float:left;
+	background: url(images/drop-shadow.png) no-repeat bottom right;
+	
+}
+.drop-shadow img 
+{
+	position: relative;
+	display: block;
+	margin: -2px 5px 5px -2px;
+}

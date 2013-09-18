@@ -1,0 +1,8 @@
+﻿/// <reference path="../js/code.js" />
+test("some lame test", function myfunction() {
+    var a = 5;
+    var b = 6;
+    var actual = 11;
+    var expected = a + b;
+    equal(actual, expected);
+})

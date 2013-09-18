@@ -1,0 +1,1640 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"VEH",
+				"vehilcleNS"
+			],
+			[
+				"veh",
+				"vehilcleNS"
+			],
+			[
+				"pro",
+				"propller"
+			],
+			[
+				"prop",
+				"propller"
+			],
+			[
+				"air",
+				"aircraft"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"ai",
+				"aircraft"
+			],
+			[
+				"whe",
+				"wheels"
+			],
+			[
+				"rear",
+				"rearRightWheel"
+			],
+			[
+				"fro",
+				"frontRightWheel"
+			],
+			[
+				"ve",
+				"vehilcleNS"
+			],
+			[
+				"am",
+				"AmphibiousVehicle"
+			],
+			[
+				"Am",
+				"AmphibiousVehicle"
+			],
+			[
+				"wa",
+				"WaterVehicle"
+			],
+			[
+				"Lan",
+				"LandVehicle"
+			],
+			[
+				"w",
+				"wheel"
+			],
+			[
+				"con",
+				"content:   (property)"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"W",
+				"WATER"
+			],
+			[
+				"Prop",
+				"Propeller"
+			],
+			[
+				"propul",
+				"propulsionUnit"
+			],
+			[
+				"Wa",
+				"WaterVehicle"
+			],
+			[
+				"a",
+				"AmphibiousVehicle"
+			],
+			[
+				"wheel",
+				"wheels"
+			],
+			[
+				"La",
+				"Land"
+			],
+			[
+				"Amp",
+				"AmphibiousVehicle  (function)"
+			],
+			[
+				"cl",
+				"CLOCKWISE"
+			],
+			[
+				"Sp",
+				"SpinDirection"
+			],
+			[
+				"Pro",
+				"Propeller"
+			],
+			[
+				"ins",
+				"instanceof"
+			],
+			[
+				"O",
+				"OFF"
+			],
+			[
+				"o",
+				"OFF"
+			],
+			[
+				"af",
+				"AfterburnerState"
+			],
+			[
+				"propuls",
+				"propulsionUnits"
+			],
+			[
+				"A",
+				"AirVehicle"
+			],
+			[
+				"Pr",
+				"PropelingNozzle"
+			],
+			[
+				"f",
+				"f	Anonymous Function"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"Wh",
+				"Wheel"
+			],
+			[
+				"wh",
+				"wheel"
+			],
+			[
+				"for",
+				"forin	forin"
+			],
+			[
+				"th",
+				"throw"
+			],
+			[
+				"e",
+				"Error"
+			],
+			[
+				"pr",
+				"propultionUnit"
+			],
+			[
+				"acc",
+				"acceleration"
+			],
+			[
+				"c",
+				"CLOCKWISE"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"arg",
+				"args"
+			],
+			[
+				"ar",
+				"arguments"
+			],
+			[
+				"stri",
+				"stringFormat"
+			],
+			[
+				"get",
+				"getRandomArbitary"
+			],
+			[
+				"traject",
+				"trajectoryY"
+			],
+			[
+				"tra",
+				"trajectoryX"
+			],
+			[
+				"s",
+				"style"
+			],
+			[
+				"go",
+				"goAntiClockWise"
+			],
+			[
+				"max",
+				"maxY"
+			],
+			[
+				"min",
+				"minY"
+			],
+			[
+				"div",
+				"divX"
+			],
+			[
+				"Tra",
+				"trajectoryY"
+			],
+			[
+				"di",
+				"divX"
+			],
+			[
+				"mi",
+				"minY"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"data-",
+				"data-coordintes"
+			],
+			[
+				"sh",
+				"SHAPE_WIDTH"
+			],
+			[
+				"mo",
+				"movingShapes"
+			],
+			[
+				"SHA",
+				"SHAPE_HEIGHT"
+			],
+			[
+				"sha",
+				"SHAPE_WIDTH"
+			],
+			[
+				"R",
+				"RADIUS_OF_CIRCLE_TRAJECTORY"
+			],
+			[
+				"ge",
+				"generateRandomStylesForElement"
+			],
+			[
+				"br",
+				"BROWSER_SAFE_FONTS"
+			],
+			[
+				"shs",
+				"movingShapesToRender"
+			],
+			[
+				"mov",
+				"movingShapesToRender"
+			],
+			[
+				"In",
+				"InvalidArumentException"
+			],
+			[
+				"cr",
+				"createElement"
+			],
+			[
+				"pa",
+				"parentSelector"
+			],
+			[
+				"ci",
+				"child"
+			],
+			[
+				"chi",
+				"child"
+			],
+			[
+				"tag",
+				"tagCloud"
+			],
+			[
+				"i",
+				"i"
+			],
+			[
+				"tagW",
+				"tagWithOccurance"
+			],
+			[
+				"va",
+				"val"
+			],
+			[
+				"dic",
+				"dictionary"
+			],
+			[
+				"sor",
+				"sortDictionaryByValue"
+			],
+			[
+				"v",
+				"val"
+			],
+			[
+				"co",
+				"copyOfTags"
+			],
+			[
+				"p",
+				"push  (function)"
+			],
+			[
+				"cre",
+				"createElement  (function)"
+			],
+			[
+				"ape",
+				"appendCloudWithTags"
+			],
+			[
+				"ta",
+				"tagOccurance"
+			],
+			[
+				"so",
+				"sortDictionary"
+			],
+			[
+				"key",
+				"key"
+			],
+			[
+				"fo",
+				"for	for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"colo",
+				"backgroundColor  (variable)"
+			],
+			[
+				"sel",
+				"selector"
+			],
+			[
+				"se",
+				"selector"
+			],
+			[
+				"sl",
+				"selectorList"
+			],
+			[
+				"re",
+				"relative"
+			],
+			[
+				"getEl",
+				"getElementsByClassName  (function)"
+			],
+			[
+				"h",
+				"h	height"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"d",
+				"div"
+			],
+			[
+				"deg",
+				"degrees"
+			],
+			[
+				"dra",
+				"drawDivAtPosition"
+			],
+			[
+				"rad",
+				"radius"
+			],
+			[
+				"set",
+				"setInterval();"
+			],
+			[
+				"wi",
+				"width  (variable)"
+			],
+			[
+				"getEleme",
+				"getElementById  (function)"
+			],
+			[
+				"getRandom",
+				"getRandomArbitary"
+			],
+			[
+				"getRan",
+				"getRandomPosition  (function)"
+			],
+			[
+				"ap",
+				"appendChild  (function)"
+			],
+			[
+				"b",
+				"button"
+			],
+			[
+				"number",
+				"number-of-divs"
+			],
+			[
+				"getElmen",
+				"getElementById  (function)"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"typ",
+				"type"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"emoticon",
+				"emoticonName"
+			],
+			[
+				"emotico",
+				"emoticonName"
+			],
+			[
+				"fon",
+				"font-weight"
+			],
+			[
+				"wp_reg",
+				"wp_register_script  (function)"
+			],
+			[
+				"wp_en",
+				"wp_enqueue_style  (function)"
+			],
+			[
+				"fa",
+				"false"
+			],
+			[
+				"get_templa",
+				"get_template_directory_uri"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "vehicle.js",
+			"settings":
+			{
+				"buffer_size": 6122,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1241,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"camel",
+				"Convert Case: camelCase"
+			],
+			[
+				"format",
+				"Format: Javascript"
+			],
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"func",
+				"Snippet: Anonymous Function"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"prett",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"pretty",
+				"HTMLPrettify: Prettify"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"buil",
+				"Build: Build"
+			],
+			[
+				"snipp",
+				"Snippet: HTML - Stylesheet link"
+			],
+			[
+				"snippet",
+				"Snippet: HTML - HTML5 shiv"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"expn",
+				"Emmet: Evaluate Math Expression"
+			],
+			[
+				"snippet:",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"snippet	",
+				"Snippet: .width"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"snippet for",
+				"Snippet: for (…) {…} (Improved Native For-Loop)"
+			],
+			[
+				"rename",
+				"File: Rename"
+			],
+			[
+				"fora",
+				"Format: Javascript"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"disabl",
+				"Package Control: Disable Package"
+			],
+			[
+				"js",
+				"JSLint"
+			],
+			[
+				"fomar",
+				"Format: Javascript"
+			],
+			[
+				"fet",
+				"Fetch: File"
+			],
+			[
+				"fe",
+				"Fetch: File"
+			],
+			[
+				"intel",
+				"SublimeCodeIntel: Enable Live Autocompletion for Current Language"
+			],
+			[
+				"package",
+				"Package Control: Remove Package"
+			],
+			[
+				"nodejs",
+				"Nodejs::Debug::Run::Current File"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"linter",
+				"SublimeLinter: Lint Current File"
+			],
+			[
+				"p",
+				"Package Control: List Packages"
+			],
+			[
+				"sublimeco",
+				"SublimeCodeIntel: Enable Live Autocompletion"
+			],
+			[
+				"sublimecode",
+				"SublimeCodeIntel: Enable Live Autocompletion for Current Language"
+			],
+			[
+				"sublimec",
+				"SublimeCodeIntel: Disable Live Autocompletion for Current Language"
+			],
+			[
+				"disable",
+				"SublimeCodeIntel: Disable Live Autocompletion"
+			],
+			[
+				"enable",
+				"SublimeCodeIntel: Enable Plugin"
+			],
+			[
+				"sublim",
+				"SublimeLinter: Show Error List"
+			],
+			[
+				"sublimein",
+				"SublimeCodeIntel: Enable Plugin"
+			],
+			[
+				"fetc",
+				"Fetch: File"
+			],
+			[
+				"jsl",
+				"JSLint"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"wor",
+				"WordPress Codex: Open Function Reference"
+			],
+			[
+				"wordpre",
+				"WordPress Codex: Open Function Reference"
+			],
+			[
+				"wordpr",
+				"WordPress Codex: Open Function Reference"
+			],
+			[
+				"wordpres",
+				"WordPress Codex: Open Function Reference"
+			],
+			[
+				"wordp",
+				"WordPress Codex: Open Function Reference"
+			],
+			[
+				"wordpresss",
+				"WordPress Codex: Search Selection"
+			],
+			[
+				"wopress",
+				"WordPress Codex: Open Function Reference"
+			],
+			[
+				"codeinte",
+				"SublimeCodeIntel: Reset"
+			],
+			[
+				"tab",
+				"View: Toggle Tabs"
+			],
+			[
+				"emmet",
+				"Emmet: Toggle Comment"
+			],
+			[
+				"fetch",
+				"Fetch: File"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"proje",
+				"Project: Save As"
+			],
+			[
+				"browser",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"snippe",
+				"Snippet: html"
+			],
+			[
+				"snip	",
+				"Snippet: html"
+			],
+			[
+				"php",
+				"Format: Php"
+			],
+			[
+				"goto",
+				"Goto Documentation"
+			],
+			[
+				"got",
+				"Goto Documentation"
+			],
+			[
+				"PHP: Generate",
+				"PHP: Generate Getters"
+			],
+			[
+				"php g",
+				"PHP: Generate Getters"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove pa",
+				"Package Control: Remove Package"
+			],
+			[
+				"node",
+				"Nodejs::Default File Settings"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"packag",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upda",
+				"Package Control: Upgrade/Overwrite All Packages"
+			],
+			[
+				"package ",
+				"Package Control: Install Package"
+			],
+			[
+				"html ra",
+				"Set Syntax: HTML (Rails)"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"print ",
+				"Print to HTML: print as HTML via browser"
+			],
+			[
+				"package ct",
+				"Package Control: Install Package"
+			],
+			[
+				"package ad",
+				"Package Control: Add Channel"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"brow",
+				"Preferences: Browse Packages"
+			],
+			[
+				"package contro in",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Preferences: Browse Packages"
+			],
+			[
+				"less",
+				"View: Toggle Open Files in Side Bar"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 118.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/User/JavaScript/consoleLog.sublime-snippet",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/JavaScriptOOP/AirVehichle.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/JavaScriptOOP/propulsionUnit.js",
+		"/C/Users/mike_laury/Desktop/SimpleGrid/styles.min.css",
+		"/C/Users/mike_laury/Desktop/SimpleGrid/index.html",
+		"/C/Users/mike_laury/Desktop/SimpleGrid/index.hmtl",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/WorkShop/Example-PSD/styles.less",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/WorkShop/Example-PSD/index.html",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/WorkShop/FullMoon/styles.css",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/WorkShop/FullMoon/index.html",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/WorkShop/FullMoon/styles.less",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/WorkShop/FullMoon/dsasda.less",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/User/JSLint.sublime-settings",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/WorkShop/FullMoon/style.less",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/WorkShop/FullMoon/FullMoon.sublime-workspace",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/WorkShop/simple/index.html",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/JavaScriptOOP/PropulsionUnit.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/JavaScriptOOP/index.html",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/User/JavaScript/forin.sublime-snippet",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/JavaScriptOOP/LandVehicle.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/JavaScriptOOP/Wheel.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/JavaScriptOOP/inherit.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/JavaScriptOOP/WaterVehicle.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/JavaScriptOOP/AmphibiousVehicle.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/JavaScriptOOP/PropelingNozzle.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/JavaScriptOOP/oop.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/JavaScriptOOP/Propeller.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/JavaScriptOOP/Vehicle.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/JavaScriptOOP/Propeller",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/AdvancedFunctions/MovingShapes/moving-shapes-module.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/AdvancedFunctions/SpecialConsole/special-console.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/AdvancedFunctions/SpecialConsole/index.html",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/AdvancedFunctions/MovingShapes/index.html",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/2.DivsMovingInCircle/scripts.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/2.DivsMovingInCircle/index.html",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/2.DivsMovingInCircle/styles.css",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/AdvancedFunctions/MovingShapes",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/AdvancedFunctions/DomModule/dom-module.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/AdvancedFunctions/DomModule/index.html",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/AdvancedFunctions/DomModule/dasda.php",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JSLint/jslint.js",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JsFormat/libs/merge_utils.py",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JsFormat/package-metadata.json",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/User/SideBarEnhancements/Open With/Side Bar.sublime-menu",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JSLint/JSLint.sublime-settings",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JSLint/JSLint.sublime-build",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/User/GoSublime.sublime-settings",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/GoSublime/USAGE.md",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/GoSublime/README.md",
+		"/D/Projects/Pong/index.html",
+		"/D/Projects/Pong/styles.css",
+		"/C/DOMManipulation/5.TagCloud/index.html",
+		"/C/DOMManipulation/5.TagCloud/scripts.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/5.TagCloud/index.html",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/5.TagCloud/scripts.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/4.ChangeColorOfTextArea/inputShim.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/4.ChangeColorOfTextArea/scripts.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/4.ChangeColorOfTextArea/index.html",
+		"/C/Users/mike_laury/Desktop/cloud.png",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/4.ChangeColorOfTextArea/jquery.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/2.DivsMovingInCircle/planets.png",
+		"/ChangeColorOfTextArea/scripts.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/1.RandomDivCreator/index.html",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/1.RandomDivCreator/scripts.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/3.QuerySelectorShims/index.html",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/3.QuerySelectorShims/scripts.js",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/2.DivsMovingInCircle/dsa.js",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/SublimeLinter/README.md",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JSLint/linter.js",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JSLint/Main.sublime-menu",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JSLint/package-metadata.json",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JSLint/.gitignore",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JSLint/Context.sublime-menu",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JSLint/Default.sublime-commands",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JSLint/Default.sublime-keymap",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JSLint/README.md",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JSLint/JSLint.py",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/JSLint/JSLint.pyc",
+		"/D/Projects/TelerikAcademy/WebDesign/JavaScriptPartTwo/DOMManipulation/scripts.js",
+		"/D/Projects/ChromeExtensions/FacebookExtendedEmoticons/index.html",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/WorkShop/styles.less",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/GoSublime/CHANGELOG.md",
+		"/D/Projects/ChromeExtensions/FacebookExtendedEmoticons/popup.html",
+		"/D/Projects/ChromeExtensions/FacebookExtendedEmoticons/styles.css",
+		"/D/Projects/ChromeExtensions/FacebookExtendedEmoticons/inject.js",
+		"/D/Projects/ChromeExtensions/FacebookExtendedEmoticons/scripts.js",
+		"/D/Projects/ChromeExtensions/FacebookExtendedEmoticons/manifest.json",
+		"/C/Users/mike_laury/Desktop/index.html",
+		"/C/Users/mike_laury/Desktop/jquery.js",
+		"/D/Projects/ChromeExtension/MyFirstExtension/jquery-1.9.1.min.js",
+		"/D/Projects/ChromeExtension/MyFirstExtension/popup.html",
+		"/D/Projects/ChromeExtension/MyFirstExtension/mystyles.css",
+		"/D/Projects/ChromeExtension/MyFirstExtension/myscript.js",
+		"/D/Projects/TelerikAcademy/Programming/HighQualityProgrammingCode/NamingIdentifiers/ConsolePrinter.cs",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/AdvancedWeb/exercises/exercise-1/ex-1.html",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/AdvancedWeb/exercises/exercise-1/styles.css",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/AdvancedWeb/exercises/exercise-4/style-sprites.css",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/AdvancedWeb/exercises/exercise-4/ex-4-solved.html",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/AdvancedWeb/exercises/exercise-4/ex-4.html",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/AdvancedWeb/exercises/exercise-3/styles.css",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/AdvancedWeb/exercises/exercise-3/ex-3.html",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/AdvancedWeb/exercises/exercise-3/styles-3.css",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/AdvancedWeb/exercises/exercise-2/ex-2.html",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/AdvancedWeb/exercises/exercise-3/styles-2.css",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/AdvancedWeb/exercises/exercise-3/styles-1.css",
+		"/D/Projects/TelerikAcademy/WebDesign/Slice&Dice/AdvancedWeb/common/css/styles.css",
+		"/D/wmm/execute.bat",
+		"/D/wmm/README.txt",
+		"/D/wmm/install moviemk dlls.cmd",
+		"/D/wmm/uninstall moviemk dlls.cmd",
+		"/D/wmm/install.cmd",
+		"/D/wmm/MOVIEMK.lnk",
+		"/C/Users/mike_laury/Desktop/execute.bat",
+		"/C/Users/mike_laury/Desktop/.gitignore",
+		"/D/Projects/TelerikAcademy/WebDesign/CMS/PHP-Basics/5.WordPress-Template/wp-content/themes/scenic_photo_two/front-page.php",
+		"/D/Projects/TelerikAcademy/WebDesign/CMS/PHP-Basics/5.WordPress-Template/wp-content/themes/scenic_photo_two/op-front-page.php",
+		"/D/Projects/TelerikAcademy/WebDesign/CMS/PHP-Basics/5.WordPress-Template/wp-content/themes/scenic_photo_two/contact.php",
+		"/D/Projects/TelerikAcademy/WebDesign/CMS/PHP-Basics/5.WordPress-Template/wp-includes/functions.wp-scripts.php",
+		"/C/Users/mike_laury/AppData/Roaming/Sublime Text 2/Packages/Wordpress/README.rst",
+		"/D/Projects/TelerikAcademy/WebDesign/CMS/PHP-Basics/3.Numbers-divisible-by-seven-and-three/fsd.html",
+		"/D/Projects/TelerikAcademy/WebDesign/CMS/PHP-Basics/4.Calculator/calculator.php",
+		"/D/Projects/TelerikAcademy/WebDesign/CMS/PHP-Basics/4.Calculator/validation.js",
+		"/D/Projects/TelerikAcademy/WebDesign/CMS/PHP-Basics/1.Wamp-installation/kur.html",
+		"/D/Projects/TelerikAcademy/WebDesign/CMS/PHP-Basics/4.Calculator/kur.html",
+		"/D/Projects/TelerikAcademy/WebDesign/CMS/PHP-Basics/4.Calculator/index.html",
+		"/D/Projects/TelerikAcademy/WebDesign/CMS/PHP-Basics/2.Hello-php/hello-php.php",
+		"/D/Projects/TelerikAcademy/WebDesign/CMS/PHP-Basics/1.Wamp-installation/Wamp-windows-menu.png",
+		"/D/Projects/TelerikAcademy/WebDesign/CMS/PHP-Basics/PHP-Basics.sublime-project"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Log",
+			"NaturalLogarithm",
+			"aAs",
+			"bAsFloat",
+			"/",
+			"*",
+			"MultiplyComparsion",
+			"acceleration",
+			"propul",
+			"propulsionUnits",
+			"CLOCWISE",
+			"spinDirection",
+			"this",
+			"fins",
+			"vehicleNS",
+			"SpinDirection",
+			"spinDirection",
+			"SpinDirection",
+			"spinDirection",
+			"SpinDirection",
+			"spinDirection",
+			"SpinDirection",
+			"spinDirection",
+			"SpinDirection",
+			"PropellerS",
+			"propellers",
+			"PropellerS",
+			"propellers",
+			"PropelingNozzle",
+			"engine",
+			"PropelingNozzle",
+			"propulsionUnit",
+			"propelingNozzle",
+			"PropelingNozzle",
+			"propelingNozzle",
+			"propellingNozzle",
+			"vehicleNS",
+			"vehilcleNS",
+			"propulsionUnits",
+			"vehicle",
+			"<a href=\"#\">Read more</a>",
+			"</h2>",
+			"img",
+			"Clear",
+			"inline",
+			"title",
+			"article",
+			"</aside>",
+			">\n",
+			"=\"#\"></",
+			"</article>",
+			"00adb3",
+			"reset",
+			"false",
+			"contacts",
+			"testimonials",
+			"gallery",
+			"portfolio",
+			"first_argument",
+			"method_name",
+			"Amphibian",
+			"AmphibiousVehicle",
+			"accelerate",
+			"for",
+			"{",
+			" {",
+			"Wheel",
+			"Propuls",
+			"Propulsiont",
+			"AmphibianMode",
+			"mode",
+			"AmphibianMode",
+			"changePropellerSpinDirection",
+			"changeSpinDirection",
+			"extend",
+			"propultionUnit",
+			"propulsionUnits",
+			"propulsionUnit",
+			"PropulsionUnit",
+			"Water",
+			"Land",
+			"true",
+			"propellers[propller]",
+			"propellers",
+			"propeller",
+			"AfterburnState",
+			"afterburnState",
+			"AfterburnState",
+			"af",
+			"AfterburnSwitch",
+			"afterburnSwitch",
+			"AfterburnSwitch",
+			"propelingNozzle",
+			"AirVehicle",
+			" ",
+			"this",
+			"i",
+			"d",
+			"i",
+			"hello",
+			"var self = this;",
+			"propellerProduceAcceleration",
+			"propulsionUnitProduceAcceleration",
+			"fins",
+			"ANTI_CLOCKWISE",
+			"PropelingNozzle",
+			"argument",
+			"ON",
+			"producedAcceleration",
+			"produceAcceleration",
+			"this",
+			"argument",
+			"PropulsionUnit",
+			"inherit",
+			"argument",
+			"Vehicle",
+			"argument",
+			"function_name",
+			" >",
+			"> ",
+			" >",
+			"log",
+			"error",
+			"writeLine",
+			"writeWarning",
+			"writeLine",
+			"palecholder",
+			"pattern"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"tagInCloud",
+			"",
+			"    ",
+			"\\\\",
+			"",
+			"\\\\",
+			"140",
+			"parseInt(numbers[index - 1])",
+			"parseInt(numbers[index])",
+			"[currCol]\n",
+			"makeUnorderedLiSt",
+			"makeListItem",
+			"makeUnorderedList",
+			"makeListItem",
+			"formattedString",
+			"stringToFormat",
+			"onClickExtractPalindromes",
+			"onClickExtractEmail",
+			"/",
+			"text.match",
+			"parseURL",
+			"onClickParseUrl",
+			"captured",
+			"text",
+			"result",
+			"substr",
+			"array",
+			"index",
+			"array",
+			"sequence",
+			"min",
+			"https://www.facebook.com/",
+			"<a href=\"#\">dolor</a>",
+			"<a href=\"#\">lorem</a>",
+			"<a href=\"#\">lorem</lorem>"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "vehicle.js",
+					"settings":
+					{
+						"buffer_size": 6122,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								26,
+								26
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"css": "C:\\Program Files\\nodejs\\node.exe",
+								"javascript": "C:\\Program Files\\nodejs\\node.exe",
+								"php": "C:\\wamp\\bin\\php\\php5.4.3\\php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 1241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1214,
+								1214
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+								"css": "C:\\Program Files\\nodejs\\node.exe",
+								"javascript": "C:\\Program Files\\nodejs\\node.exe",
+								"php": "C:\\wamp\\bin\\php\\php5.4.3\\php.exe"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": false,
+							"sublimelinter_mark_style": "outline",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 30.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.GoSublime-source-output":
+	{
+		"height": 88.0
+	},
+	"output.MarGo-output":
+	{
+		"height": 94.0
+	},
+	"output.exec":
+	{
+		"height": 88.0
+	},
+	"output.git":
+	{
+		"height": 94.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/wamp/www/telerik/PHP-Basics/thisproject.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 218.0,
+	"status_bar_visible": true
+}

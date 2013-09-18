@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Loops</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		a {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<h1>Enter a sequence of numbers separated with ","...</h1>
+	<input type="text" id="tb-sequence" />
+	<a href="#" id="btn-show-max-min" onclick="onClickShowMinAndMax()">Display min and max</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickShowMinAndMax() {
+			var sequenceInText = document.getElementById("tb-sequence").value;
+			if (document.getElementById("tb-sequence").value == "") 
+			{
+				alert("The input field is empty");
+			}
+			else
+			{
+				var sequence = sequenceInText.split(",");
+				var min = sequence[0];
+				var max = sequence[0];
+				for (var i = 1; i < sequence.length; i++) {
+					if (sequence[i] < min) {
+						min = sequence[i]
+					};
+					if (sequence[i] > max) {
+						max = sequence[i];
+					};
+				}
+				jsConsole.writeLine("max: " + max);
+				jsConsole.writeLine("min: " + min);
+			}
+    }
+	</script>
+</body>
+</html>

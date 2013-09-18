@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <style>
+        input[type="text"]
+        {
+            text-align: right;
+        }
+    </style>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="content">
+        <input placeholder="Enter number" type="text" id="a" />
+        <label for="a">*x<sup>2</sup> + </label>
+        <input placeholder="Enter number" type="text" id="b" />
+        <label for="b">*x + </label>
+        <input placeholder="Enter number" type="text" id="c" />
+        <a href="#" onclick="Solve()">Solve</a>
+    </div>
+    <script>
+        function Solve() {
+            var a = parseFloat(document.getElementById("a").value);
+            var b = parseFloat(document.getElementById("b").value);
+            var c = parseFloat(document.getElementById("c").value);
+            if (isNaN(a) || isNaN(b) || isNaN(c)) {
+                alert("Please input numbers in all textboxes!");
+            }
+            else {
+                var D = b * b - 4 * a * c;
+                if (a == 0) {
+                    alert("The result is x= " + (-c / b));
+                }
+                else {
+                    if (D < 0)
+                        alert("No real roots");
+                    else if (D == 0)
+                        alert("The result is x1=x2= " + (-b / 2 * a));
+                    else
+                        alert("The result is x1= " + ((-b - Math.sqrt(D)) / 2) + " x2= " + ((-b + Math.sqrt(D)) / 2));
+                }
+            }
+        }
+    </script>
+</body>
+</html>

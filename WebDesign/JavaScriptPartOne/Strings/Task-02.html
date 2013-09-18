@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Strings</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="tb-expression">Expression</label>
+	<input type="text" id="tb-expression" />
+	<a href="#" id="btn-check-expression" onclick="onClickGetExpression()">Check is expression valid</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickGetExpression() {
+			var expression = jsConsole.read("#tb-expression");
+			if (expression == "") {
+				alert("The field is empty");
+			}
+			else {
+				checkExpression(expression);
+			}
+    	}
+    	function checkExpression (expression) {
+    		var bracketsState = 0;
+            for (var character in  expression) {
+                if (expression[character] == '(') {
+                    bracketsState++;
+                }
+                else if (expression[character] == ')') {
+                    bracketsState--;
+                }
+                if (bracketsState < 0) {
+                    break;
+                }
+            }
+            if (bracketsState === 0) {
+                jsConsole.writeLine("All brackets are correct!");   
+            }
+            else {
+                jsConsole.writeLine("Incorrect expression!");   
+            }
+    	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body {
+    background-color: #A9A9A9;
+    font-family: 'Times New Roman';
+    font-size: 12pt;
+}
+h1 {
+    color: #FAFAD2;
+    text-align: center;
+    font-size: 48px;
+}
+nav {
+    text-align: center;
+    text-decoration-style: none;
+}
+ul {
+   list-style-type: none; 
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+.current {
+    background-color: #D3D3D3;
+}
+li:last-child a{
+    text-decoration: underline;
+}
+p a {
+    text-decoration: none;
+    color: black;
+}
+p a:hover {
+    text-decoration: underline;
+    color: black;
+}
+section + footer{
+    text-align: center;
+}
+article footer {
+    font-size: 12px;
+}
+article h1 {
+    text-align: left;
+    font-size: 30px;
+}

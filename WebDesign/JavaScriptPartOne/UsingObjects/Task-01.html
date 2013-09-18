@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Using objects</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<a href="#" id="btn-execute-js" onclick="onClickExecuteJavaScipt()">Execute script</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+
+	    function onClickExecuteJavaScipt() {
+	        firstPoint = new point(-3, 5);
+	        secondPoint = new point(6, 7);
+
+	        jsConsole.writeLine("The distance between " + firstPoint + " and " + secondPoint + " is " + calculateDistanceBetweenPoints(firstPoint, secondPoint));
+
+	        firstLine = new line(new point(3, 5), new point(5, 3));
+	        secondLine = new line(new point(6, -5), new point(-5, 3));
+	        thirdLine = new line(new point(-53, 25), new point(5, 13));
+
+            canLinesFormATrinagle(firstLine, secondLine, thirdLine);
+	    }
+
+	    function canLinesFormATrinagle(a, b, c) {
+	        if ((a + b > c) && (a + c > b) && (b + c > a)) {
+	            jsConsole.writeLine("Lines can form a trinagle.");
+	        }
+	        else {
+	            jsConsole.writeLine("Lines can't form a trinagle.");
+	        }
+	    }
+
+	    function calculateDistanceBetweenPoints(firstPoint, secondPoint) {
+	        return Math.sqrt(((firstPoint.x - secondPoint.x) * (firstPoint.x - secondPoint.x) + (firstPoint.y - secondPoint.y) * (firstPoint.y - secondPoint.y)));
+	    }
+
+		function point(x, y) {
+		    return {
+		        x: x,
+		        y: y,
+		        toString: function() { return "("+ this.x + ", " + this.y + ")"; }
+		    }
+		}
+        
+		function line(startPoint, endPoint) {
+		    startPoint: startPoint;
+		    endPoint: endPoint;
+		    getLength: return calculateDistanceBetweenPoints(startPoint, endPoint);
+	    }
+	</script>
+</body>
+</html>

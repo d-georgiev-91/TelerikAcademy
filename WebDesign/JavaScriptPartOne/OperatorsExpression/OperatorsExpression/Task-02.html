@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="content">
+        <label for="number">Integer number</label>
+        <input placeholder="Enter integer" type="text" id="number" />
+        <a href="#" onclick="BoolExpresion()">Is divisible by 5 and 7 at same time</a>
+    </div>
+    <script>
+        function BoolExpresion() {
+            var intNumber = parseInt(document.getElementById("number").value);
+            var expresionForDivision = (intNumber % 7 == 0) && (intNumber % 5 == 0);
+            alert(expresionForDivision);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript OOp</title>
+</head>
+<body>
+	<script src="vehicle.js"></script>
+	<script>
+		var frontLeftWheel = new vehilcleNS.Wheel(4.4);
+		var frontRightWheel = new vehilcleNS.Wheel(4.4);
+		var rearLeftWheel = new vehilcleNS.Wheel(4.4);
+		var rearRightWheel = new vehilcleNS.Wheel(4.4);
+
+		var wheels = [frontLeftWheel, frontRightWheel, rearLeftWheel, rearRightWheel];
+
+		var car = new vehilcleNS.LandVehicle(50, wheels);
+
+		car.accelerate();
+
+		var propelingNozzle = new vehilcleNS.PropelingNozzle(500, vehilcleNS.AfterburnerState.OFF);
+
+		var aircraft = new vehilcleNS.AirVehicle(1000, propelingNozzle);
+		aircraft.accelerate();
+		aircraft.switchAfterBurnersState();
+		aircraft.accelerate();
+
+
+		var propellers = [
+			new vehilcleNS.Propeller(15, vehilcleNS.SpinDirection.CLOCKWISE),
+			new vehilcleNS.Propeller(15, vehilcleNS.SpinDirection.CLOCKWISE),
+			new vehilcleNS.Propeller(3, vehilcleNS.SpinDirection.ANTI_CLOCKWISE),
+			new vehilcleNS.Propeller(3, vehilcleNS.SpinDirection.ANTI_CLOCKWISE)
+		];
+
+		var boat = new vehilcleNS.WaterVehicle(500, propellers);
+		boat.accelerate();
+		boat.changePropellerSpinDirection();
+		boat.accelerate();
+	</script>
+</body>
+</html>

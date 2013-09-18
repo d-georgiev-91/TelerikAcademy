@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Arrays</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		a {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<h1>Enter a numbers separated with "," with no whitespace...</h1>
+	<label for="tb-sequence">The sequence: </label>
+	<input type="text" id="tb-sequence" />
+	<a href="#" id="btn-show-max-seq" onclick="onClickFindMaxEqualSequence()">Find the max increasing sequence</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickFindMaxEqualSequence()
+		{
+			var sequenceNonSplited = document.getElementById("tb-sequence").value;
+			if (sequenceNonSplited == "")
+			{
+				alert("The input field is empty");
+			}
+			else
+			{
+				var sequence = sequenceNonSplited.split(",");
+				var equalSequenceLength = 1;
+	            var equalSequenceBeginning = 0;
+	            var maxSequenceLength = 1;
+	            var maxSequenceBeginning = 0;
+	            for (var i = 1; i < sequence.length; i++)
+	            {
+	                if (sequence[i - 1] >= sequence[i])
+	                {
+	                    equalSequenceLength = 1;
+	                    equalSequenceBeginning = i;
+	                }
+	                else
+	                {
+	                    equalSequenceLength++;
+	                    if (equalSequenceLength > maxSequenceLength)
+	                    {
+	                        maxSequenceLength = equalSequenceLength;
+	                        maxSequenceBeginning = equalSequenceBeginning;
+	                    }
+	                }
+	            }
+	            if (maxSequenceLength == 1)
+	            {
+	                jsConsole.writeLine("There is no maximal sequence of icnreasing elements.");
+	            }
+	            else
+	            {
+	                var maxIncreasingSequence = sequence.slice(maxSequenceBeginning, maxSequenceBeginning + maxSequenceLength);
+						jsConsole.writeLine(" The maximal sequence of equal elements is: {" + maxIncreasingSequence.join(",") + " }");
+	            }
+			}
+    	}
+	</script>
+</body>
+</html>

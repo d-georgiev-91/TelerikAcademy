@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="content">
+        <label for="number">Integer number</label>
+        <input placeholder="Enter integer" type="text" id="number" />
+        <a href="#" onclick="IsPrime()">Is third digit seven</a>
+    </div>
+    <script>
+        function IsPrime() {
+            var sieve = new Array(100);
+            for (var i = 2; i < sieve.length; i++) {
+                sieve[i] = true;
+            }
+            for (var i = 2; i * i < sieve.length; i++) {
+                if (sieve[i]) {
+                    for (var j = i; i * j < sieve.length; j++) {
+                        sieve[i * j] = false;
+                    }
+                }
+            }
+            var intNumber = parseInt(document.getElementById("number").value);
+            if (intNumber > 100 && intNumber < 1) {
+                alert("Invalid number");
+            }
+            else {
+                isPrime = sieve[intNumber];
+                alert(isPrime);
+            }
+        }
+    </script>
+</body>
+</html>

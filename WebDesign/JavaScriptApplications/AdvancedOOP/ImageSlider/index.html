@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image slider</title>
+	<link rel="stylesheet" href="slider/slider.css">
+</head>
+<body>
+	<div id="slider"></div>
+	<script src="slider/slider.js"></script>
+	<script type="text/javascript">
+		var Image = slider.Image;
+		var Slider = slider.Slider;
+
+		var image1 = Object.create(Image);
+		image1.init("parrot","imgs/image-1.jpg", "imgs/image-1-thumbnail.jpg");
+		var image2 = Object.create(Image);
+		image2.init("bear","imgs/image-2.jpg", "imgs/image-2-thumbnail.jpg");
+		var image3 = Object.create(Image);
+		image3.init("tiger","imgs/image-3.jpg", "imgs/image-3-thumbnail.jpg");
+		var image4 = Object.create(Image);
+		image4.init("cat and parrot","imgs/image-4.jpg", "imgs/image-4-thumbnail.jpg");
+		var image5 = Object.create(Image);
+		image5.init("fox","imgs/image-5.jpg", "imgs/image-5-thumbnail.jpg");
+		var image6 = Object.create(Image);
+		image6.init("dog","imgs/image-6.jpg", "imgs/image-6-thumbnail.jpg");
+		
+		var images = [image1, image2, image3, image4, image5, image6];
+
+		var slider = Object.create(Slider);
+		slider.init("#slider", images);
+	</script>
+</body>
+</html>

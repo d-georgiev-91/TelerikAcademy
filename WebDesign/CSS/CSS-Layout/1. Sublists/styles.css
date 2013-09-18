@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.sublist {
+    display: none;
+}
+ li:hover ul {
+    display: block;
+    margin-left: 10px;
+   
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+    /*font-weight: bold;*/
+}
+.sublist a {
+     color: #988888;
+}
+ul{
+    width: 79px;
+}
+a.main:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml-stylesheet type="text/xsl" href="Students.xslt"?>
+<students xmlns:students="urn:students">
+  <student>
+    <name>Pesho Peshev</name>
+    <sex>Male</sex>
+    <birth-date>12-Jan-1991</birth-date>
+    <phone>0888461653</phone>
+    <email>asdafa@gmail.com</email>
+    <course>Second</course>
+    <specialty>Informatics</specialty>
+    <faculty-number>44499</faculty-number>
+    <exams>
+      <exam>
+        <name>Algebra</name>
+        <tutor>Pencho</tutor>
+        <score>0</score>
+      </exam>
+      <exam>
+        <name>Geometry</name>
+        <tutor>Pena</tutor>
+        <score>400</score>
+      </exam>
+    </exams>
+  </student>
+  <student>
+    <name>Minka Svirkata</name>
+    <sex>Female</sex>
+    <birth-date>12-Dec-1991</birth-date>
+    <phone>0888412421</phone>
+    <email>dasdad@gmail.com</email>
+    <course>First</course>
+    <specialty>Informatics</specialty>
+    <faculty-number>44399</faculty-number>
+    <exams>
+      <exam>
+        <name>Algebra</name>
+        <tutor>Pencho</tutor>
+        <score>30</score>
+      </exam>
+    </exams>
+  </student>
+</students>

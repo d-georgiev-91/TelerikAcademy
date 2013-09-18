@@ -1,0 +1,16 @@
+body, img, div {
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: url(imgs/background.jpg);
+	background-size: 100%;
+}
+img {
+	-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+}
+.garbage:hover {
+	cursor: url("http://www.google.com/intl/en_ALL/mapfiles/openhand.cur"), move;
+}

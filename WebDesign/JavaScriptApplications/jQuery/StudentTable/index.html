@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Students Table</title>
+	<style>
+		#students-table {
+			border: 1px solid black;
+			border-spacing: 0;
+			border-collapse: collapse;
+		}
+		#students-table th, #students-table td {
+			border: 1px solid black;
+			padding: 5px 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="students"></div>
+	<script src="../jquery-1.10.1.min.js"></script>
+	<script src="students.js"></script>
+	<script>
+		var Student = student.Student;
+
+		var peter = new Student("Peter", "Ivanov", 3);
+		var milena = new Student("Milena", "Grigorova", 6);
+		var gergana = new Student("Gergana", "Borisova", 12);
+		var boyko = new Student("Boyko", "Petrov", 7);
+
+		var students = [peter, milena, gergana, boyko];
+
+		studentsRenderer.render(students, "#students");
+	</script>
+</body>
+</html>

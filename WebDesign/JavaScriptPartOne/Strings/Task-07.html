@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Strings</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		textarea
+		{
+			margin-left: 10px;	
+		}
+	</style>
+</head>
+<body>
+	<label for="tb-url">URL: </label>
+	<input type="text" id="tb-url" />
+	<a href="#" id="btn-remove-tags" onclick="onClickParseURL()">Parse URL</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickParseURL() {
+			var text = document.getElementById("tb-url").value;
+			if (text == "") {
+				alert("The field is empty.");
+			}
+			else {
+				jsConsole.writeLine("protocol: " + parseURL(text)['protocol']);
+				jsConsole.writeLine("server: " + parseURL(text)['server']);
+				jsConsole.writeLine("resource: " + parseURL(text)['resource']);
+			}
+		}
+		function parseURL(text) {
+			var protocolMatch = text.match(/[^:]*/);
+            var serverMatch = text.match(/\/([^\/][\w\.]*)/)[1];
+            var resourceMatch = text.match(/\b\/[^\/][\w.]*.+/);
+            return {
+            	protocol : protocolMatch,
+            	server : serverMatch,
+            	resource : resourceMatch
+            }
+		}
+	</script>
+</body>
+</html>

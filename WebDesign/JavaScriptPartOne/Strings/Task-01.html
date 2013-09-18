@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Strings</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<label for="tb-string">String</label>
+	<input type="text" id="tb-string" />
+	<a href="#" id="btn-reverse-string" onclick="onClickReverseString()">Reverse string</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickReverseString() {
+			var string = jsConsole.read("#tb-string");
+			if (string = "") {
+				alert("The field is empty");
+			}
+			else {
+				jsConsole.writeLine("The string in reverse: " + string.reverse());
+			}
+    	}
+    String.prototype.reverse=function(){return this.split("").reverse().join("");}
+	</script>
+</body>
+</html>

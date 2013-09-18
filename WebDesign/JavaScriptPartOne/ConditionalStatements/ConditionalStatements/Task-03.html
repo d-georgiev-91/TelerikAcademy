@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="content">
+        <label for="first">First integer</label>
+        <input type="text" id="first" />
+        <label for="second">Second integer</label>
+        <input type="text" id="second" />
+        <label for="third">Second integer</label>
+        <input type="text" id="third" />
+        <a href="#" onclick="GetSign()">Get sign of the product</a>
+    </div>
+    <script>
+        function GetSign() {
+            var firstNumber = parseInt(document.getElementById("first").value);
+            var secondNumber = parseInt(document.getElementById("second").value);
+            var thirdNumber = parseInt(document.getElementById("third").value);
+            if (isNaN(firstNumber) || isNaN(secondNumber) || isNaN(thirdNumber)) {
+                alert("Please input numbers in all textboxes!");
+            }
+            else {
+                firstNumber = parseFloat(firstNumber);
+                secondNumber = parseFloat(secondNumber);
+                thirdNumber = parseFloat(thirdNumber);
+                if (firstNumber > secondNumber) {
+                    if (firstNumber > thirdNumber) {
+                        alert(firstNumber + " is the biggest number");
+                    }
+                    else {
+                        alert(thirdNumber + " is the biggest number");
+                    }
+                }
+                else {
+                    if (secondNumber > thirdNumber) {
+                        alert(secondNumber + " is the biggest number");
+                    }
+                    else {
+                        alert(thirdNumber + " is the biggest number");
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

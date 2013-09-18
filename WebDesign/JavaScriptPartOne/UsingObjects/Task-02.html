@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Using objects</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<h1>Enter a characters separated with ","...</h1>
+	<label for="tb-array">The array: </label>
+	<input type="text" id="tb-array" />
+	<label for="tb-number">The number: </label>
+	<input type="text" id="tb-number" />
+	<a href="#" id="btn-show-max-min" onclick="onClickCompareArrays()">Compare</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickCompareArrays()
+		{
+		    var arrayNonSplited = document.getElementById("tb-array").value;
+		    var number = jsConsole.readInteger("#tb-number");
+		    if (arrayNonSplited == "" || isNaN(number)) {
+		        alert("The input field is empty or with incorrect data");
+		    }
+			else
+			{
+		        var array = arrayNonSplited.split(",");
+		        Array.prototype.remove = function (element) {
+		            var arr = [];
+		            var len = this.length;
+		            for (var i = 0; i < len; i++) {
+		                if (this[i] != element) {
+		                    arr.push(this[i]);
+		                }
+		            }
+		            return arr;
+		        };
+
+		        jsConsole.writeLine("The array before remove " + array.join(", "));
+		        array = array.remove(number);
+		        jsConsole.writeLine("The array after remove " + array.join(", "));
+			}
+    	}
+	</script>
+</body>
+</html>

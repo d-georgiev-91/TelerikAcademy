@@ -1,0 +1,80 @@
+﻿<!--Трябва да го пуснеш през сървър, съответно през Visual Studio, 
+ако не го пуснеш през Visual Studio не работи коректно. 
+Работи за http://localhost:43980/ с това Id иначе не тръгва.-->
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Google+ Video Login</title>
+        <style>
+            #authOps {
+                position: relative;
+                top: 0;
+            }
+            #authOps, #video-player-container
+            {
+                display: inline;
+            }
+            #profile-photo
+            {
+                width: 150px;
+                height: 150px;
+            }
+        </style>
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <script type="text/javascript">
+            (function () {
+                var po = document.createElement('script');
+                po.type = 'text/javascript';
+                po.async = true;
+                po.src = 'https://apis.google.com/js/client:plusone.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+        <script src="Scripts/jquery-2.0.2.min.js"></script>
+    </head>
+    <body>
+        <div id="gConnect">
+            <button class="g-signin"
+                    data-scope="https://www.googleapis.com/auth/plus.login"
+                    data-requestvisibleactions="http://schemas.google.com/AddActivity"
+                    data-clientId="369093933649.apps.googleusercontent.com"
+                    data-callback="onSignInCallback"
+                    data-theme="dark"
+                    data-cookiepolicy="single_host_origin">
+            </button>
+        </div>
+        <div id="authOps">
+            <button id="disconnect" >Disconnect your Google account from this app</button>
+            <div id="profile"></div>
+        </div>
+        <div id="loaderror">
+            This section will be hidden by JQuery. If you can see this message, you
+            may be viewing the file rather than running a web server.<br />
+            The sample must be run from http or https. See instructions at
+            <a href="https://developers.google.com/+/quickstart/javascript">
+                https://developers.google.com/+/quickstart/javascript
+            </a>
+        </div>
+        <script src="Scripts/auth.js"></script>
+        <div id="video-player-container">
+            <div id="player"></div>
+            <br />
+            <label for="load-video">ID: </label>
+            <input type="text" id="load-video" value="BBSmo4JW4mk"/>
+            <button id="single-video">Load video</button>
+            <button id="pause">Pause video</button>
+            <button id="play">Play video</button>
+            <br />
+            <label for="playlist">Playlist: </label><textarea id="playlist">aqmdG7dIzR0,fNddo-xLoL8,L2o5dnVuxiI</textarea>
+            <button id="load-playlist">Load playlist</button>
+            <button id="previous">Previous</button>
+            <button id="next">Next</button>
+            <button id="mute-unmute">Mute/Unmute</button>
+            <label for="volume">Volume</label>
+            <input type="range" id="volume" min="0" max="100">
+            <script src="Scripts/youtube-player.js"></script>
+        </div>
+    </body>
+</html>

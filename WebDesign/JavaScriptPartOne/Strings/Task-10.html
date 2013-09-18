@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Strings</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		textarea
+		{
+			margin-left: 10px;	
+		}
+	</style>
+</head>
+<body>
+	<label for="tb-text">URL: </label>
+	<textarea id="tb-text"></textarea>
+	<a href="#" id="btn-replace-tags" onclick="onClickExtractPalindromes()">Replace tags</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickExtractPalindromes() {
+			var text = document.getElementById("tb-text").value;
+			if (text == "") {
+				alert("The field is empty.");
+			}
+			else {
+				palindomes = extractPalindormes(text);
+				if (palindomes.length != 0) {
+					for (var palindome in palindomes) {
+						jsConsole.writeLine(palindomes[palindome]);
+					}
+				}
+				else {
+					jsConsole.writeLine("No palindomes found.");
+				}
+			}
+		} 
+		
+		function isPalindrome(string)
+        {
+        	var stringLen = string.length;
+           	var firstHalf = []; 
+           	for (var i = 0; i < parseInt(stringLen/2); i++) {
+           		firstHalf.push(string[i]);
+           	}
+           	var secondHalf = [];
+           	var secondHalfLen = parseInt(stringLen % 2) == 0 ? parseInt(stringLen / 2) : parseInt(stringLen / 2) + 1;
+           	for (var i = stringLen-1; i >= secondHalfLen; i--) {
+           		secondHalf.push(string[i]);
+           	}
+           	return firstHalf.join("") == secondHalf.join("");
+        }
+
+		function extractPalindormes(text) {
+			var words = text.split(/[\s,]+/);
+			var palindomes = [];
+			for(var word in words) {
+				if (isPalindrome(words[word]) == true) {
+					palindomes.push(words[word]);
+				}
+			}
+			return palindomes;
+		}
+	</script>
+</body>
+</html>

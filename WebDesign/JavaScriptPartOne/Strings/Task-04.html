@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Strings</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		textarea
+		{
+			margin-left: 10px;	
+		}
+	</style>
+</head>
+<body>
+	<label for="tb-text">Text:</label>
+	<textarea id="tb-text"></textarea>
+	<a href="#" id="btn-change-casing" onclick="onClickChangeCasing()">Change casing</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickChangeCasing() {
+			var text = document.getElementById("tb-text").value;
+			if (text == "") {
+				alert("The field is empty.");
+			}
+			else {
+				jsConsole.writeLine("The result is: " + changeCasing(text));
+			}
+		}
+
+		String.prototype.toMixedCase = function () {
+                    var size = this.length;
+                    var result = "";
+
+                    for (var i = 0; i < size; i++) {
+                        if (parseInt(i % 2) === 0) {
+                            result += this[i].toLowerCase();
+                        }
+                        else {
+                            result += this[i].toUpperCase();
+                        }
+                    }
+                    return result;
+        }
+
+		function changeCasing(text) {
+            var upperCasePattern = /<upcase>([^<>]+)<\/upcase>/g;
+            var lowerCasePattern = /<lowcase>([^<>]+)<\/lowcase>/g;
+            var mixedCasePattern = /<mixcase>([^<>]+)<\/mixcase>/g;
+
+            var result = text;
+
+            result = result.replace(upperCasePattern, function (match, captured) {
+                return captured.toUpperCase();
+            });
+
+            result = result.replace(lowerCasePattern, function (match, captured) {
+                return captured.toLowerCase();
+            });
+
+            result = result.replace(mixedCasePattern, function (match, captured) {
+                return captured.toMixedCase();
+            });
+
+            return result;
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random div creator</title>
+	<style>
+		input[type="text"] {
+			text-align: right;
+		}
+		#input {
+			position: relative;
+			width:100%;
+			height: 100%;
+			z-index: 100;
+		}
+	</style>
+</head>
+<body>
+	<form id="input">
+		<label for="count-of-divs" />Divs count: </label>
+		<input type="text" id="count-of-divs" />
+		<input type="button" onClick="createDivs();" value="Create divs" />
+	</form>
+	<div id="div-factory"></div>
+	<script src="scripts.js"></script>
+</body>
+</html>

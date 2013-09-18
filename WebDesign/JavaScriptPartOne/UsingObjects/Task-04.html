@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Using objects</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <a href="#" id="btn-execute-js" onclick="onClickExecuteJavaScipt()">Execute script</a>
+    <div id="js-console">
+    </div>
+    <script src="scripts/js-console.js">	  
+    </script>
+    <script>
+
+        function onClickExecuteJavaScipt() {
+
+            var marks = [
+            { subject: "JavaScript", score: 5.50 },
+            { subject: "OOP", score: 5.00 },
+            { subject: "Slice and Dice", score: 6.00 },
+            { subject: "Photoshop", score: 4.00 }];
+
+            var student = { name: "Doncho Minkov", marks: marks };
+
+            var propName = "name";
+
+            if (hasProperty(student, propName)) {
+                jsConsole.writeLine("The object has property " + propName);
+            }
+            else {
+                jsConsole.writeLine("The object doesn't have property " + propName);
+            }
+        }
+
+        function hasProperty(obj, propName) {
+            if (obj[propName]) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+    </script>
+</body>
+</html>

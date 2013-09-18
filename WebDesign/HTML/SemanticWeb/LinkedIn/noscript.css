@@ -1,0 +1,4 @@
+* { margin:0; padding:0 }
+html { background:silver }
+body { border:solid; background:white; margin-left:10em }
+ul { position:absolute; top:0; left:0; width:10em }

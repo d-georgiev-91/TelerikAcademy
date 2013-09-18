@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Arrays</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		a {
+			display: block;
+		}
+		strong {
+			display: block;
+		}
+		h1 {
+			padding: 0;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<h1>Enter a numbers separated with "," with no whitespace between...</h1>
+	<strong>Note that array must be sorted, or it will be sorted implicitly</strong>
+	<label for="tb-array">The array: </label>
+	<input type="text" id="tb-array" />
+	<label for="tb-number">The number to search: </label>
+	<input type="text" id="tb-number" />
+	<a href="#" id="btn-binary-search" onclick="onClickBinarySearchTheNumber()">Binary search</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickBinarySearchTheNumber()
+		{
+			var arrayNonSplited = document.getElementById("tb-array").value;
+			var searchedNumber = document.getElementById("tb-number").value;
+			if (arrayNonSplited == "" || searchedNumber =="")
+			{
+				alert("The input fields are empty.");
+			}
+			else
+			{	
+				var	array = arrayNonSplited.split(",");
+				array.sort(function(a, b) {return a - b});
+				jsConsole.writeLine("The binary search for the array [ " + array.join(", ") + " ]");
+				var iMax = array.length - 1;
+	            var iMin = 0;
+	            var iMid = 0;
+	            while (parseInt(iMin) <= parseInt(iMax))
+	            {	
+	                iMid = parseInt((iMin + iMax) / 2);
+	                if (parseInt(array[iMid]) == parseInt(searchedNumber))
+	                {
+	                    jsConsole.writeLine("The searched number has index " + iMid);
+	                    break;
+	                }
+	                else if (parseInt(array[iMid]) < parseInt(searchedNumber))
+	                {
+	                    iMin = iMid + 1;
+	                }
+	                else
+	                {
+	                    iMax = iMax - 1;
+	                }
+	            }
+	            if (parseInt(array[iMid]) != parseInt(searchedNumber))
+	            {
+	                jsConsole.writeLine("Number not found.");
+	            }
+			}
+    	}
+	</script>
+</body>
+</html>

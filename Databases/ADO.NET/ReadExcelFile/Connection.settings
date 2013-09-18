@@ -1,0 +1,10 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ReadExcelFile" GeneratedClassName="Connection">
+  <Profiles />
+  <Settings>
+    <Setting Name="ExcelConnectionString" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Projects\TelerikAcademy\Databases\ADO.NET\ReadExcelFile\bin\Debug\MyExcelFile.xls;
+Extended Properties="Excel 8.0;HDR=YES";</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

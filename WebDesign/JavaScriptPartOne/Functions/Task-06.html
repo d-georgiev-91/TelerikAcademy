@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Functions</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		a {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<h1>Enter a numbers separated with "," with no whitespace...</h1>
+	<label for="tb-array">The array: </label>
+	<input type="text" id="tb-array" />
+	<label for="tb-index">The index: </label>
+	<input type="text" id="tb-index" />
+	<a href="#" id="btn-bigger-than-neighbours" onclick="onCheckBiggerThanNeighbours()">Display is bigger than neigbours</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onCheckBiggerThanNeighbours()
+		{
+			var arrayNonSplited = document.getElementById("tb-array").value;
+			var index = jsConsole.readInteger("#tb-index");
+			if (arrayNonSplited == "" || isNaN(index))
+			{
+				alert("The input field is empty or with incorrect data");
+			}
+			else
+			{
+				var array = arrayNonSplited.split(",");
+				if (biggerThanNeigbours(array, index)) 
+				{
+					jsConsole.writeLine("The element is bigger than it's neigbours.");
+				}
+				else
+				{
+					jsConsole.writeLine("The element is not bigger than it's neigbours.");
+				}
+			}
+    	}
+    	function biggerThanNeigbours(array, index)
+        {
+            if (index == 0)
+            {
+                return parseInt(array[index]) > parseInt(array[index + 1]);
+            }
+            else if (index == array.Length - 1)
+            {
+                return parseInt(array[index]) > parseInt(array[index - 1]);
+            }
+            else
+            {
+                return (parseInt(array[index]) > parseInt(array[index - 1])) && (parseInt(array[index]) > parseInt(array[index + 1]));
+            }
+        }
+	</script>
+</body>
+</html>

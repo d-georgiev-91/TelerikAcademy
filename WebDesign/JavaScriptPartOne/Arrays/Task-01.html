@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Loops - while loop</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+	<a href="#" id="btn-print-to-n" onclick="onClickInitializeArray()">Initialize array</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickInitializeArray() {
+			var array = new Array();
+            for (var i = 0; i < 20; i++) {
+            	array.push(i*5);7
+		}
+		jsConsole.write(array.join(", "));
+    }
+	</script>
+</body>
+</html>

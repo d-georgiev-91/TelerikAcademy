@@ -1,0 +1,8 @@
+table, td, th{
+    border-collapse: collapse;
+    border: 2px solid #a8a8a8;
+    padding: 3px;
+}
+.total{
+    font-weight: bold;
+}

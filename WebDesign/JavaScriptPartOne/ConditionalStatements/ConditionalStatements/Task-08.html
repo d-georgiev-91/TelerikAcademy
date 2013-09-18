@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+        #button
+        {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="textField">
+        <label for="FirstVariable">First variable</label>
+        <input type="text" id="FirstVariable" />
+        <label for="SecondVariable">Second variable</label>
+        <input type="text" id="SecondVariable" />
+        <label for="ThirdVariable">Third variable</label>
+        <input type="text" id="ThirdVariable" />
+        <label for="FourthVariable">Fourth variable</label>
+        <input type="text" id="FourthVariable" />
+        <label for="FifthVariable">Fifth variable</label>
+        <input type="text" id="FifthVariable" />
+    </div>
+    <div id="button">
+        <a href="#" onclick="TheGreatestVariable()">The greatest variable</a>
+    </div>
+    <script>
+        function TheGreatestVariable() {
+            var a = parseInt(document.getElementById("FirstVariable").value);
+            var b = parseInt(document.getElementById("SecondVariable").value);
+            var c = parseInt(document.getElementById("ThirdVariable").value);
+            var d = parseInt(document.getElementById("FourthVariable").value);
+            var e = parseInt(document.getElementById("FifthVariable").value);
+            if (a + b + c + d + e == 0) {
+                alert("There is some subset with sum 0.");
+            }
+            else if ((a + b + c + d == 0) || (a + b + c + e == 0) || (a + b + d + e == 0) || (b + c + d + e == 0) || (a + c + d + e == 0)) {
+                alert("There is some subset with sum 0.");
+            }
+            else if ((a + b + c == 0) || (a + b + d == 0) || (a + b + e == 0) || (a + c + d == 0) || (a + c + e == 0) || (a + d + e == 0) || (b + c + d == 0) || (b + c + e == 0) || (b + d + e == 0) || (c + d + e == 0)) {
+                alert("There is some subset with sum 0.");
+            }
+            else if ((a + b == 0) || (a + c == 0) || (a + d == 0) || (a + e == 0) || (b + c == 0) || (b + d == 0) || (b + e == 0) || (c + d == 0) || (c + e == 0) || (d + e == 0)) {
+                alert("There is some subset with sum 0.");
+            }
+            else if ((a == 0) || (b == 0) || (c == 0) || (d == 0) || (e == 0)) {
+                alert("There is some subset with sum 0.");
+            }
+            else {
+                alert("There is no subset with sum 0.");
+            }
+        }
+    </script>
+</body>
+</html>

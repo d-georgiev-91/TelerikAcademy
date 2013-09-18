@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+	<title>Online map toursim</title>
+	<style>
+		#map-canvas {
+			width: 800px;
+			height: 600px;
+		}
+		#map-canvas, #cities-list, #map-nav {
+			display: inline-block;
+		}
+		#cities-list {
+			top: 0;
+			position: absolute;
+			list-style: none;
+		}
+	</style>
+	<script src="jquery-1.10.1.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+</head>
+<body>
+	<div id="map-canvas"></div>
+	<ul id="cities-list">
+		<li><a href="#">Sofia</a></li>
+		<li><a href="#">Cairo</a></li>
+		<li><a href="#">Melbourne</a></li>
+		<li><a href="#">Moscow</a></li>
+		<li><a href="#">Washington</a></li>
+		<li><a href="#">Brasília</a></li>
+		<li><a href="#">London</a></li>
+		<li><a href="#">Paris</a></li>
+		<li><a href="#">Tokyo</a></li>
+		<li><a href="#">Rome</a></li>
+	</ul>
+	<nav id="map-nav">
+		<button id="prev">Previous</button>
+		<button id="next">Next</button>
+	</nav>
+	<script src="map-tourism.js"></script>
+</body>
+</html>

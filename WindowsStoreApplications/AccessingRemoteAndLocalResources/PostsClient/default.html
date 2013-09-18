@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>PostsClient</title>
+
+        <!-- WinJS references -->
+        <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+        <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+        <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+        <!-- PostsClient references -->
+        <link href="/css/default.css" rel="stylesheet" />
+        <script src="js/data.js"></script>
+        <script src="/js/default.js"></script>
+    </head>
+    <body>
+        <ul id="mediumListIconTextTemplate" data-win-control="WinJS.Binding.Template">
+            <li>
+                <label id="author" for="content" data-win-bind="innerText: Author ">Unknown</label>
+                <span>: </span>
+                <span id="content" data-win-bind="innerText: Content">Unknown</span>
+            </li>
+        </ul>
+        <div data-win-control="WinJS.UI.ListView"
+             data-win-options="{itemDataSource : Data.posts.dataSource, 
+             itemTemplate: select('#mediumListIconTextTemplate'),
+             layout : {type: WinJS.UI.ListLayout}}">
+        </div>
+
+        <div>
+            <label for="post-author">
+                Name:
+                <input id="post-author" type="text" />
+            </label>
+            <label for="post-text">
+                Post:
+                <input id="post-text" type="text" />
+            </label>
+            <button id="publish-post">Post</button>
+        </div>
+
+        <div id="system-messages"></div>
+    </body>
+</html>

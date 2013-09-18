@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Arrays</title>
+	<link href="styles/js-console.css" rel="stylesheet" />
+	<style type="text/css">
+		a {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<h1>Enter a numbers separated with "," with no whitespace...</h1>
+	<label for="tb-array">The array: </label>
+	<input type="text" id="tb-array" />
+	<label for="tb-number">The number: </label>
+	<input type="text" id="tb-number" />
+	<a href="#" id="btn-return-freq" onclick="onClickGetNumberFreq()">Display number frequency</a>
+	<div id="js-console">
+	</div>
+	<script src="scripts/js-console.js">	  
+	</script>
+	<script>
+		function onClickGetNumberFreq()
+		{
+			var arrayNonSplited = document.getElementById("tb-array").value;
+			var number = jsConsole.readInteger("#tb-number");
+			if (arrayNonSplited == "" || isNaN(number))
+			{
+				alert("The input field is empty or with incorrect data");
+			}
+			else
+			{
+				var array = arrayNonSplited.split(",");
+				jsConsole.writeLine("The frequency of " + number + " is " + getNumberFreq(array, number));
+			}
+    	}
+    	function getNumberFreq(array, number)
+    	{
+    		var frequency = 0;
+    		for (var item in array)
+    		{
+    			if (parseInt(array[item]) == number) 
+				{
+					frequency++;
+				}
+    		}
+    		return frequency;
+    	}
+	</script>
+</body>
+</html>

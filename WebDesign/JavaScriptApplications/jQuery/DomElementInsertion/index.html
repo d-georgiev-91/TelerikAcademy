@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Insert element after or before</title>
+</head>
+<body>
+	<div>
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+		<div>4</div>
+		<div id="speical-item">5</div>
+		<div>6</div>
+		<div>8</div>
+		<div>9</div>
+		<div>10</div>
+		<div>11</div>
+	</div>
+	<script src="../jquery-1.10.1.min.js"></script>
+	<script src="inserter.js"></script>
+	<script type="text/javascript">
+		var firstDiv = document.createElement("div");
+		firstDiv.id = "first-div";
+		firstDiv.innerHTML = "before div";
+		inserter.insertBefore("#speical-item", firstDiv);
+		var secondDiv = document.createElement("div");
+		secondDiv.id = "second-div";
+		secondDiv.innerHTML = "after div";
+		inserter.insertAfter("#speical-item", secondDiv);
+	</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Strings</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body onload="onBodyLoad()">
+    <fieldset style="width: 200px; margin-bottom: 20px;">
+        <legend><strong>The template</strong></legend>
+        <div data-type="template" id="list-item">
+        <strong>-{name}-</strong> <span>-{age}-</span>
+    </div>
+    </fieldset>
+    <div id="js-console"></div>
+    <script src="scripts/js-console.js"></script>
+    <script>
+        function onBodyLoad(input) {
+            var template = document.getElementById("list-item").innerHTML;
+            template = template.trim();
+            var people = [
+                { name: "Peter", age: 14 },
+                { name: "Ivan", age: 50 },
+                { name: "Pesho", age: 21 }
+            ];
+            var pattern = /-{(\w+)}-/g;
+            var ul = makeUnorderedList(people, template, pattern);
+            jsConsole.writeLine(ul);
+        }
+
+        function makeListItem(obj, template, pattern) {
+            var result = "<li>";
+            result += template.replace(pattern, function (match, capture) { return obj[capture]; });
+            result += "</li>";
+            return result;
+        }
+
+        function makeUnorderedList(objects, template, pattern) {
+            var ul = "";
+            ul += "<ul>";
+            var len = objects.length;
+            for (var index = 0; index < len; index++) {
+                var listItem = makeListItem(objects[index], template, pattern);
+                ul += listItem;
+            }
+            ul += "</ul>";
+            return ul
+        }
+    </script>
+</body>
+</html>

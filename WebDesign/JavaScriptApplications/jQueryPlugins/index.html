@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tree view plugin</title>
+	<script src="jquery-1.10.1.js"></script>
+	<script src="tree-view-plugin.js"></script>
+	<style>	
+		.tree-view, .subtree-view {
+			list-style: none;
+		}
+		
+		.tree-view a {
+			text-decoration: none;
+			color: black;
+		}
+
+		.subtree-root:before {
+			content: "\2023";
+			color: green;
+		}
+	</style>
+</head>
+<body>
+	<ul class="tree-view">
+		<li><a href="#">Item</a></li>
+		<li><a href="#">Item</a></li>
+		<li>
+			<a href="#">Item</a>
+			<ul>
+				<li><a href="#">Sub item</a></li>
+				<li>
+					<a href="#">Sub item</a>
+					<ul>
+						<li><a href="#">Sub item</a></li>
+						<li><a href="#">Sub item</a></li>
+					</ul>
+				</li>
+			</ul>
+
+		</li>
+		<li><a href="#">Item</a></li>
+		<li><a href="#">Item</a></li>
+	</ul>
+	<script type="text/javascript">
+	    $(document).ready(function() {
+	      $(".tree-view").treeView();
+	    });
+  	</script>
+</body>
+</html>

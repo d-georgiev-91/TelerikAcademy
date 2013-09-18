@@ -1,0 +1,6 @@
+3. What is the command and its parameters to mount a windows fs in such a way that all
+files and dirs in it will be owned by user "naso" and group "students".
+[root@acer Downloads]# id naso
+uid=1001(naso) gid=1001(students) groups=1001(students)
+[root@acer Downloads]# mkdir /windows
+[root@acer /]# mount -o uid=naso,gid=students,umask=0007 /dev/sda2 /windows/

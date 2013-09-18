@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>RepaterControl</title>
+
+        <!-- WinJS references -->
+        <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+        <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+        <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+        <!-- RepaterControl references -->
+        <link href="/css/default.css" rel="stylesheet" />
+        <script src="js/data.js"></script>
+        <script src="js/repeater-control.js"></script>
+        <script src="/js/default.js"></script>
+    </head>
+    <body>
+
+        <div id="input">
+            <fieldset>
+                <legend>Add a computer</legend>
+                <label for="computer-name">
+                    Computer name:
+                    <input id="computer-name" type="text" />
+                </label>
+                <label for="computer-price">
+                    Computer price:
+                    <input id="computer-price" type="text" />
+                </label>
+                <label for="computer-manufacturer">
+                    Manufacturer name:
+                    <input id="computer-manufacturer" type="text" />
+                </label>
+                <label for="processor-name">
+                    Processor name:
+                    <input id="processor-name" type="text" />
+                </label>
+                <label for="processor-freq">
+                    Processor frequency:
+                    <input id="processor-freq" type="text" />
+                </label>
+                <button id="store-computer">Save computer</button>
+            </fieldset>
+        </div>
+
+        <div id="headerTemplate" data-win-control="WinJS.Binding.Template"
+             style="display: none">
+            <div class="simpleHeaderItem">
+                <h1 data-win-bind="innerText: manufacturer"></h1>
+            </div>
+        </div>
+
+        <div id="mediumListIconTextTemplate"
+             data-win-control="WinJS.Binding.Template"
+             style="display: none">
+            <div class="mediumListIconTextItem">
+                <dl>
+                    <dt>Name</dt>
+                    <dd data-win-bind="innerText: name"></dd>
+                    <dt>Price</dt>
+                    <dd>
+                        <span>$</span><span data-win-bind="innerText: price"></span>
+                    </dd>
+                    <dt>Processor</dt>
+                    <dd>
+                        <dl>
+                            <dt>Model</dt>
+                            <dd data-win-bind="innerText: processor.modelName"></dd>
+                            <dt>Frequency</dt>
+                            <dd data-win-bind="innerText: processor.frequencyGHz"></dd>
+                        </dl>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+
+        <div id="groupedListView"
+             data-win-control="WinJS.UI.ListView"
+             data-win-options="{itemDataSource: Data.groupedComputersList.dataSource, 
+             itemTemplate: select('#mediumListIconTextTemplate'),
+             groupDataSource: Data.groupedComputersList.groups.dataSource,
+             groupHeaderTemplate: select('#headerTemplate'),
+             layout: {type: WinJS.UI.GridLayout}}">
+        </div>
+
+        <!--    <div id="groupedListView"
+        data-win-control="WinJS.UI.ListView"
+        data-win-options="{itemDataSource: Data.groupedComputersList.dataSource, 
+        groupDataSource: Data.groupedComputersList.groups.dataSource, 
+        layout: {type: WinJS.UI.GridLayout}}">
+        </div>-->
+    </body>
+</html>

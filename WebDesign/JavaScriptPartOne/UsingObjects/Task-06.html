@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Using objects</title>
+    <link href="styles/js-console.css" rel="stylesheet" />
+</head>
+<body>
+    <a href="#" id="btn-execute-js" onclick="onClickExecuteJavaScipt()">Execute script</a>
+    <div id="js-console">
+    </div>
+    <script src="scripts/js-console.js">	  
+    </script>
+    <script>
+
+        function onClickExecuteJavaScipt() {
+
+            var persons =  [
+                new Person("Gosho", "Petrov", 32),
+                new Person("Bay", "Ivan",  81),
+                new Person("Bay", "Mangau",  31),
+                new Person("Kiro", "Kirov", 22),
+                new Person("Pencho", "Penchev",  22),
+                new Person("King", "Kiro", 50),
+            ];
+
+            var groupedByFname = group(persons, "firstName");
+            var groupedByLname = group(persons, "lastName");
+            var groupedByAge = group(persons, "age");
+
+            for (var grp in groupedByFname) {
+                jsConsole.writeLine("Group by " + grp + ": " + groupedByFname[grp]);
+            }
+
+            for (var grp in groupedByLname) {
+                jsConsole.writeLine("Group by " + grp + ": " + groupedByLname[grp]);
+            }
+
+            for (var grp in groupedByAge) {
+                jsConsole.writeLine("Group by age " + grp + ": " + groupedByAge[grp]);
+            }
+        }
+
+        function Person(firstName, lastName, age) {
+            return {
+                firstName : firstName,
+                lastName : lastName,
+                age : age,
+                toString: function () { return "[first name: " + this.firstName + " last name: " + this.lastName + " age: " + this.age + "]";}
+            }
+        }
+
+        function group(persons, groupBy) {
+        theGroup = {};
+            
+        persons.map(function (person) {
+            if (!theGroup[person[groupBy]])
+                theGroup[person[groupBy]] = new Array();
+            theGroup[person[groupBy]].push(person);
+        });
+        return theGroup;
+        }
+    </script>
+</body>
+</html>
