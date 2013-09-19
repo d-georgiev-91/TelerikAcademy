@@ -1,0 +1,473 @@
+﻿<Window x:Class="Calculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        Title="Calculator" 
+        Height="323" 
+        Width="228"
+        MinHeight="323"
+        MinWidth="228"
+        MaxHeight="323"
+        MaxWidth="228">
+    <Grid>       
+        <StackPanel FocusManager.FocusedElement="{Binding ElementName=TextBoxNumbersContext}">
+            <StackPanel.Background>
+                <LinearGradientBrush 
+                    StartPoint="0,0" 
+                    EndPoint="0,1"
+                    SpreadMethod="Pad" 
+                    ColorInterpolationMode="SRgbLinearInterpolation" >
+                    <GradientStop Color="#F0F0F0" Offset="0" />
+                    <GradientStop Color="#D9E4F1" Offset="1" />
+                </LinearGradientBrush>
+            </StackPanel.Background>
+
+            <Border BorderBrush="#F0F0F0" BorderThickness="0, 0, 0, 1">
+                <Border BorderBrush="#E8E9EA" BorderThickness="0, 0, 0, 1">
+                    <Menu Background="#F5F6F7">
+                        <MenuItem Header="_View">
+                        </MenuItem>
+                        <MenuItem Header="_Edit" />
+                        <MenuItem Header="_Help" />
+                    </Menu>
+                </Border>
+            </Border>
+
+            <TextBox Name="TextBoxNumbersContext"
+                     CaretIndex="{x:Static System:Int32.MaxValue}"
+                     BorderBrush="#8E9CAD"
+                     Margin="0, 12, 0, 5"  
+                     Width="190" 
+                     Height="50"
+                     TextAlignment="Right"
+                     FontSize="18"
+                     Text="0"
+                     Cursor="None"
+                     Padding="24, 18, 2, 10">
+                <TextBox.Background>
+                    <LinearGradientBrush 
+                        StartPoint="0,0" 
+                        EndPoint="0,1" SpreadMethod="Pad" 
+                        ColorInterpolationMode="SRgbLinearInterpolation" >
+                        <GradientStop Color="#E5EEFB" Offset="0" />
+                        <GradientStop Color="#FFFFFF" Offset="1" />
+                    </LinearGradientBrush>
+                </TextBox.Background>
+            </TextBox>
+
+            <Grid Width="190">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="38"/>
+                    <ColumnDefinition Width="38"/>
+                    <ColumnDefinition Width="38"/>
+                    <ColumnDefinition Width="38"/>
+                    <ColumnDefinition Width="38"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="31"/>
+                    <RowDefinition Height="31"/>
+                    <RowDefinition Height="31"/>
+                    <RowDefinition Height="31"/>
+                    <RowDefinition Height="31"/>
+                    <RowDefinition Height="31"/>
+                </Grid.RowDefinitions>
+
+                <Button Grid.Row="0" Grid.Column="0" Margin="0, 0, 4.5, 3.5" BorderBrush="#8797AA">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#D4E0ED" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    MC
+                </Button>
+                <Button Grid.Row="0" Grid.Column="1" Margin="0.5, 0, 3.5, 3.5" BorderBrush="#8797AA">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#D4E0ED" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    MR
+                </Button>
+                <Button Grid.Row="0" Grid.Column="2" Margin="1.5, 0, 2.5, 3.5" BorderBrush="#8797AA">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#D4E0ED" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    MS
+                </Button>
+                <Button Grid.Row="0" Grid.Column="3" Margin="2.5, 0, 1.5, 3.5" BorderBrush="#8797AA">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#D4E0ED" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    M+
+                </Button>
+                <Button Grid.Row="0" Grid.Column="4" Margin="3.5, 0, 0, 3.5" BorderBrush="#8797AA">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#D4E0ED" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                    M-
+                </Button>
+
+                <Button Grid.Row="1" Grid.Column="0" Margin="0, 1, 4.5, 2.5" FontSize="20" BorderBrush="#8797AA" Content="←" Click="OnButtonClickDelete">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F0F6FB" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="1" Grid.Column="1" Margin="0.5, 1, 3.5, 2.5" BorderBrush="#8797AA">
+                    CE
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F0F6FB" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="1" 
+                        Grid.Column="2" 
+                        Margin="1.5, 1, 2.5, 2.5" 
+                        BorderBrush="#8797AA"
+                        Content="C"
+                        Click="OnClickClearContainer">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F0F6FB" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="1" 
+                        Grid.Column="3" 
+                        Margin="2.5, 1, 1.5, 2.5" 
+                        BorderBrush="#8797AA"
+                        Content="±"
+                        Click="OnClickChangeSign">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F0F6FB" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="1" 
+                        Grid.Column="4" 
+                        Margin="3.5, 1, 0, 2.5" 
+                        BorderBrush="#8797AA" 
+                        Content="√"
+                        Click="OnClickDoMathOperation">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F0F6FB" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="2" 
+                        Grid.Column="0" 
+                        Margin="0,2,4,0" 
+                        BorderBrush="#8797AA" 
+                        Height="28" 
+                        VerticalAlignment="Top" 
+                        Content="7"
+                        Click="OnButtonClickEnterNumber">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F7FBFF" Offset="0" />
+                            <GradientStop Color="#EBF3F9" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="2" 
+                        Grid.Column="1" 
+                        Margin="0.5, 2, 3.5, 1.5" 
+                        BorderBrush="#8797AA"
+                        Content="8"
+                        Click="OnButtonClickEnterNumber">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F7FBFF" Offset="0" />
+                            <GradientStop Color="#EBF3F9" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="2" 
+                        Grid.Column="2" 
+                        Margin="1.5, 2, 2.5, 1.5" 
+                        BorderBrush="#8797AA"
+                        Content="9"
+                        Click="OnButtonClickEnterNumber">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F7FBFF" Offset="0" />
+                            <GradientStop Color="#EBF3F9" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="2" Grid.Column="3" Margin="2.5, 2, 1.5, 1.5" BorderBrush="#8797AA">
+                    /
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F0F6FB" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="2" Grid.Column="4" Margin="3.5, 2, 0, 1.5" BorderBrush="#8797AA">
+                    %
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F0F6FB" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="3" 
+                        Grid.Column="0" 
+                        Margin="0, 3, 4.5, 0.5" 
+                        BorderBrush="#8797AA"
+                        Content="4"
+                        Click="OnButtonClickEnterNumber">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F7FBFF" Offset="0" />
+                            <GradientStop Color="#EBF3F9" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="3" 
+                        Grid.Column="1" 
+                        Margin="0.5, 3, 3.5, 0.5" 
+                        BorderBrush="#8797AA"
+                        Content="5"
+                        Click="OnButtonClickEnterNumber">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F7FBFF" Offset="0" />
+                            <GradientStop Color="#EBF3F9" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="3"
+                        Grid.Column="2"
+                        Margin="1.5, 3, 2.5, 0.5"
+                        BorderBrush="#8797AA"
+                        Content="6"
+                        Click="OnButtonClickEnterNumber">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F7FBFF" Offset="0" />
+                            <GradientStop Color="#EBF3F9" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="3" Grid.Column="3" Margin="2.5, 3, 1.5, 0.5" BorderBrush="#8797AA">
+                    *
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F0F6FB" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="3" Grid.Column="4" Margin="3.5, 3, 0, 0.5" BorderBrush="#8797AA">
+                    1/x
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F0F6FB" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="4" 
+                        Grid.Column="0" 
+                        Margin="0, 4, 4.5, 0" 
+                        BorderBrush="#8797AA"
+                        Content="1"
+                        Click="OnButtonClickEnterNumber">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F7FBFF" Offset="0" />
+                            <GradientStop Color="#EBF3F9" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="4" 
+                        Grid.Column="1" 
+                        Margin="0.5, 4, 3.5, 0" 
+                        BorderBrush="#8797AA"
+                        Content="2"
+                        Click="OnButtonClickEnterNumber">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F7FBFF" Offset="0" />
+                            <GradientStop Color="#EBF3F9" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="4" 
+                        Grid.Column="2" 
+                        Margin="1.5, 4, 2.5, 0" 
+                        BorderBrush="#8797AA" 
+                        Content="3"
+                        Click="OnButtonClickEnterNumber">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F7FBFF" Offset="0" />
+                            <GradientStop Color="#EBF3F9" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="4" Grid.Column="3" Margin="2.5, 4, 1.5, 0" BorderBrush="#8797AA">
+                    -
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F0F6FB" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="4" Grid.Column="4" Grid.RowSpan="2" Margin="3.5, 4, 0, -1.5" BorderBrush="#8797AA">
+                    =
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F0F6FB" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+
+                <Button Grid.Row="5" 
+                        Grid.Column="0" 
+                        Grid.ColumnSpan="2"
+                        Margin="0,5,3.5,-1.5"
+                        BorderBrush="#8797AA"
+                        Content="0"
+                        Click="OnButtonClickEnterNumber">
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F7FBFF" Offset="0" />
+                            <GradientStop Color="#EBF3F9" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="5" Grid.Column="2" Margin="2,5,2,-1.5" BorderBrush="#8797AA">
+                    ,
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F7FBFF" Offset="0" />
+                            <GradientStop Color="#EBF3F9" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+                <Button Grid.Row="5" Grid.Column="3" Margin="2.5,5,1.5,-1.5" BorderBrush="#8797AA">
+                    +
+                    <Button.Background>
+                        <LinearGradientBrush 
+                            StartPoint="0,0" 
+                            EndPoint="0,1" SpreadMethod="Pad" 
+                            ColorInterpolationMode="SRgbLinearInterpolation" >
+                            <GradientStop Color="#F0F6FB" Offset="0" />
+                            <GradientStop Color="#D7E2EF" Offset="1" />
+                        </LinearGradientBrush>
+                    </Button.Background>
+                </Button>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Window>

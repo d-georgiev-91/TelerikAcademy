@@ -1,0 +1,148 @@
+﻿<Window x:Class="ThirdTask.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <TabControl>
+            <TabItem Header="First Task">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <WrapPanel Grid.Row="0">
+                        <Border BorderBrush="Black" BorderThickness="2" Margin="10">
+                            <TextBlock TextAlignment="Center" VerticalAlignment="Center">Some text</TextBlock>
+                        </Border>
+                        <Border BorderBrush="Black" BorderThickness="2" Margin="10">
+                            <TextBlock TextAlignment="Center" VerticalAlignment="Center">Some text</TextBlock>
+                        </Border>
+                        <Border BorderBrush="Black" BorderThickness="2" Margin="10">
+                            <TextBlock TextAlignment="Center" VerticalAlignment="Center">Some text</TextBlock>
+                        </Border>
+                        <Border BorderBrush="Black" BorderThickness="2" Margin="10">
+                            <StackPanel>
+                                <Border BorderBrush="Black" BorderThickness="2" Margin="10">
+                                    <TextBlock TextAlignment="Center" VerticalAlignment="Center">Some text</TextBlock>
+                                </Border>
+                                <Border BorderBrush="Black" BorderThickness="2" Margin="10">
+                                    <TextBlock TextAlignment="Center" VerticalAlignment="Center">Some text</TextBlock>
+                                </Border>
+                                <Border BorderBrush="Black" BorderThickness="2" Margin="10">
+                                    <TextBlock TextAlignment="Center" VerticalAlignment="Center">Some text</TextBlock>
+                                </Border>
+                            </StackPanel>
+                        </Border>
+                        <Border BorderBrush="Black" BorderThickness="2" Margin="10">
+                            <DockPanel>
+                                <Border BorderBrush="Black" BorderThickness="2" DockPanel.Dock="Top" Margin="10">
+                                    <TextBlock TextAlignment="Center" VerticalAlignment="Center">Some text</TextBlock>
+                                </Border>
+                                <Border BorderBrush="Black" BorderThickness="2" DockPanel.Dock="Left" Margin="10">
+                                    <TextBlock TextAlignment="Center" VerticalAlignment="Center" >Some text</TextBlock>
+                                </Border>
+                                <Border BorderBrush="Black" BorderThickness="2" DockPanel.Dock="Bottom" Margin="10">
+                                    <TextBlock TextAlignment="Center" VerticalAlignment="Center">Some text</TextBlock>
+                                </Border>
+                                <Border BorderBrush="Black" BorderThickness="2" DockPanel.Dock="Right" Margin="10">
+                                    <TextBlock TextAlignment="Center" VerticalAlignment="Center" >Some text</TextBlock>
+                                </Border>
+                                <Border BorderBrush="Black" BorderThickness="2" Margin="10">
+                                    <TextBlock TextAlignment="Center" VerticalAlignment="Center">Some text</TextBlock>
+                                </Border>
+                            </DockPanel>
+                        </Border>
+                    </WrapPanel>
+
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition />
+                            <RowDefinition />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Border Grid.Row="0" Grid.Column="0" BorderBrush="Black" BorderThickness="2" Margin="10">
+                            <TextBlock TextAlignment="Center" VerticalAlignment="Center">Some text</TextBlock>
+                        </Border>
+                        <Border Grid.Row="0" Grid.Column="1" BorderBrush="Black" BorderThickness="2" Margin="10">
+                            <TextBlock TextAlignment="Center" VerticalAlignment="Center">Some text</TextBlock>
+                        </Border>
+                        <Border Grid.Row="0" Grid.Column="2" BorderBrush="Black" BorderThickness="2" Margin="10">
+                            <TextBlock TextAlignment="Center" VerticalAlignment="Center">Some text</TextBlock>
+                        </Border>
+                        <Border Grid.Row="1" Grid.Column="0" BorderBrush="Black" BorderThickness="2" Margin="10">
+                            <TextBlock TextAlignment="Center" VerticalAlignment="Center">Some text</TextBlock>
+                        </Border>
+                        <Border Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1" BorderBrush="Black" BorderThickness="2" Margin="10">
+                            <TextBlock TextAlignment="Center" VerticalAlignment="Center">Some text</TextBlock>
+                        </Border>
+                    </Grid>
+                </Grid>
+            </TabItem>
+            
+            <TabItem Header="Second Task" Margin="-2,-3,-2,1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Button Grid.Row="0" Grid.Column="0">Button</Button>
+                            <Button Grid.Row="0" Grid.Column="1">Button</Button>
+                            <Button Grid.Row="0" Grid.Column="2">Button</Button>
+
+                            <Button Grid.Row="1" Grid.Column="0">Button</Button>
+                            <Button Grid.Row="1" Grid.Column="1">Button</Button>
+                            <Button Grid.Row="1" Grid.Column="2">Button</Button>
+                        </Grid>
+                        <Grid Margin="1, 0, 0, 0">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+
+                            <Button Grid.Row="0" Grid.Column="0">Button</Button>
+                            <Button Grid.Row="0" Grid.Column="1">Button</Button>
+                            <Button Grid.Row="0" Grid.Column="2">Button</Button>
+
+                            <Button Grid.Row="1" Grid.Column="0">Button</Button>
+                            <Button Grid.Row="1" Grid.Column="1">Button</Button>
+                            <Button Grid.Row="1" Grid.Column="2">Button</Button>
+                        </Grid>
+                    </StackPanel>
+                    <Canvas Grid.Row="0" Grid.Column="1">
+                        <Button Canvas.Left="10" Canvas.Top="19" Height="39" Width="140" Canvas.ZIndex="0">I am a button</Button>
+                        <Button Canvas.Left="49" Canvas.Top="46" Height="39" Width="140" Canvas.ZIndex="1">I am a button</Button>
+                    </Canvas>
+                    <Canvas Grid.Row="1" Grid.Column="0">
+                        <Button Canvas.Left="75" Canvas.Top="57" Height="51" Width="152">I am a button</Button>
+                    </Canvas>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

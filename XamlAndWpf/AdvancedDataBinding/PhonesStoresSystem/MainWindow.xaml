@@ -1,0 +1,198 @@
+﻿<Window x:Class="PhonesStoresSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vms="clr-namespace:PhonesStoresSystem.ViewModels"
+        Title="MainWindow" Height="350" Width="525"
+        WindowState="Maximized">
+    <Window.DataContext>
+        <vms:StoresViewModel />
+    </Window.DataContext>
+
+    <TabControl>
+        <TabItem Header="Stores">
+            <TabControl ItemsSource="{Binding Stores}"
+                        DisplayMemberPath="Name">
+                <TabControl.ContentTemplate>
+                    <DataTemplate>
+                        <ListView ItemsSource="{Binding Phones}">
+                            <ListView.View>
+                                <GridView>
+                                    <GridView.Columns>
+                                        <GridViewColumn Width="Auto" Header="Vendor" DisplayMemberBinding="{Binding Vendor}"/>
+                                        <GridViewColumn Width="Auto" Header="Model" DisplayMemberBinding="{Binding Model}"/>
+                                        <GridViewColumn Width="Auto" Header="Year" DisplayMemberBinding="{Binding Year}"/>
+                                        <GridViewColumn Width="Auto" 
+                                                        Header="Os" >
+                                            <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="Name: "/>
+                                                            <TextBlock Text="{Binding Path=Os.Name}"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="Version: "/>
+                                                            <TextBlock Text="{Binding Path=Os.Version}"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="Manufacturer: "/>
+                                                            <TextBlock Text="{Binding Path=Os.Manufacturer}"/>
+                                                        </StackPanel>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </GridViewColumn.CellTemplate>
+                                        </GridViewColumn>
+                                        <GridViewColumn Width="Auto" Header="Features" >
+                                            <GridViewColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="3G: "/>
+                                                            <TextBlock Text="{Binding Path=Features._3G}"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="DisplayResolution: "/>
+                                                            <TextBlock Text="{Binding Path=Features.DisplayResolution}"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="Hdd: "/>
+                                                            <TextBlock Text="{Binding Path=Features.Hdd}"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="Processor: "/>
+                                                            <TextBlock Text="{Binding Path=Features.Processor}"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="Radio: "/>
+                                                            <TextBlock Text="{Binding Path=Features.Radio}"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="Ram: "/>
+                                                            <TextBlock Text="{Binding Path=Features.Ram}"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="ScreenProtection: "/>
+                                                            <TextBlock Text="{Binding Path=Features.ScreenProtection}"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="Size: "/>
+                                                            <TextBlock Text="{Binding Path=Features.Size}"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="Weight: "/>
+                                                            <TextBlock Text="{Binding Path=Features.Weight}"/>
+                                                        </StackPanel>
+                                                        <StackPanel Orientation="Horizontal">
+                                                            <TextBlock Text="WiFi: "/>
+                                                            <TextBlock Text="{Binding Path=Features.WiFi}"/>
+                                                        </StackPanel>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </GridViewColumn.CellTemplate>
+                                        </GridViewColumn>
+                                    </GridView.Columns>
+                                </GridView>
+                            </ListView.View>
+                        </ListView>
+                    </DataTemplate>
+                </TabControl.ContentTemplate>
+            </TabControl>
+        </TabItem>
+        <TabItem Header="Add New Store">
+            <StackPanel>
+                <StackPanel DataContext="{Binding NewStore}" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Name: "/>
+                        <TextBox Text="{Binding Name}" Width="100"/>
+                    </StackPanel>
+                </StackPanel>
+                <Button Command="{Binding AddNewStore}">Add</Button>
+            </StackPanel>
+        </TabItem>
+        <TabItem Header="Add New Phone">
+            <StackPanel>
+                <ComboBox ItemsSource="{Binding Stores}"
+                          IsSynchronizedWithCurrentItem="True"
+                          SelectedItem="{Binding Path=NewPhoneStore}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Name}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                </ComboBox>
+
+                <StackPanel DataContext="{Binding NewPhone}" >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Vendor: "/>
+                        <TextBox Text="{Binding Vendor}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Model: "/>
+                        <TextBox Text="{Binding Model}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Os Name: "/>
+                        <TextBox Text="{Binding Os.Name}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Os Version: "/>
+                        <TextBox Text="{Binding Os.Version}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Os Manufacturer: "/>
+                        <TextBox Text="{Binding Os.Manufacturer}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="DisplayType: "/>
+                        <TextBox Text="{Binding Features.DisplayType}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="DisplayResolution: "/>
+                        <TextBox Text="{Binding Features.DisplayResolution}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="ScreenProtection: "/>
+                        <TextBox Text="{Binding Features.ScreenProtection}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Size: "/>
+                        <TextBox Text="{Binding Features.Size}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Weight: "/>
+                        <TextBox Text="{Binding Features.Weight}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Processor: "/>
+                        <TextBox Text="{Binding Features.Processor}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Ram: "/>
+                        <TextBox Text="{Binding Features.Ram}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Hdd: "/>
+                        <TextBox Text="{Binding Features.Hdd}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Bluetooth: "/>
+                        <TextBox Text="{Binding Features.Bluetooth}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="WiFi: "/>
+                        <TextBox Text="{Binding Features.WiFi}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="3G: "/>
+                        <TextBox Text="{Binding Features._3G}" Width="100"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Radio: "/>
+                        <TextBox Text="{Binding Features.Radio}" Width="100"/>
+                    </StackPanel>
+                </StackPanel>
+                <Button Command="{Binding AddNewPhone}">Add</Button>
+            </StackPanel>
+        </TabItem>
+    </TabControl>
+</Window>

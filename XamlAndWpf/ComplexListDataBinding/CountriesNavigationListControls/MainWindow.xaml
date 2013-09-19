@@ -1,0 +1,45 @@
+﻿<Window x:Class="CountriesNavigationListControls.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vms="clr-namespace:Countries.ViewModels;assembly=Countries.ViewModels"
+        Title="MainWindow" Height="350" Width="525" WindowState="Maximized">
+    <Window.DataContext>
+        <vms:CountriesViewModel/>
+    </Window.DataContext>
+    <Window.Resources>
+        <DataTemplate x:Key="TownsTemplate">
+            <ListView Height="100" ItemsSource="{Binding Towns}">
+                <ListView.View>
+                    <GridView >
+                        <GridView.Columns>
+                            <GridViewColumn Width="100" Header="Town Name" DisplayMemberBinding="{Binding Name}"/>
+                            <GridViewColumn Width="100" Header="Population" DisplayMemberBinding="{Binding Population}"/>
+                        </GridView.Columns>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </DataTemplate>
+        <DataTemplate x:Key="CountryFlag">
+            <Image Source="{Binding NationalFlagPath}" />
+        </DataTemplate>
+    </Window.Resources>
+    <StackPanel>
+        <ListView ItemsSource="{Binding Countries}">
+            <ListView.View>
+                <GridView>
+                    <GridView.Columns>
+                        <GridViewColumn Width="Auto" Header="Country" DisplayMemberBinding="{Binding Name}"/>
+                        <GridViewColumn Width="Auto" Header="Language" DisplayMemberBinding="{Binding Language}"/>
+                        <GridViewColumn Width="Auto" 
+                                        Header="National Flag" 
+                                        CellTemplate="{DynamicResource ResourceKey=CountryFlag}" />
+                        <GridViewColumn Width="Auto"
+                                        Header="Towns" 
+                                        CellTemplate="{DynamicResource ResourceKey=TownsTemplate}">
+                        </GridViewColumn>
+                    </GridView.Columns>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </StackPanel>
+</Window>

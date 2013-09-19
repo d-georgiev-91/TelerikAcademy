@@ -1,0 +1,46 @@
+﻿<Window x:Class="CountriesNavigationWithoutListControls.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vms="clr-namespace:Countries.ViewModels;assembly=Countries.ViewModels"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.DataContext>
+        <vms:CountriesViewModel />
+    </Window.DataContext>
+    <StackPanel>
+        <DockPanel DataContext="{Binding Countries}">
+            <StackPanel DockPanel.Dock="Left" HorizontalAlignment="Left">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Name: " />
+                    <TextBlock Text="{Binding Name}" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="Language: " />
+                    <TextBlock Text="{Binding Language}" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Text="National Flag: " />
+                    <Image Source="{Binding NationalFlagPath}" Height="100"/>
+                </StackPanel>
+                <Label Content="Towns" />
+                <StackPanel DataContext="{Binding Towns}">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Name: " />
+                        <TextBlock Text="{Binding Name}" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Population: " />
+                        <TextBlock Text="{Binding Population}" />
+                    </StackPanel>
+                </StackPanel>
+                <UniformGrid>
+                    <Button Click="OnPrevTownButtonClick">Previous Town</Button>
+                    <Button Click="OnNextTownButtonClick">Next Town</Button>
+                </UniformGrid>
+            </StackPanel>
+        </DockPanel>
+        <UniformGrid>
+            <Button Click="OnPrevCountryButtonClick">Previous Country</Button>
+            <Button Click="OnNextCountryButtonClick">Next Country</Button>
+        </UniformGrid>
+    </StackPanel>
+</Window>
