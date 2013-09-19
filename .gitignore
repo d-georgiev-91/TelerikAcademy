@@ -110,4 +110,4 @@ Backup*/
 UpgradeLog*.XML
 
 # Custom defined directories to ignore
-Minesweeper/.git/
+Teamwork/
