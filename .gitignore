@@ -111,3 +111,7 @@ UpgradeLog*.XML
 
 # Custom defined directories to ignore
 *.pfx
+/Php/nbproject/private/
+/Php/Expenses/nbproject/private/
+/Php/MessagingSystem/nbproject/private/
+/Php/BooksCatalog/nbproject/private/

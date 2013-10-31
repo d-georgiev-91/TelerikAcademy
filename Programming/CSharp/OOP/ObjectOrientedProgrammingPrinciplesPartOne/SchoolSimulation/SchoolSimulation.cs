@@ -1,8 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace SchoolSimulation
+﻿namespace SchoolSimulation
 {
+    using System;
+    
     class SchoolSimulation
     {
         static void Main()
@@ -11,37 +10,37 @@ namespace SchoolSimulation
 
             Teacher ivan = new Teacher("Ivan Todorov");
             ivan.AddDiscipline("Matematika", 3, 5);
-            ivan.AddComment("comment");
-            ivan.AddComment("comment");
-            ivan.AddComment("comment");
+            ivan.AddComment("comment #32424");
+            ivan.AddComment("comment #53252");
+            ivan.AddComment("comment #432432");
 
             foreach (var disciplne in ivan.Disciplines)
             {
-                disciplne.AddComment(String.Format("comment"));
+                disciplne.AddComment(string.Format("comment"));
                 i++;
             }
 
             Teacher penka = new Teacher("Penka Popova");
             penka.AddDiscipline("Nemski Ezik", 3, 2);
-            penka.AddComment("comment");
-            penka.AddComment("comment");
-            penka.AddComment("comment");
+            penka.AddComment("comment #432324125");
+            penka.AddComment("comment #24151");
+            penka.AddComment("comment #243243");
 
             foreach (var disciplne in penka.Disciplines)
             {
-                disciplne.AddComment(String.Format("comment"));
+                disciplne.AddComment(string.Format("comment #{0}", i));
                 i++;
             }
 
             Teacher stefan = new Teacher("Stefan Nikolov");
             stefan.AddDiscipline("Matematika", 2, 4);
-            stefan.AddComment("comment");
-            stefan.AddComment("comment");
-            stefan.AddComment("comment");
+            stefan.AddComment("comment #343224");
+            stefan.AddComment("comment #3422124");
+            stefan.AddComment("comment #3422334");
 
             foreach (var disciplne in stefan.Disciplines)
             {
-                disciplne.AddComment(String.Format("comment"));
+                disciplne.AddComment(string.Format("comment #{0}", i));
                 i++;
             }
 
@@ -69,8 +68,8 @@ namespace SchoolSimulation
             petiB.AddStudent(kiro);
 
             School school = new School(2);
-            school.AddClass(OsmiA);
-            school.AddClass(petiB);
+            school.Classes.Add(OsmiA);
+            school.Classes.Add(petiB);
 
             school.SchoolInfo();
         }

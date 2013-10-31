@@ -1,48 +1,71 @@
-﻿using System;
-using System.Text;
-
-namespace GenericList
+﻿namespace GenericList
 {
-    internal class GenericList<T>
+    using System;
+    using System.Text;
+    using System.Linq;
+
+    public class GenericList<T>
     {
         private T[] list;
         private int currentCapacity;
+        private const string InvalidIndexMessage = "{0} is invalid index";
+
         public int Capacity
         {
-            get { return this.currentCapacity; }
-            private set { this.currentCapacity = value; }
+            get
+            {
+                return this.currentCapacity;
+            }
+            private set
+            {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Capacity should be positive number");
+                }
+
+                this.currentCapacity = value;
+            }
         }
+
+        public int Count { get; private set; }
+
         public GenericList(int capacity = 0)
         {
-            currentCapacity = capacity;
-            if (capacity == 0)
-            {
-                this.list = null;
-            }
-            else
-            {
-                this.list = new T[capacity];
-            }
+            this.currentCapacity = capacity;
+            this.list = new T[capacity];
+            this.Count = 0;
         }
-        public void AddItem(T item)
-        {
 
-            if (this.currentCapacity >= list.Length)
+        public void Add(T item)
+        {
+            if (this.Count >= this.Capacity)
             {
-                T[] extendedList = new T[list.Length * 2];
-                for (int i = 0; i < list.Length; i++)
-                {
-                    extendedList[i] = list[i];
-                }
-                this.currentCapacity++;
-                extendedList[list.Length] = item;
-                list = extendedList;
+                this.ResizeList();
+            }
+
+            this.list[this.Count] = item;
+            this.Count++;
+        }
+
+        private void ResizeList()
+        {
+            if (this.Capacity == 0)
+            {
+                this.Capacity = 1;    
             }
             else
             {
-                list[currentCapacity] = item;
-                this.currentCapacity++;
+                this.Capacity *= 2;
             }
+
+            T[] swapList = new T[this.Capacity];
+
+            for (int i = 0; i < this.Count; i++)
+            {
+                swapList[i] = this.list[i];
+            }
+
+            this.list = swapList;
         }
 
         public T this[int index]
@@ -51,11 +74,11 @@ namespace GenericList
             {
                 if (index >= 0 && index < list.Length)
                 {
-                    return list[index];
+                    return this.list[index];
                 }
                 else
                 {
-                    throw new IndexOutOfRangeException();
+                    throw new IndexOutOfRangeException(string.Format(InvalidIndexMessage, index));
                 }
             }
 
@@ -67,88 +90,82 @@ namespace GenericList
                 }
                 else
                 {
-                    throw new IndexOutOfRangeException();
+                    throw new IndexOutOfRangeException(string.Format(InvalidIndexMessage, index));
                 }
             }
         }
 
         public void RemoveItemAtIndex(int index)
         {
-            if (index >= 0 && index < list.Length)
+            if (index >= 0 && index < this.Count)
             {
-                T[] reducedList = new T[list.Length - 1];
-                bool indexFound = false;
-                for (int i = 0; i < list.Length - 1; i++)
+                for (int i = index; i < this.Count - 1; i++)
                 {
-                    if (index == i)
-                    {
-                        indexFound = true;
-                    }
-                    if (!indexFound)
-                    {
-                        reducedList[i] = list[i];
-                    }
-                    else
-                    {
-                        reducedList[i] = list[i + 1];
-                    }
+                    this.list[i] = this.list[i + 1];
                 }
-                currentCapacity--;
-                list = reducedList;
+
+                this.Count--;
             }
             else
             {
-                throw new IndexOutOfRangeException();
+                throw new IndexOutOfRangeException(string.Format(InvalidIndexMessage, index));
             }
         }
+
         public void InsertItemAtIndex(T item, int index)
         {
-            if (index >= 0 && index < currentCapacity)
+            if (index >= 0 && index < this.Capacity)
             {
-                T[] extendedList = new T[currentCapacity + 1];
-                for (int i = 0; i < index; i++)
+                if (index == this.Capacity - 1)
                 {
-                    extendedList[i] = list[i];
+                    this.ResizeList();
                 }
-                extendedList[index] = item;
-                currentCapacity++;
-                for (int i = index + 1; i < currentCapacity; i++)
+
+                if (index < this.Count)
                 {
-                    extendedList[i] = list[i - 1];
+                    for (int i = index; i < this.Count; i++)
+                    {
+                        list[i + 1] = list[i];
+                    }
                 }
-                list = extendedList;
+
+                list[index] = item;
+                this.Count++;
             }
             else
             {
-                throw new IndexOutOfRangeException();
+                throw new IndexOutOfRangeException(string.Format(InvalidIndexMessage, index));
             }
         }
+
         public void Clear()
         {
-            list = new T[0];
+            list = new T[this.Capacity];
         }
 
         public int FindItemByValue(T value)
         {
             int index = -1;
+            
             for (int i = 0; i < list.Length; i++)
             {
-
                 if (list[i].Equals(value))
                 {
                     index = i;
                     break;
                 }
             }
+
             return index;
         }
 
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
-            for (int i = 0; i < currentCapacity; i++)
+
+            for (int i = 0; i < this.Count; i++)
             {
-                if (i < currentCapacity - 1)
+                if (i < this.Count - 1)
                 {
                     result.AppendFormat("{0}, ", list[i]);
                 }
@@ -157,9 +174,9 @@ namespace GenericList
                     result.AppendFormat("{0}", list[i]);
                 }
             }
+
             return result.ToString();
         }
-
 
         public T Min()
         {
@@ -167,6 +184,7 @@ namespace GenericList
             {
                 throw new InvalidOperationException("Empty list!");
             }
+
             if (list[0] is IComparable<T>)
             {
                 T min = list[0];
@@ -177,11 +195,12 @@ namespace GenericList
                         min = list[i];
                     }
                 }
+
                 return min;
             }
             else
             {
-                throw new ArgumentException("List not IComparable.");
+                throw new ArgumentException("Items in list are not IComparable.");
             }
         }
 
@@ -191,9 +210,11 @@ namespace GenericList
             {
                 throw new InvalidOperationException("Empty list!");
             }
+
             if (list[0] is IComparable<T>)
             {
                 T max = list[0];
+            
                 for (int i = 1; i < currentCapacity; i++)
                 {
                     if ((max as IComparable<T>).CompareTo(list[i]) < 0)
@@ -201,11 +222,12 @@ namespace GenericList
                         max = list[i];
                     }
                 }
+
                 return max;
             }
             else
             {
-                throw new ArgumentException("List not IComparable.");
+                throw new ArgumentException("Items in list are not IComparable.");
             }
         }
     }

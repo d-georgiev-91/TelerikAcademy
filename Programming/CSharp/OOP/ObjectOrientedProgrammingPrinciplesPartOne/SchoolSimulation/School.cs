@@ -5,22 +5,19 @@ namespace SchoolSimulation
 {
     public class School
     {
-        private List<Class> classes;
-        private int numberOfClasses;
+        private ICollection<Class> classes;
 
         public School()
         {
             this.Classes = new List<Class>();
-            this.NumberOfClasses = 0;
         }
 
         public School(int numberOfClasses)
         {
             this.classes = new List<Class>(numberOfClasses);
-            this.NumberOfClasses = 0;
         }
 
-        public List<Class> Classes
+        public ICollection<Class> Classes
         {
             get
             {
@@ -32,29 +29,11 @@ namespace SchoolSimulation
             }
         }
 
-        public int NumberOfClasses
-        {
-            get
-            {
-                return this.numberOfClasses;
-            }
-            set
-            {
-                this.numberOfClasses = value;
-            }
-        }
-
-        public void AddClass(Class classToAdd)
-        {
-            this.NumberOfClasses++;
-            this.Classes.Add(classToAdd);
-        }
-
         public void SchoolInfo()
         {
-            foreach (var c in Classes)
+            foreach (var @class in Classes)
             {
-                Console.WriteLine(c.ToString());
+                Console.WriteLine(@class.ToString());
             }
         }
     }

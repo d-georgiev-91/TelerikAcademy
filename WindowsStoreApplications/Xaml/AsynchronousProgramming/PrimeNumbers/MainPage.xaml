@@ -1,0 +1,67 @@
+﻿<Page
+    x:Class="PrimeNumbers.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:ViewModels="using:PrimeNumbers.ViewModels"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.DataContext>
+        <ViewModels:PrimesCalculatorViewModel/>
+    </Page.DataContext>
+    <Grid Background="Black" Margin="70">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" FontSize="16">Enter range's start and end number </TextBlock>
+        <StackPanel Orientation="Vertical"  Grid.Row="1" Grid.Column="0">
+            <StackPanel Orientation="Horizontal">
+                <TextBox Margin="10" Text="{Binding RangeStart}"></TextBox>
+                <TextBox Margin="10" Text="{Binding RangeEnd}"></TextBox>
+            </StackPanel>
+            <ToggleSwitch IsOn="{Binding DisplayPrimes}" OffContent="Not prime" OnContent="Prime" Name="FirstToggle"></ToggleSwitch>
+            <Button Name="FirstButton" Command="{Binding CalculatePrimesCommand}">Calculate</Button>
+        </StackPanel>
+        <TextBlock Grid.Row="2" Grid.Column="0" TextWrapping="Wrap" Text="{Binding PrimesList}"/>
+        <TextBlock Grid.Row="0" Grid.Column="1"  FontSize="16">Enter range's start and end number</TextBlock>
+        <StackPanel Orientation="Vertical"  Grid.Row="1" Grid.Column="1">
+            <StackPanel Orientation="Horizontal">
+                <TextBox Margin="10" Name="LowerRangeSecond" Text="{Binding RangeStart}"></TextBox>
+                <TextBox Margin="10" Name="UpperRangeSecond" Text="{Binding RangeEnd}"></TextBox>
+            </StackPanel>
+            <ToggleSwitch IsOn="{Binding DisplayPrimes}" OffContent="Not prime" OnContent="Prime" Name="SecondToggle"></ToggleSwitch>
+            <Button Name="SecondButton">Calculate</Button>
+        </StackPanel>
+        <TextBlock Grid.Row="2" Grid.Column="1" Name="ResultBlockSecond" TextWrapping="Wrap" Text="{Binding PrimesList}"></TextBlock>
+
+        <TextBlock Grid.Row="0" Grid.Column="2"  FontSize="16">Enter range's start and end number</TextBlock>
+        <StackPanel Orientation="Vertical"  Grid.Row="1" Grid.Column="2">
+            <StackPanel Orientation="Horizontal">
+                <TextBox Margin="10" Name="LowerRangeThird" Text="{Binding RangeStart}"></TextBox>
+                <TextBox Margin="10" Name="UpperRangeThird" Text="{Binding RangeEnd}"></TextBox>
+            </StackPanel>
+            <ToggleSwitch IsOn="{Binding DisplayPrimes}" OffContent="Not prime" OnContent="Prime" Name="ThirdToggle"></ToggleSwitch>
+            <Button Name="ThirdButton" Command="{Binding CalculatePrimesCommand}">Calculate</Button>
+        </StackPanel>
+        <TextBlock Grid.Row="2" Grid.Column="2" Name="ResultBlockThird" TextWrapping="Wrap" Text="{Binding PrimesList}"/>
+
+        <TextBlock Grid.Row="0" Grid.Column="3"  FontSize="16">Enter range's start and end number</TextBlock>
+        <StackPanel Orientation="Vertical"  Grid.Row="1" Grid.Column="3">
+            <StackPanel Orientation="Horizontal">
+                <TextBox Margin="10" Name="LowerRangeForth" Text="{Binding RangeStart}"></TextBox>
+                <TextBox Margin="10" Name="UpperRangeForth" Text="{Binding RangeEnd}"></TextBox>
+            </StackPanel>
+            <ToggleSwitch IsOn="{Binding DisplayPrimes}" OffContent="Not prime" OnContent="Prime" Name="ForthToggle"></ToggleSwitch>
+            <Button Name="ForthButton">Calculate</Button>
+        </StackPanel>
+        <TextBlock Grid.Row="2" Grid.Column="3" Name="ResultBlockForth" TextWrapping="Wrap" Text="{Binding PrimesList}"/>
+    </Grid>
+</Page>

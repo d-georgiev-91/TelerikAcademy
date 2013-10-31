@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Linq;
 
-namespace divisibleBySevenAndThree
+namespace DivisableBySevenAndThree
 {
-    class divisibleBySevenAndThree
+    class DivisibleBySevenAndThree
     {
         //6. Write a program that prints from given array of integers all 
         //   numbers that are divisible by 7 and 3. Use the built-in extension 
@@ -17,7 +17,7 @@ namespace divisibleBySevenAndThree
             }
         }
 
-        public static void DivisibleToSevenAndThreeLINQ(int[] array)
+        public static void DivisibleToSevenAndThreeLinq(int[] array)
         {
             var divisibleItem =
                 from item in array
@@ -35,7 +35,7 @@ namespace divisibleBySevenAndThree
 
             DivisibleToSevenAndThreeLambda(array);
             Console.WriteLine();
-            DivisibleToSevenAndThreeLINQ(array);
+            DivisibleToSevenAndThreeLinq(array);
         }
     }
 }

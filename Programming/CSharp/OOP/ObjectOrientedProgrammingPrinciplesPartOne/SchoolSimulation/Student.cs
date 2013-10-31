@@ -1,30 +1,24 @@
-﻿using System;
-using System.Text;
-
-namespace SchoolSimulation
+﻿namespace SchoolSimulation
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+    
     public class Student : Person, ICommentable
     {
         private int uniqueClassNumber;
-        private CommentS studentComments;
 
-        public Student(string name, int uniqueClassNumber)
-            : base(name)
+        public Student(string name, int uniqueClassNumber) : base(name)
         {
             this.uniqueClassNumber = uniqueClassNumber;
-            studentComments = new CommentS();
+            this.Comments = new List<string>();
         }
 
-        public CommentS StudentComments
+        public ICollection<string> Comments { get; set; }
+
+        public void AddComment(string comment)
         {
-            get
-            {
-                return this.studentComments;
-            }
-            set
-            {
-                this.studentComments = value;
-            }
+            this.Comments.Add(comment);
         }
 
         public int UniqueClassNumber
@@ -39,22 +33,6 @@ namespace SchoolSimulation
             }
         }
 
-        public CommentS CommentS
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
-        public void AddComment(string comment)
-        {
-            this.studentComments.AddComment(comment);
-        }
-
         public override string ToString()
         {
             StringBuilder printableStudent = new StringBuilder();
@@ -62,10 +40,17 @@ namespace SchoolSimulation
             printableStudent.AppendLine(this.Name);
             printableStudent.AppendLine("Unique class number");
             printableStudent.AppendLine(this.UniqueClassNumber.ToString());
-            if (this.StudentComments.HasComments())
+
+            if (this.Comments.Count > 0)
             {
-                printableStudent.AppendLine(StudentComments.ToString());
+                printableStudent.AppendLine("Comments");
+
+                foreach (var comment in this.Comments)
+                {
+                    printableStudent.AppendLine(comment);
+                }
             }
+
             return printableStudent.ToString();
         }
     }

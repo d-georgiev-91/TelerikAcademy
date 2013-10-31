@@ -1,9 +1,9 @@
-﻿using System;
-using System.Text;
-
-namespace MobilePhone
+﻿namespace MobilePhone
 {
-    class Display
+    using System;
+    using System.Text;
+
+    public class Display
     {
         private double? displaySize;
         private int? numberOfColors;

@@ -2,7 +2,7 @@
 
 namespace SchoolSimulation
 {
-    public class Person
+    public abstract class Person
     {
         private string name;
     
@@ -11,7 +11,7 @@ namespace SchoolSimulation
             this.name = name;
         }
 
-        protected string Name
+        public string Name
         {
             get
             {

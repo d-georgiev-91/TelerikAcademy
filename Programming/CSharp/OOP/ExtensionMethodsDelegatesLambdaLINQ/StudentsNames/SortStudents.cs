@@ -19,7 +19,7 @@ namespace StudentsNames
             }
         }
 
-        public static void SortStudentsWithLINQ(Student[] students)
+        public static void SortStudentsWithLinq(Student[] students)
         {
             var sorted =
                 from student in students

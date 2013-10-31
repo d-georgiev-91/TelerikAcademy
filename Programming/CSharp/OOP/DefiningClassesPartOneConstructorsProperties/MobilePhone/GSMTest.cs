@@ -1,8 +1,8 @@
-﻿using System;
-
-namespace MobilePhone
+﻿namespace MobilePhone
 {
-    class GSMTest
+    using System;
+
+    public class GsmTest
     {
         static void Main()
         {
@@ -26,7 +26,7 @@ namespace MobilePhone
 
             // Nachalo na 12 zada4a.
 
-            GSMCallHistoryTest test = new GSMCallHistoryTest();
+            GsmCallHistoryTest test = new GsmCallHistoryTest();
             test.Testing();
         }
     }

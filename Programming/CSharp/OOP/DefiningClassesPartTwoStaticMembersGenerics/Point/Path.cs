@@ -7,24 +7,37 @@ namespace Point
     {
         private int length;
         private List<Point3D> points = new List<Point3D>();
+
         public List<Point3D> Points
         {
-            get { return this.points; }
-            set { this.points = value; }
+            get
+            {
+                return this.points;
+            }
+            set
+            {
+                this.points = value;
+            }
         }
+
         public int Length
         {
-            get { return this.length; }
+            get
+            {
+                return this.length;
+            }
         }
-        public Path(int length)
-            : this()
+
+        public Path(int length) : this()
         {
             this.length = length;
         }
+
         public Path()
         {
             this.length = 0;
         }
+
         public void AddPoint(double x, double y, double z)
         {
             Point3D point = new Point3D(x, y, z);

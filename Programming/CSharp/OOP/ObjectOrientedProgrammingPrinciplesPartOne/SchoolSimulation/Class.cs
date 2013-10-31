@@ -1,78 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace SchoolSimulation
+﻿namespace SchoolSimulation
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+
     public class Class : ICommentable
     {
-        private List<Teacher> teachers;
-        private int teachersCount;
-        private List<Student> students;
-        private int studentsCount;
-        private CommentS classComments;
-        private string classId;
+        private ICollection<Teacher> teachers;
+        private ICollection<Student> students;
+        private string uniqueTextIdentifier;
 
-        public Class(string classId, int teachersCount = 0, int studentsCount = 0)
+        public Class(string uniqueTextIdentifier, int teachersCount = 0, int studentsCount = 0)
         {
-            this.ClassId = classId;
-            this.teachersCount = teachersCount;
-            this.studentsCount = studentsCount;
-            this.ClassComments = new CommentS();
+            this.UniqueTextIdentifier = uniqueTextIdentifier;
+            this.Comments = new List<string>();
             this.teachers = new List<Teacher>(teachersCount);
             this.students = new List<Student>(studentsCount);
         }
 
-        public string ClassId
+        public ICollection<string> Comments { get; set; }
+
+        public string UniqueTextIdentifier
         {
             get
             {
-                return this.classId;
+                return this.uniqueTextIdentifier;
             }
             set
             {
-                this.classId = value;
+                this.uniqueTextIdentifier = value;
             }
         }
 
-        public int StudentsCount
-        {
-            get
-            {
-                return this.studentsCount;
-            }
-            set
-            {
-                this.studentsCount = value;
-            }
-        }
-
-        public int TeachersCount
-        {
-            get
-            {
-                return this.teachersCount;
-            }
-            set
-            {
-                this.teachersCount = value;
-            }
-        }
-
-        public CommentS ClassComments
-        {
-            get
-            {
-                return this.classComments;
-            }
-            set
-            {
-                this.classComments = value;
-            }
-        }
-
-        public List<Student> Students
+        public ICollection<Student> Students
         {
             get
             {
@@ -84,7 +45,7 @@ namespace SchoolSimulation
             }
         }
 
-        public List<Teacher> Teachers
+        public ICollection<Teacher> Teachers
         {
             get
             {
@@ -96,31 +57,29 @@ namespace SchoolSimulation
             }
         }
 
-        public CommentS CommentS
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
         public void AddComment(string comment)
         {
-            this.ClassComments.AddComment(comment);
+            this.Comments.Add(comment);
         }
 
         public void AddStudent(Student student)
         {
-            this.StudentsCount++;
-            this.Students.Add(student);
+            if (this.students.Where(s => s.UniqueClassNumber == student.UniqueClassNumber).FirstOrDefault() != null)
+            {
+                throw new ArgumentException(string.Format("Student with class number: \"{0}\" alredy exists",
+                    student.UniqueClassNumber));
+            }
+
+            this.students.Add(student);
         }
 
         public void AddTeacher(Teacher teacher)
         {
-            this.TeachersCount++;
+            if (this.teachers.Where(t => t.Name == teacher.Name).FirstOrDefault() != null)
+            {
+                throw new ArgumentException(string.Format("The teacher: \"{0}\" alredy exists", teacher.Name));
+            }
+
             this.Teachers.Add(teacher);
         }
 
@@ -130,7 +89,7 @@ namespace SchoolSimulation
 
             classToString.AppendLine("=========================");
 
-            classToString.AppendLine(this.ClassId.ToString());
+            classToString.AppendLine(this.UniqueTextIdentifier.ToString());
 
             classToString.AppendLine("list of students");
             
@@ -146,12 +105,18 @@ namespace SchoolSimulation
                 classToString.AppendLine(teacher.ToString());
             }
 
-            classToString.AppendLine("comments");
-            if (this.ClassComments.HasComments())
+            if (this.Comments.Count > 0)
             {
-                classToString.AppendLine(ClassComments.ToString());
+                classToString.AppendLine("Comments");
+
+                foreach (var comment in this.Comments)
+                {
+                    classToString.AppendLine(comment);
+                }
             }
+
             classToString.AppendLine("=========================");
+
             return classToString.ToString();
         }
     }

@@ -6,17 +6,19 @@ namespace Animals
 {
     class AnimalsTest
     {
-        public static IEnumerable<Tuple<string, double>> AverageAgeOfKindofAnimals(List<Animal> animals)
+        public static IEnumerable<Tuple<string, double>> AverageAgeOfKindofAnimals(ICollection<Animal> animals)
         {
             var averageAges =
-                from animal in animals
-                group animal by animal.GetType() into typeofAnimal
-                select new Tuple<string, double>(typeofAnimal.Key.Name, typeofAnimal.Average(a => a.Age));
+                             from animal in animals
+                             group animal by animal.GetType()
+                                 into typeofAnimal
+                                 select new Tuple<string, double>(typeofAnimal.Key.Name, typeofAnimal.Average(a => a.Age));
             return averageAges;
         }
+
         static void Main()
         {
-            List<ISound> animalsThatMakeSounds = new List<ISound>(new ISound[]
+            ICollection<ISound> animalsThatMakeSounds = new List<ISound>(new ISound[]
             {
                 new Kitten("kitty 1", 2),
                 new Kitten("kitty 2", 3),
@@ -28,7 +30,7 @@ namespace Animals
                 new Frog("Frog#2", 2, Sex.Male),
             });
 
-            List<Animal> animals = new List<Animal>(new Animal[]
+            ICollection<Animal> animals = new List<Animal>(new Animal[]
             {
                 new Kitten("kitty 1", 2),
                 new Kitten("kitty 2", 3),
@@ -48,11 +50,11 @@ namespace Animals
             Console.WriteLine();
 
             var averageAges = AverageAgeOfKindofAnimals(animals);
+
             foreach (var tuple in averageAges)
             {
                 Console.WriteLine("{0} {1:F2}", tuple.Item1, tuple.Item2);
             }
-
         }
     }
 }

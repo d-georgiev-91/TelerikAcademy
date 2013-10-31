@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="TriviaGame.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TriviaGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:viewModel="using:TriviaGame.ViewModel"
+    xmlns:converters="using:TriviaGame.Converters"
+    mc:Ignorable="d">
+    <Page.DataContext>
+        <viewModel:TriviaViewModel />
+    </Page.DataContext>
+    <Page.Resources>
+        <converters:BooleanToVisibilityConverter x:Key="BoolToVisConverter"/>
+    </Page.Resources>
+    <StackPanel Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Visibility="{Binding IsCategorySelected, Converter={StaticResource BoolToVisConverter}}">
+            <ComboBox ItemsSource="{Binding Path=Categories}" 
+                      DisplayMemberPath="Name"
+                      SelectedItem="{Binding SelectedCategory}"/>
+            <Button Command="{Binding SelectCategoryCommand}">Select a category</Button>
+        </StackPanel>
+        <StackPanel Visibility="{Binding IsTriviaStarted, Converter={StaticResource BoolToVisConverter}}">
+            
+        </StackPanel>
+    </StackPanel>
+</Page>

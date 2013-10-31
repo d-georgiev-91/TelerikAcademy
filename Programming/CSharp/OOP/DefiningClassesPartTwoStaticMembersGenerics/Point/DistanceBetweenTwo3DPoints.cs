@@ -5,6 +5,7 @@ namespace Point
     {
         private static Point3D firstPoint = new Point3D(3, 5, 12);
         private static Point3D secondPoint = new Point3D(-3, 5, -42);
+
         public static double CalculateDistance()
         {
             double distance;

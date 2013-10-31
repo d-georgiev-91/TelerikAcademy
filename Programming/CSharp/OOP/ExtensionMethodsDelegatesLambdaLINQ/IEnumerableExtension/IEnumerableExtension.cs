@@ -19,16 +19,19 @@ namespace IEnumerableExtension
         static public T Product<T>(this IEnumerable<T> items) where T : IComparable
         {
             dynamic product = 1;
+
             foreach (var item in items)
             {
                 product *= item;
             }
+
             return product;
         }
 
         static public T Max<T>(this IEnumerable<T> items) where T : IComparable
         {
             dynamic max = items.First();
+
             foreach (var item in items)
             {
                 if (max < item)
@@ -36,12 +39,14 @@ namespace IEnumerableExtension
                     max = item;
                 }
             }
+
             return max;
         }
 
         static public T Min<T>(this IEnumerable<T> items) where T : IComparable
         {
             dynamic min = items.First();
+
             foreach (var item in items)
             {
                 if (min > item)
@@ -49,6 +54,7 @@ namespace IEnumerableExtension
                     min = item;
                 }
             }
+
             return min;
         }
 

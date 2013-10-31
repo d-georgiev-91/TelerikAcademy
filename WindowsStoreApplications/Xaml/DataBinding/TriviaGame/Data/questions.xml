@@ -1,0 +1,93 @@
+﻿<?xml version="1.0"?>
+<questions>
+  <question category="Movies">
+    <text>Which classic science fiction film features characters such as the hero George Taylor and two doctors, namely Zaius and Zira?</text>
+    <answers>
+      <answer>War of the World</answer>
+      <answer>2001: A Space Odyssey</answer>
+      <answer correct="true">The Day the Earth Stood Still</answer>
+      <answer>Planet of the Apes</answer>
+    </answers>
+  </question>
+  <question category="Animals">
+    <text>What is the scientific name for the family that the huntsman spider comes from?</text>
+    <answers>
+      <answer>The Palpimanidae family</answer>
+      <answer correct="true">The Sparassidae family</answer>
+      <answer>The Trechaleidae family</answer>
+      <answer>The Archaeidae family</answer>
+    </answers>
+  </question>
+  <question category="Movies">
+    <text>Another sci-fi film, this one an 'edge-of-the-seater' from the 1980s, featuring characters such as Kyle Reese, Lieutenant Ed Traxler and, of course, Sarah Connor. What is this film called?</text>
+    <answers>
+      <answer>Scanners</answer>
+      <answer>Lifeforce</answer>
+      <answer correct="true">The Terminator</answer>
+      <answer>Dreamscape</answer>
+    </answers>
+  </question>
+  <question category="Movies">
+    <text>Many a war movie has reached the silver screen, but perhaps none are as well-regarded and intense as this one, featuring characters named Private Chris Taylor, Sergeant Bob Barnes and Sergeant Elias Grodin. Which movie contains these characters and many more?</text>
+    <answers>
+      <answer correct="true">Platoon</answer>
+      <answer>The Deer Hunter</answer>
+      <answer>Full Metal Jacket</answer>
+      <answer>Hamburger Hill</answer>
+    </answers>
+  </question>
+  <question category="Animals">
+    <text>Which of the following descriptions best describes the appearance of the huntsman spider?</text>
+    <answers>
+      <answer>A small body with very long legs, and a yellow dot on the back of its abdomen</answer>
+      <answer>Very small and unobtrusive, with a red hourglass shape on the underside its abdomen</answer>
+      <answer>Large and leathery looking, with thick legs and short, thick fangs</answer>
+      <answer correct="true">Big and hairy, with beady little black eyes and long, sharp fangs</answer>
+    </answers>
+  </question>
+  <question category="Animals">
+    <text>The legs of a huntsman spider fan out sideways, and the joints are twisted forward in a crablike fashion. How is this useful for the spider?</text>
+    <answers>
+      <answer correct="true">It means that they can run forwards, as well as sideways</answer>
+      <answer>It means that they are able to swim quickly and efficiently</answer>
+      <answer>It means that they can jump to great heights, sometimes even up to 4 metres</answer>
+      <answer>It means that they are able to run at speeds of up to 30 mph</answer>
+    </answers>
+  </question>
+  <question category="Animals">
+    <text>What does the huntsman spider's diet primarily consist of?</text>
+    <answers>
+      <answer>Small berries and nuts</answer>
+      <answer correct="true">Insects and other invertebrates</answer>
+      <answer>Mice, and other small mammals</answer>
+      <answer>People!</answer>
+    </answers>
+  </question>
+  <question category="Geography">
+    <text>In what kind of landform is Paris located?</text>
+    <answers>
+      <answer correct="true">River Basin</answer>
+      <answer>Coastal Plain</answer>
+      <answer>Mountain Area</answer>
+      <answer>Volcanic Crater</answer>
+    </answers>
+  </question>
+  <question category="Geography">
+    <text>Between France and the UK are the waters of the English Channel. What is it called in France?</text>
+    <answers>
+      <answer>Le Channel d'Anglaise</answer>
+      <answer>La Mer</answer>
+      <answer>Le Channel de Francais</answer>
+      <answer correct="true">La Manche</answer>
+    </answers>
+  </question>
+  <question category="Geography">
+    <text>When I visited Troyes in 2009, what do you think I reasonably expected to see?</text>
+    <answers>
+      <answer>A former bull-fighting ring</answer>
+      <answer correct="true">Half-timbered buildings</answer>
+      <answer>Mountain views</answer>
+      <answer>A Roman road</answer>
+    </answers>
+  </question>
+</questions>

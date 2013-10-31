@@ -11,19 +11,25 @@ namespace Matrix
 
         public int Rows
         {
-            get { return this.rows; }
+            get
+            {
+                return this.rows;
+            }
         }
 
         public int Cols
         {
-            get { return this.cols; }
+            get
+            {
+                return this.cols;
+            }
         }
 
         public T this[int rows, int cols]
         {
             get
             {
-                if ((rows >= 0 && rows < matrix.GetLength(1)) && cols >= 0 && cols < matrix.GetLength(1))
+                if ((rows >= 0 && rows < this.Rows) && cols >= 0 && cols < this.Cols)
                 {
                     return matrix[rows, cols];
                 }
@@ -32,9 +38,10 @@ namespace Matrix
                     throw new IndexOutOfRangeException("Index out of boundries");
                 }
             }
+
             set
             {
-                if ((rows >= 0 && rows < matrix.GetLength(1)) && cols >= 0 && cols < matrix.GetLength(1))
+                if ((rows >= 0 && rows < this.Rows) && (cols >= 0 && cols < this.Cols))
                 {
                     matrix[rows, cols] = value;
                 }
@@ -45,16 +52,11 @@ namespace Matrix
             }
         }
 
-        public Matrix()
-        {
-            this.matrix = null;
-            this.rows = 0;
-            this.cols = 0;
-        }
-
         public Matrix(int rows, int cols)
         {
             this.matrix = new T[rows, cols];
+            this.rows = rows;
+            this.cols = cols;
         }
 
         public static Matrix<T> operator +(Matrix<T> leftSide, Matrix<T> rightSide)
@@ -71,6 +73,7 @@ namespace Matrix
                             result[i, j] = (dynamic)leftSide[i, j] + rightSide[i, j];
                         }
                     }
+
                     return result;
                 }
                 else
@@ -91,6 +94,7 @@ namespace Matrix
                 if (leftSide.Rows == rightSide.Rows && leftSide.Cols == rightSide.Cols)
                 {
                     Matrix<T> result = new Matrix<T>(leftSide.rows, leftSide.cols);
+
                     for (int i = 0; i < leftSide.Rows; i++)
                     {
                         for (int j = 0; j < leftSide.cols; j++)
@@ -98,6 +102,7 @@ namespace Matrix
                             result[i, j] = (dynamic)leftSide[i, j] - rightSide[i, j];
                         }
                     }
+
                     return result;
                 }
                 else
@@ -117,18 +122,21 @@ namespace Matrix
             {
                 if (leftSide.Cols == rightSide.Rows)
                 {
-                    Matrix<T> result = new Matrix<T>(leftSide.rows, rightSide.cols);
-                    for (int i = 0; i < leftSide.Rows; i++)
+                    Matrix<T> result = new Matrix<T>(leftSide.Rows, rightSide.Cols);
+
+                    for (int i = 0; i < result.Rows; i++)
                     {
-                        for (int j = 0; j < leftSide.cols; j++)
+                        for (int j = 0; j < result.Cols; j++)
                         {
                             result[i, j] = default(T);
-                            for (int k = 0; k < leftSide.cols; k++)
+
+                            for (int k = 0; k < leftSide.Rows; k++)
                             {
                                 result[i, j] += (dynamic)leftSide[i, k] * rightSide[k, j];
                             }
                         }
                     }
+
                     return result;
                 }
                 else
@@ -141,25 +149,61 @@ namespace Matrix
                 throw new NullReferenceException("Matrices doesn't contains any elements.");
             }
         }
+
         public override string ToString()
         {
             StringBuilder result = new StringBuilder();
-            for (int i = 0; i < matrix.GetLength(0); i++)
+
+            for (int row = 0; row < this.Rows; row++)
             {
-                for (int j = 0; j < matrix.GetLength(1); j++)
+                for (int col = 0; col < this.Cols; col++)
                 {
-                    if (j == matrix.GetLength(1) - 1)
+                    if (row == this.Rows - 1 && col == this.Cols - 1)
                     {
-                        result.Append(matrix[i, j] + ", ");
+                        result.Append(matrix[row, col] + ".");
                     }
                     else
                     {
-                        result.Append(matrix[i, j]);
+                        result.Append(matrix[row, col] + ", ");
                     }
                 }
+
                 result.Append("\n");
             }
+
             return result.ToString();
+        }
+
+        public static bool operator true(Matrix<T> matrix)
+        {
+            for (int row = 0; row < matrix.Rows; row++)
+            {
+                for (int col = 0; col < matrix.Cols; col++)
+                {
+                    if (matrix[row, col].Equals(default(T)))
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
+        }
+
+        public static bool operator false(Matrix<T> matrix)
+        {
+            for (int row = 0; row < matrix.Rows; row++)
+            {
+                for (int col = 0; col < matrix.Cols; col++)
+                {
+                    if (!matrix[row, col].Equals(default(T)))
+                    {
+                        return false;
+                    }
+                }
+            }
+
+            return true;
         }
     }
 }

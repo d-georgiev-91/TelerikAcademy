@@ -1,11 +1,12 @@
-﻿using System;
-
-namespace MobilePhone
+﻿namespace MobilePhone
 {
-    class GSMCallHistoryTest
+    using System;
+
+    public class GsmCallHistoryTest
     {
-        private GSM gsm = new GSM("3310", "Nokia");
-        public void Testing()     // Vmesto da dobqvam nov proekt za i nov main method, pravq tozi method koito da vikam v main methoda. :)
+        private readonly Gsm gsm = new Gsm("3310", "Nokia");
+
+        public void Testing()
         {
             gsm.AddCall("12/3/2004 12:53:24", "0888123456", 53);
             gsm.AddCall("15/3/2004 03:52:12", "0888123456", 24);
@@ -15,8 +16,8 @@ namespace MobilePhone
             gsm.PrintCallsInfo();
 
             Console.WriteLine("The total price is: " + gsm.CalculateTotalPriceOfCalls(0.37));
-
             int longestCall = gsm.CallHistory[0].Duration;
+
             for (int i = 1; i < gsm.CallHistory.Count; i++)
             {
                 if (longestCall < gsm.CallHistory[i].Duration)

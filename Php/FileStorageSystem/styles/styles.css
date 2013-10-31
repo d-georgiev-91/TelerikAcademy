@@ -1,0 +1,14 @@
+#login-form > label {
+    display: block;
+}
+
+#login-form {
+    border: 1px solid black;
+    padding: 10px;
+    width: 200px;
+    border-radius: 6px;
+}
+
+#login-form > * {
+    margin: 5px;
+}

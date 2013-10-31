@@ -12,7 +12,9 @@ namespace StringBuilderExtension
             {
                 length = str.Length - index;
             }
+
             StringBuilder strBuilder = new StringBuilder(str.ToString().Substring(index, length));
+
             return strBuilder;
         }
     }

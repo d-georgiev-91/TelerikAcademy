@@ -1,0 +1,36 @@
+form>label {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table, tr, th, td {
+    border: 1px solid black;
+}
+
+td, th {
+    padding: 5px 10px;
+}
+
+#error-reporter, #success-message {
+	position: absolute;
+	font-size: 50px;
+	font-weight: bold;
+	margin: 15% 15%;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#error-reporter {
+	color: red;
+}
+
+#success-message {
+	color: green;
+}
+
+section {
+    margin: auto 0;
+}

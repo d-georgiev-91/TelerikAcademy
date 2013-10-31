@@ -15,6 +15,7 @@ namespace StudentsNames
                 from student in students
                 where student.FirstName.CompareTo(student.LastName) == -1
                 select student;
+
             foreach (var student in firstNameBeforeLastStudent)
             {
                 Console.WriteLine(student);

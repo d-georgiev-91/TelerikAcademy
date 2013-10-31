@@ -14,6 +14,7 @@ namespace StudentsNames
                new Student("Galina", "Stefanova", 19),
                new Student("Petq", "Naidenova" , 52)
             };
+
             Console.WriteLine("3.----------------------------");
             FirstNameBeforeLastQuery.FirstNameBeforeLast(students);
             Console.WriteLine("4.----------------------------");
@@ -21,7 +22,7 @@ namespace StudentsNames
             Console.WriteLine("5.----------------------------");
             SortStudents.SortStudentsWithOrderByAndThenBy(students);
             Console.WriteLine("------------------------------");
-            SortStudents.SortStudentsWithLINQ(students);
+            SortStudents.SortStudentsWithLinq(students);
         }
     }
 }

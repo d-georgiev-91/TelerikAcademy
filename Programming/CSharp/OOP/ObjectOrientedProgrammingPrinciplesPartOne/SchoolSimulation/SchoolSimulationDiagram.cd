@@ -1,50 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="SchoolSimulation.Class" BaseTypeListCollapsed="true">
-    <Position X="8.25" Y="7" Width="1.5" />
+    <Position X="8.25" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAoAAAAIIAkAAiAAAAAAAACAIAAAgKAAgACAAI=</HashCode>
+      <HashCode>AAIAAAAIAQAAAAAkAAAAAAAAAQAAAAAAAAIAAgACIAI=</HashCode>
       <FileName>Class.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="CommentS" />
-    </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Property Name="Students" />
       <Property Name="Teachers" />
     </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="SchoolSimulation.CommentS" BaseTypeListCollapsed="true">
-    <Position X="8.75" Y="3.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAgAAAIAAAAAAAEAAAAAAAAAAEAAAAAAAAAAAAAIAA=</HashCode>
-      <FileName>CommentS.cs</FileName>
-    </TypeIdentifier>
-    <Lollipop Position="0.2" Collapsed="true" />
-  </Class>
   <Class Name="SchoolSimulation.Discipline" BaseTypeListCollapsed="true">
-    <Position X="11.25" Y="7.5" Width="1.5" />
+    <Position X="16" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIQAAAABAEAIgAAASAAAAEBAAAABAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAIAAAAABAEAIAAAASAAAAEAAAAABAAAAAAIAA=</HashCode>
       <FileName>Discipline.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="CommentS" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
   <Class Name="SchoolSimulation.Person">
-    <Position X="13" Y="0.5" Width="1.5" />
+    <Position X="12.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAEAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Person.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SchoolSimulation.School">
-    <Position X="5.25" Y="8" Width="1.5" />
+    <Position X="5.25" Y="4.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAQAAAAAAEAAAABAABAAAQAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <HashCode>AAAAAAAAAAEAAAABAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>School.cs</FileName>
     </TypeIdentifier>
     <ShowAsCollectionAssociation>
@@ -52,38 +38,26 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="SchoolSimulation.Student">
-    <Position X="11.75" Y="3.5" Width="1.5" />
+    <Position X="11.25" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAAAIAAAAAAAEAAgAAAAIgAAACAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAIAAAAIAAAAAAAEAAAAAAAAgAAAAAAAAAAAAAAAIAA=</HashCode>
       <FileName>Student.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="CommentS" />
-    </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="SchoolSimulation.Teacher">
-    <Position X="14" Y="3.5" Width="1.5" />
-    <Members>
-      <Property Name="CommentS" Hidden="true" />
-    </Members>
+    <Position X="13.5" Y="3.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAQIAAAIAAAESAgAAECAAAAAAAAAAAAEAAAAAEA=</HashCode>
+      <HashCode>AAAAAAAIAAAAAAAEQAAAAECAAAAAAAAAAAAEAAAAIAA=</HashCode>
       <FileName>Teacher.cs</FileName>
     </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="CommentS" />
-    </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Property Name="Disciplines" />
-    </ShowAsCollectionAssociation>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="SchoolSimulation.ICommentable" Collapsed="true">
-    <Position X="16.25" Y="1.75" Width="1.5" />
+  <Interface Name="SchoolSimulation.ICommentable">
+    <Position X="16" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>IComentable.cs</FileName>
+      <HashCode>AAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAA=</HashCode>
+      <FileName>ICommentable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />

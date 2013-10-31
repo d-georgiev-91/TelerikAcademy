@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 
 namespace SchoolSimulation
@@ -8,27 +9,16 @@ namespace SchoolSimulation
         private string name;
         private int numberOfLectures;
         private int numberOfExercises;
-        private CommentS disciplineComments;
-
+        
         public Discipline(string name, int numberOfLectures, int numberOfExercises)
         {
             this.Name = name;
             this.NumberOfLectures = numberOfLectures;
             this.NumberOfExercises = numberOfExercises;
-            disciplineComments = new CommentS();
+            this.Comments = new List<string>();
         }
 
-        public CommentS DisciplineComments
-        {
-            get
-            {
-                return this.disciplineComments;
-            }
-            set
-            {
-                this.disciplineComments = value;
-            }
-        }
+        public ICollection<string> Comments { get; set; }
 
         public int NumberOfExercises
         {
@@ -38,9 +28,7 @@ namespace SchoolSimulation
             }
             set
             {
-
                 this.numberOfExercises = value;
-
             }
         }
 
@@ -68,20 +56,9 @@ namespace SchoolSimulation
             }
         }
 
-        public CommentS CommentS
-        {
-            get
-            {
-                throw new System.NotImplementedException();
-            }
-            set
-            {
-            }
-        }
-
         public void AddComment(string comment)
         {
-            this.disciplineComments.AddComment(comment);
+            this.Comments.Add(comment);
         }
 
         public override string ToString()
@@ -94,11 +71,16 @@ namespace SchoolSimulation
             printableDiscipline.AppendLine("Number of exercises");
             printableDiscipline.AppendLine(this.NumberOfExercises.ToString());
 
-            if (this.DisciplineComments.HasComments())
+            if (this.Comments.Count > 0)
             {
-                printableDiscipline.AppendLine("Comments for the disciplne");
-                printableDiscipline.AppendLine(disciplineComments.ToString());    
+                printableDiscipline.AppendLine("Comments");
+            
+                foreach (var comment in this.Comments)
+                {
+                    printableDiscipline.AppendLine(comment);
+                }
             }
+
             return printableDiscipline.ToString();
         }
     }

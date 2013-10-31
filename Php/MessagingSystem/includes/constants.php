@@ -1,0 +1,13 @@
+<?php
+
+define('MIN_USERNAME_LENGTH', 5);
+define('MAX_USERNAME_LENGTH', 30);
+
+define('MIN_PASSWORD_LENGTH', 5);
+define('MAX_PASSWORD_LENGTH', 50);
+
+define('MIN_TITLE_LENGTH', 5);
+define('MAX_TITLE_LENGTH', 50);
+
+define('MIN_MESSAGE_LENGTH', 10);
+define('MAX_MESSAGE_LENGTH', 250);

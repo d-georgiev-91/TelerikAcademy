@@ -1,10 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace MobilePhone
+﻿namespace MobilePhone
 {
-    class GSM
+    using System;
+    using System.Collections.Generic;
+    using System.Text;
+
+    public class Gsm
     {
         private string gsmModel;
         private string gsmManufacturer;
@@ -14,11 +14,14 @@ namespace MobilePhone
         private Display gsmDisplay = new Display(5.1);
         private List<Call> callHistory = new List<Call>();
 
-        static private GSM iPhone4S = new GSM("4S", "Apple", 1240, "Pesho");
+        private static readonly Gsm iPhone4S = new Gsm("4S", "Apple", 1240, "Pesho");
 
         public List<Call> CallHistory
         {
-            get { return this.callHistory; }
+            get
+            {
+                return this.callHistory;
+            }
             set
             {
                 if (value != null)
@@ -32,7 +35,7 @@ namespace MobilePhone
             }
         }
 
-        public static GSM IPhone
+        public static Gsm IPhone
         {
             get
             {
@@ -40,41 +43,41 @@ namespace MobilePhone
             }
         }
 
-        public void InputGSMData()
+        public void InputGsmData()
         {
             string input;
             Console.Write("Input GSM model: ");
             input = Console.ReadLine();
-            GSMModel = input;
+            GsmModel = input;
             Console.Write("Input GSM manufacturer: ");
             input = Console.ReadLine();
-            GSMManufacturer = input;
+            GsmManufacturer = input;
             Console.Write("Input GSM price: ");
             input = Console.ReadLine();
-            GSMPrice = double.Parse(input);
+            GsmPrice = double.Parse(input);
             Console.Write("Input GSM Owner: ");
             input = Console.ReadLine();
-            GSMOwner = input;
+            GsmOwner = input;
             gsmBattery.InputBatteryData();
             gsmDisplay.InputDisplayData();
         }
 
-        public GSM(string gsmModel, string gsmManufacturer)
+        public Gsm(string gsmModel, string gsmManufacturer)
             : this(gsmModel, gsmManufacturer, null, null, null, null)
         {
         }
 
-        public GSM(string gsmModel, string gsmManufacturer, int gsmPrice)
+        public Gsm(string gsmModel, string gsmManufacturer, int gsmPrice)
             : this(gsmModel, gsmManufacturer, gsmPrice, null, null, null)
         {
         }
 
-        public GSM(string gsmModel, string gsmManufacturer, double? gsmPrice, string gsmOwner)
+        public Gsm(string gsmModel, string gsmManufacturer, double? gsmPrice, string gsmOwner)
             : this(gsmModel, gsmManufacturer, gsmPrice, gsmOwner, null, null)
         {
         }
 
-        public GSM(string gsmModel, string gsmManufacturer, double? gsmPrice, string gsmOwner, Battery gsmBattery, Display gsmDisplay)
+        public Gsm(string gsmModel, string gsmManufacturer, double? gsmPrice, string gsmOwner, Battery gsmBattery, Display gsmDisplay)
         {
             this.gsmModel = gsmModel;
             this.gsmManufacturer = gsmManufacturer;
@@ -84,13 +87,16 @@ namespace MobilePhone
             this.gsmDisplay = gsmDisplay;
         }
 
-        public GSM()
+        public Gsm()
         {
         }
 
-        public string GSMModel
+        public string GsmModel
         {
-            get { return this.gsmModel; }
+            get
+            {
+                return this.gsmModel;
+            }
             set
             {
                 if (value != null)
@@ -104,9 +110,12 @@ namespace MobilePhone
             }
         }
 
-        public string GSMManufacturer
+        public string GsmManufacturer
         {
-            get { return this.gsmManufacturer; }
+            get
+            {
+                return this.gsmManufacturer;
+            }
             set
             {
                 if (value != null)
@@ -120,9 +129,12 @@ namespace MobilePhone
             }
         }
 
-        public double? GSMPrice
+        public double? GsmPrice
         {
-            get { return this.gsmPrice; }
+            get
+            {
+                return this.gsmPrice;
+            }
             set
             {
                 if (value != null || value >= 0)
@@ -136,9 +148,12 @@ namespace MobilePhone
             }
         }
 
-        public string GSMOwner
+        public string GsmOwner
         {
-            get { return this.gsmOwner; }
+            get
+            {
+                return this.gsmOwner;
+            }
             set
             {
                 if (value != null)
@@ -152,9 +167,12 @@ namespace MobilePhone
             }
         }
 
-        public Battery GSMBattery
+        public Battery GsmBattery
         {
-            get { return this.gsmBattery; }
+            get
+            {
+                return this.gsmBattery;
+            }
             set
             {
                 if (value != null)
@@ -168,9 +186,12 @@ namespace MobilePhone
             }
         }
 
-        public Display GSMDisplay
+        public Display GsmDisplay
         {
-            get { return this.gsmDisplay; }
+            get
+            {
+                return this.gsmDisplay;
+            }
             set
             {
                 if (value != null)

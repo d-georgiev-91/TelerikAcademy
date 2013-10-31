@@ -42,9 +42,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class.cs" />
-    <Compile Include="CommentS.cs" />
     <Compile Include="Discipline.cs" />
-    <Compile Include="IComentable.cs" />
+    <Compile Include="ICommentable.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="SchoolSimulation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

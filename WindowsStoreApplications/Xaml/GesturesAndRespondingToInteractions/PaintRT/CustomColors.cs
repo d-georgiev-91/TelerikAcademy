@@ -1,0 +1,6 @@
+﻿namespace PaintRT
+{
+    enum CustomColors
+    {
+    }
+}

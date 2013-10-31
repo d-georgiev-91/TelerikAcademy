@@ -6,7 +6,7 @@ namespace HumanAbstraction
 {
     class HumanAbstractionTest
     {
-        public static void SortingStudentsByGrade(List<Student> students)
+        public static void SortingStudentsByGrade(ICollection<Student> students)
         {
             var sortedByGrade =
                 from student in students
@@ -19,7 +19,7 @@ namespace HumanAbstraction
             }
         }
 
-        public static void SortingWorkersByMoneyPerHour(List<Worker> workers)
+        public static void SortingWorkersByMoneyPerHour(ICollection<Worker> workers)
         {
             var sortedByMoneyPerHour = workers.OrderByDescending(worker => worker.MoneyPerHour());
 
@@ -29,7 +29,7 @@ namespace HumanAbstraction
             }
         }
 
-        public static void SortHumansByName(List<Human> humans)
+        public static void SortHumansByName(ICollection<Human> humans)
         {
             var sortedByName = humans.OrderBy(human => human.FirstName).ThenBy(human => human.LastName);
             foreach (var human in sortedByName)
@@ -40,7 +40,7 @@ namespace HumanAbstraction
 
         static void Main()
         {
-            List<Student> students = new List<Student>(new[] 
+            ICollection<Student> students = new List<Student>(new[] 
             {
                 new Student("Ivan", "Georgiev", 5.6),
                 new Student("Petyr", "Popov", 2.6),
@@ -55,7 +55,7 @@ namespace HumanAbstraction
                 new Student("Spirdon", "Stamatov", 3.59)
             });
 
-            List<Worker> workers = new List<Worker>(new[] 
+            ICollection<Worker> workers = new List<Worker>(new[] 
             {
                 new Worker("Stoqn", "Dimitrov", 45.32, 4),
                 new Worker("Stefan", "Dinchev", 60.4, 12),
@@ -70,9 +70,9 @@ namespace HumanAbstraction
                 new Worker("Stamat", "Spiridonov", 45.05, 5)
             });
 
-            List<Human> studentsToHumans = new List<Human>(students);
-            List<Human> workesToHumans = new List<Human>(workers);
-            List<Human> humans = new List<Human>(studentsToHumans.Concat(workesToHumans));
+            ICollection<Human> studentsToHumans = new List<Human>(students);
+            ICollection<Human> workesToHumans = new List<Human>(workers);
+            ICollection<Human> humans = new List<Human>(studentsToHumans.Concat(workesToHumans));
 
             SortingStudentsByGrade(students);
             Console.WriteLine();

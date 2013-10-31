@@ -1,0 +1,2 @@
+1. Make an RPM package for an application written in C. 
+The expected result is the package and its spec file.
